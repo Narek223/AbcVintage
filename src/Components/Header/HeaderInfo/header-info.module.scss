@@ -1,0 +1,22 @@
+.contactConteiner {
+    background-color: #98896c;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding: 20px 200px 20px 200px;
+    .contactInformation {
+        width: 600px;
+       
+        display: flex;
+        justify-content: space-evenly;
+        height: 30px;
+        .iconsImg {
+            img{
+                margin: 0 5px;
+            }
+         
+         
+        }
+    }
+}
