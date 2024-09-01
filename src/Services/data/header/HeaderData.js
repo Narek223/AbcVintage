@@ -4,7 +4,7 @@ import facebookLogo from '../../../assets/Header/facebook.png'
 
 
 export const socialMediaIcons = [
-    { src: instagramlogo, alt: 'Instagram Logo' },
-    { src: pinterestLogo, alt: 'Pinterest Logo' },
-    { src: facebookLogo, alt: 'Facebook Logo' }
+    { id:1,src: instagramlogo, alt: 'Instagram Logo' },
+    { id:2,src: pinterestLogo, alt: 'Pinterest Logo' },
+    { id:3,src: facebookLogo, alt: 'Facebook Logo' }
   ];

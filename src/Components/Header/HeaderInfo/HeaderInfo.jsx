@@ -9,8 +9,8 @@ const HeaderInfo = () => {
       <div className={styles.contactInformation}>
         <p>Call Us: +123456789</p>
         <nav className={styles.iconsImg}>
-          {socialMediaIcons.map((icon, index) => (
-            <img key={index} src={icon.src} alt={icon.alt} />
+          {socialMediaIcons.map((icon) => (
+            <img key={icon.id} src={icon.src} alt={icon.alt} />
           ))}
         </nav>
         <p>

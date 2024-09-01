@@ -1,0 +1,28 @@
+.benefitsConteiner{
+    padding: 50px 200px 50px 200px;
+    height: 725px;
+    .title{
+width: 100%;
+min-height: 100px;
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    p{
+   width: 50%;
+        font-weight: 400;
+        font-size: 22px;
+        line-height:28px;
+        color:rgba(0, 0, 0, 1);
+        opacity:70%;
+        }
+}
+    }
+    .benefitsdata{
+        display: flex;
+        width: 100%;
+      
+    }
+}

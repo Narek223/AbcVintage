@@ -1,0 +1,40 @@
+.homepageconteiner {
+  height: 1000px;
+  padding: 0 0 0 200px;
+  display: flex;
+  .welcometoAbc {
+
+    width: 467px;
+    height: 900px;
+    padding: 50px 20px 0px 0px;
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      width: 466px;
+      padding: 24px 0;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 50px;
+      color: rgba(93, 64, 55, 1);
+    }
+    p {
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 27px;
+      opacity: 70%;
+      text-align: start;
+    }
+  }
+  .imgbox{
+    width: 100%;
+    .vintageimg{
+        height: 900px;
+        width: 100%;
+  
+    }
+  }
+}

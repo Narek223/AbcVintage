@@ -1,5 +1,6 @@
 .contactConteiner {
   background-color: #98896c;
+  width: 100%;
   height: 60px;
   display: flex;
   justify-content: flex-end;
@@ -7,10 +8,12 @@
   padding: 20px 200px 20px 200px;
 }
 .contactConteiner .contactInformation {
-  width: 600px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   height: 30px;
+}
+.contactConteiner .contactInformation .iconsImg {
+  padding: 0 35px;
 }
 .contactConteiner .contactInformation .iconsImg img {
   margin: 0 5px;

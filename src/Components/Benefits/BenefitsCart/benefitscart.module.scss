@@ -1,0 +1,25 @@
+.benefitscart {
+  width: 360px;
+  height: 340px;
+  background-color: rgba(152, 137, 108, 1);
+  border-radius: 0 50px 0 0;
+  margin: 50px 10px;
+  padding: 30px;
+  .benefitsinfo {
+ 
+   
+
+    h1 {
+      color: white;
+    }
+  }
+    p {
+text-align: start;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 70%;
+    width: 100%;
+  }
+}

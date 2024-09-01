@@ -1,0 +1,26 @@
+.benefitsConteiner {
+  padding: 50px 200px 50px 200px;
+  height: 725px;
+}
+.benefitsConteiner .title {
+  width: 100%;
+  min-height: 100px;
+}
+.benefitsConteiner .title .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.benefitsConteiner .title .text p {
+  width: 50%;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: rgb(0, 0, 0);
+  opacity: 70%;
+}
+.benefitsConteiner .benefitsdata {
+  display: flex;
+  width: 100%;
+}/*# sourceMappingURL=benefits.module.css.map */
