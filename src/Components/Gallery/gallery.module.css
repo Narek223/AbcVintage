@@ -1,0 +1,47 @@
+.conteiner {
+  padding: 20px 200px 20px 200px;
+}
+.conteiner .gallarytitle {
+  font-size: 64px;
+  font-weight: 400;
+  color: #5d4037;
+  opacity: 70%;
+}
+.conteiner .galleryConteiner {
+  display: flex;
+  border: 1px solid #000;
+  height: 610px;
+  margin: 30px 0;
+}
+.conteiner .galleryConteiner .Sideboard {
+  padding: 0 30px;
+  width: 543px;
+  margin: 0 20px 0 0;
+}
+.conteiner .galleryConteiner .Sideboard p:nth-child(2) {
+  text-align: start;
+  line-height: 24px;
+  color: #000000;
+  opacity: 70%;
+}
+.conteiner .galleryConteiner .Sideboard .sideboardText {
+  margin: 30px;
+  padding: 10px 0;
+  text-align: center;
+}
+.conteiner .galleryConteiner .Sideboard .sideboardText h1 {
+  font-size: 30px;
+  opacity: 70%;
+  color: #000000;
+  padding: 30px 0;
+}
+.conteiner .galleryConteiner .Sideboard .sideboardText img {
+  padding: 10px 0;
+}
+.conteiner .galleryConteiner .galleryImgCont img {
+  width: 700px;
+  height: 610px;
+  border: 8px solid white;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 12% 0 0 0;
+}/*# sourceMappingURL=gallery.module.css.map */

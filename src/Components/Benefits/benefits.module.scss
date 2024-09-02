@@ -22,7 +22,9 @@ min-height: 100px;
     }
     .benefitsdata{
         display: flex;
+        justify-content: center;
         width: 100%;
+        border: 1px solid #000;
       
     }
 }
