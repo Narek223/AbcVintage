@@ -8,10 +8,11 @@
   opacity: 70%;
 }
 .conteiner .galleryConteiner {
+  overflow: hidden;
   display: flex;
   border: 1px solid #000;
   height: 610px;
-  margin: 30px 0;
+  margin: 50px 0;
 }
 .conteiner .galleryConteiner .Sideboard {
   padding: 0 30px;
@@ -19,29 +20,85 @@
   margin: 0 20px 0 0;
 }
 .conteiner .galleryConteiner .Sideboard p:nth-child(2) {
+  width: 483px;
+  height: 290px;
   text-align: start;
-  line-height: 24px;
+  font-size: 22px;
   color: #000000;
   opacity: 70%;
+  line-height: 28px;
 }
 .conteiner .galleryConteiner .Sideboard .sideboardText {
-  margin: 30px;
+  width: 400px;
+  height: 220px;
+  border: 1px solid #000;
+  margin: 20px;
   padding: 10px 0;
   text-align: center;
 }
 .conteiner .galleryConteiner .Sideboard .sideboardText h1 {
   font-size: 30px;
   opacity: 70%;
-  color: #000000;
-  padding: 30px 0;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+}
+.conteiner .galleryConteiner .Sideboard .sideboardText p {
+  padding: 10px 0;
 }
 .conteiner .galleryConteiner .Sideboard .sideboardText img {
   padding: 10px 0;
 }
 .conteiner .galleryConteiner .galleryImgCont img {
-  width: 700px;
+  width: 950px;
   height: 610px;
   border: 8px solid white;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1490196078);
-  border-radius: 12% 0 0 0;
+  border-radius: 100px 0 0 0;
+}
+.conteiner .meal {
+  margin: 30px 0 0 0;
+  height: 610px;
+  border: 1px solid #000;
+  display: flex;
+}
+.conteiner .meal .mealImg {
+  width: 933px;
+}
+.conteiner .meal .mealImg img {
+  border: 8px solid white;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 0 100px 0 0;
+}
+.conteiner .meal .Celebration {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 20px;
+  padding: 30px;
+  width: 543px;
+}
+.conteiner .meal .Celebration p {
+  opacity: 70%;
+  color: rgb(0, 0, 0);
+}
+.conteiner .meal .Celebration p:nth-child(2) {
+  font-weight: 400;
+  text-align: start;
+  font-size: 22px;
+  line-height: 28px;
+}
+.conteiner .meal .Celebration .celebrationText {
+  text-align: center;
+  height: 220px;
+}
+.conteiner .meal .Celebration .celebrationText img {
+  padding: 10px 0;
+}
+.conteiner .meal .Celebration .celebrationText h1 {
+  line-height: 55px;
+  padding: 10px 100px;
+  font-weight: 400;
+  font-size: 30px;
+  opacity: 70%;
+  color: rgb(0, 0, 0);
 }/*# sourceMappingURL=gallery.module.css.map */

@@ -3,6 +3,10 @@ import gallerydecor from "../../assets/Gallery/GallaryDecorImg.png";
 import teaImg from "../../assets/Gallery/miniTea.png";
 import styles from "./gallery.module.scss";
 import vector from "../../assets/Gallery/Vector.png";
+import Slider from "./Slider/Slider";
+
+
+
 export default function Gallery() {
   return (
     <div className={styles.conteiner}>
@@ -31,6 +35,32 @@ export default function Gallery() {
           <img src={gallerydecor} />
         </div>
       </div>
+
+      <div className={styles.meal}>
+        <div className={styles.mealImg}>
+          <img src={teaImg} />
+        </div>
+
+        <div className={styles.Celebration}>
+          <div className={styles.celebrationText}>
+            <p>A Taste of Tradition</p>
+            <h1>Where Every Meal Becomes a Celebration</h1>
+            <img src={vector} />
+            <p>Our favorite dishes</p>
+          </div>
+
+          <p>
+            Porcelain has a fascinating history that dates back over a thousand
+            years, originating in China during the Tang Dynasty (618–907 AD).
+            The Chinese were the first to develop the techniques for producing
+            porcelain, which is a type of ceramic made from a mixture of kaolin
+            clay and other minerals, fired at very high temperatures. This
+            process results in a material that is both translucent and highly
+            durable, setting porcelain apart from other ceramics.
+          </p>
+        </div>
+      </div>
+      {/* <Slider/> */}
     </div>
   );
 }

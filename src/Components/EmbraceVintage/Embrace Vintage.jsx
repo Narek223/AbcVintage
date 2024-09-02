@@ -8,8 +8,6 @@ export default function EmbraceVintage() {
     <h1>Embrace Vintage<br/> Elegance</h1>
     <button>Shop now</button>
 </div>
-
-
     </div>
   )
 }

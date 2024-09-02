@@ -1,0 +1,41 @@
+.galleryconteiner{
+margin: 20px 0;
+h1{
+    font-size: 48px;
+    font-weight: 400;
+    color:rgba(93, 64, 55, 1);
+    height: 88px;
+}
+.sliderconteiner{
+    display: flex;
+    align-items: center;
+    button{
+        
+      width: 68px;
+        height: 68px;
+    
+        background-color: rgba(152, 137, 108, 1);
+        border-radius: 60%;
+        padding: 10px;
+        border: none;
+        margin:  0 10px;
+        .icon{
+            color: white;
+            font-size: 2em;
+        }
+    }
+    .slider{
+        width: 290px;
+     margin: 0 10px;
+
+
+img{
+    box-shadow: 0px 0px 22.87px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 0 100px 0 0;
+}
+    }
+}
+
+
+
+}
