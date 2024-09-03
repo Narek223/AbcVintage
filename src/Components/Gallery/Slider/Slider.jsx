@@ -50,7 +50,7 @@ let windowfunction=(index)=>{
           {showDetail ? (
             <div className={styles.nextpage}>
                 <div className={styles.imgconteiner}>
-                <img src={sliderdata[selectedIndex].img}/>
+                {/* <img src={sliderdata[selectedIndex].img}/> */}
                 </div>
           </div>) : null}
 

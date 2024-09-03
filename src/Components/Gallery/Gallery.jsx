@@ -3,7 +3,7 @@ import gallerydecor from "../../assets/Gallery/GallaryDecorImg.png";
 import Meal from "./Meal/Meal";
 import styles from "./gallery.module.scss";
 import vector from "../../assets/Gallery/Vector.png";
-import Slider from "./Slider/Slider";
+
 
 
 
@@ -37,7 +37,7 @@ export default function Gallery() {
       </div>
 
      <Meal/>
-      <Slider/>
+ 
     </div>
   );
 }
