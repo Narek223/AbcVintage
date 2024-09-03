@@ -8,9 +8,7 @@
   opacity: 70%;
 }
 .conteiner .galleryConteiner {
-  overflow: hidden;
   display: flex;
-  border: 1px solid #000;
   height: 610px;
   margin: 50px 0;
 }
@@ -31,7 +29,6 @@
 .conteiner .galleryConteiner .Sideboard .sideboardText {
   width: 400px;
   height: 220px;
-  border: 1px solid #000;
   margin: 20px;
   padding: 10px 0;
   text-align: center;
@@ -55,50 +52,55 @@
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 100px 0 0 0;
 }
-.conteiner .meal {
-  margin: 30px 0 0 0;
-  height: 610px;
-  border: 1px solid #000;
-  display: flex;
+
+@media screen and (max-width: 1860px) {
+  .conteiner .galleryConteiner .galleryImgCont img {
+    width: 860px;
+  }
 }
-.conteiner .meal .mealImg {
-  width: 933px;
+@media screen and (max-width: 1770px) {
+  .conteiner .galleryConteiner .galleryImgCont img {
+    width: 800px;
+  }
 }
-.conteiner .meal .mealImg img {
-  border: 8px solid white;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1490196078);
-  border-radius: 0 100px 0 0;
+@media screen and (max-width: 1720px) {
+  .conteiner .galleryConteiner .galleryImgCont img {
+    width: 750px;
+  }
 }
-.conteiner .meal .Celebration {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 0 20px;
-  padding: 30px;
-  width: 543px;
+@media screen and (max-width: 1680px) {
+  .conteiner .galleryConteiner .galleryImgCont img {
+    width: 700px;
+  }
 }
-.conteiner .meal .Celebration p {
-  opacity: 70%;
-  color: rgb(0, 0, 0);
+@media screen and (max-width: 1620px) {
+  .conteiner .galleryConteiner .galleryImgCont img {
+    width: 650px;
+  }
 }
-.conteiner .meal .Celebration p:nth-child(2) {
-  font-weight: 400;
-  text-align: start;
-  font-size: 22px;
-  line-height: 28px;
+@media screen and (max-width: 1570px) {
+  .conteiner .galleryConteiner .Sideboard {
+    width: 500px;
+  }
+  .conteiner .galleryConteiner .Sideboard p:nth-child(2) {
+    width: 100%;
+  }
+  .conteiner .galleryConteiner .galleryImgCont img {
+    width: 650px;
+  }
 }
-.conteiner .meal .Celebration .celebrationText {
-  text-align: center;
-  height: 220px;
-}
-.conteiner .meal .Celebration .celebrationText img {
-  padding: 10px 0;
-}
-.conteiner .meal .Celebration .celebrationText h1 {
-  line-height: 55px;
-  padding: 10px 100px;
-  font-weight: 400;
-  font-size: 30px;
-  opacity: 70%;
-  color: rgb(0, 0, 0);
+@media screen and (max-width: 1536px) {
+  .conteiner .galleryConteiner .Sideboard {
+    width: 400px;
+  }
+  .conteiner .galleryConteiner .Sideboard p:nth-child(2) {
+    line-height: 20px;
+    font-size: 20px;
+  }
+  .conteiner .galleryConteiner .Sideboard .sideboardText {
+    width: 100%;
+  }
+  .conteiner .galleryConteiner .galleryImgCont img {
+    width: 700px;
+  }
 }/*# sourceMappingURL=gallery.module.css.map */

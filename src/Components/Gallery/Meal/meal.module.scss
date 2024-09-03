@@ -1,0 +1,143 @@
+.meal {
+    margin: 30px 0 0 0;
+    height: 610px;
+    // border: 1px solid #000;
+    display: flex;
+    .mealImg {
+        width: 933px;
+
+        img {
+            border: 8px solid white;
+            box-shadow: 0px 0px 30px 0px #00000026;
+            border-radius: 0 100px 0 0;
+        }
+    }
+    .Celebration {
+        margin: 0 20px;
+        padding: 30px;
+        width: 543px;
+        p {
+            opacity: 70%;
+            color: rgba(0, 0, 0, 1);
+            &:nth-child(2) {
+                font-weight: 400;
+                text-align: start;
+                font-size: 22px;
+                line-height: 28px;
+                padding: 30px 0;
+            }
+        }
+        .celebrationText {
+            text-align: center;
+            height: 220px;
+            img {
+                padding: 10px 0;
+            }
+            h1 {
+                line-height: 55px;
+                padding: 10px 100px;
+                font-weight: 400;
+                font-size: 30px;
+                opacity: 70%;
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+    }
+}
+@media screen and (max-width: 1910px) {
+    .meal {
+        .mealImg {
+            img {
+            }
+        }
+        .Celebration {
+            .celebrationText {
+                h1 {
+                    padding: 10px 70px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1852px) {
+    .meal {
+        .mealImg {
+            width: 850px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .Celebration {
+            width: 580px;
+            .celebrationText {
+                h1 {
+                    padding: 10px 90px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1709px) {
+    .meal {
+        .mealImg {
+            width: 850px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .Celebration {
+            width: 580px;
+            .celebrationText {
+                h1 {
+                    padding: 10px 60px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1550px) {
+    .meal {
+        .mealImg {
+            img {
+            }
+        }
+        .Celebration {
+            width: 580px;
+            p {
+              
+                font-size: 20px;
+            }
+            .celebrationText {
+                h1 {
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1537px) {
+    .meal {
+        .mealImg {
+    
+        }
+        .Celebration {
+            width: 580px;
+         p{
+            &:nth-child(2) {
+           
+                font-size: 21px;
+                   }
+         }
+               
+            
+            .celebrationText {
+
+                h1 {
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+}
