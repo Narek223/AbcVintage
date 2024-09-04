@@ -1,30 +1,33 @@
 import React, { useState } from "react";
 import styles from "./slider.module.scss";
-import { sliderdata } from "../../../Services/data/Gallery/sliderimgdata";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import ImageModal from "./ImageModal/ImageModal";
+import { sliderdata } from "../../../Services/data/Gallery/sliderimgdata";
+
 
 export default function Slider() {
-    const [showDetail, setShowDetail] = useState(false);
-    const [selectedIndex, setSelectedIndex] = useState(null);
+  const [showDetail, setShowDetail] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
+  const openImageModal = (index) => {
+    setSelectedIndex(index);
+    setShowDetail(true);
+  };
 
-let windowfunction=(index)=>{
-    setSelectedIndex(index)
-    setShowDetail(true)
-}
-
-
-  
+  const closeImageModal = () => {
+    setShowDetail(false);
+    setSelectedIndex(null);
+  };
 
   return (
     <div className={styles.galleryconteiner}>
-      <h1>See More Images of Vintage Products</h1>
+      <h1 className={styles.slidertitle}>See More Images of Vintage Products</h1>
       <div className={styles.sliderconteiner}>
         <button className="custom-prev">
           <MdKeyboardArrowLeft className={styles.icon} />
@@ -39,26 +42,22 @@ let windowfunction=(index)=>{
             prevEl: ".custom-prev",
           }}
         >
-          {sliderdata.map((elem) => (
+          {sliderdata.map((elem, index) => (
             <SwiperSlide key={elem.id} className={styles.swiper}>
               <div className={styles.slider} key={elem.id}>
-                <img src={elem.img} onClick={() => windowfunction(elem.id)} />
+                <img src={elem.img} onClick={() => openImageModal(index)} />
               </div>
             </SwiperSlide>
           ))}
-          
-          {showDetail ? (
-            <div className={styles.nextpage}>
-                <div className={styles.imgconteiner}>
-                {/* <img src={sliderdata[selectedIndex].img}/> */}
-                </div>
-          </div>) : null}
-
         </Swiper>
         <button className="custom-next">
           <MdKeyboardArrowRight className={styles.icon} />
         </button>
       </div>
+
+      {showDetail === true?  (
+<ImageModal index={selectedIndex} />
+      ): null}
     </div>
   );
 }

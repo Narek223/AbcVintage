@@ -1,0 +1,73 @@
+.openwindow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+.openwindow .arrowicon {
+  background-color: rgb(152, 137, 108);
+  color: white;
+  border-radius: 25px;
+}
+.openwindow .nextpage {
+  position: relative;
+  width: 70%;
+  max-width: 800px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+.openwindow .nextpage .imgconteiner {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.openwindow .nextpage .imgconteiner img {
+  max-width: 100%;
+  max-height: 70vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+}
+.openwindow .nextpage .imageModelText {
+  text-align: center;
+  padding: 20px;
+}
+.openwindow .nextpage .imageModelText p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #5d4037;
+}
+.openwindow .nextpage .imageModelText h1 {
+  font-size: 32px;
+  font-weight: 400;
+  color: rgb(93, 64, 55);
+  margin-bottom: 10px;
+}
+.openwindow .nextpage .imageModelText img {
+  margin: 10px 0;
+}
+.openwindow .nextpage .imageModelText button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  border: none;
+  background-color: rgb(152, 137, 108);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.openwindow .nextpage .imageModelText button:hover {
+  background-color: rgb(132, 117, 88);
+}/*# sourceMappingURL=imagemodal.module.css.map */
