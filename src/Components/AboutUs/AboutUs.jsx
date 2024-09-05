@@ -7,6 +7,8 @@ import nextTexture from "../../assets/AboutUs/Group (1).png";
 import Aboutusitem from "./AboutUsItem/Aboutusitem";
 
 export default function AboutUs() {
+
+  
   return (
     <div className={styles.aboutusconteiner}>
       <Aboutusitem

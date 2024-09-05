@@ -6,11 +6,11 @@ import { imgslider } from '../../Services/data/followoninstagram/followimgdata';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 export default function FollowUs() {
+
+
+
   return (
     <div className={styles.followusContainer}>
       <div className={styles.followusText}>
@@ -26,12 +26,13 @@ export default function FollowUs() {
           modules={[Autoplay]}
           slidesPerView={5}
           autoplay={{
-            delay: 3000, // Changed to a more typical delay
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
+            delay: 1, 
+            disableOnInteraction: false, 
+            pauseOnMouseEnter: false, 
           }}
+          speed={1000} 
           loop={true}
-
+          allowTouchMove={false} 
           breakpoints={{
             640: {
               slidesPerView: 1,
