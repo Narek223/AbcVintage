@@ -10,7 +10,6 @@ import "swiper/css/scrollbar";
 import ImageModal from "./ImageModal/ImageModal";
 import { sliderdata } from "../../../Services/data/Gallery/sliderimgdata";
 
-
 export default function Slider() {
   const [showDetail, setShowDetail] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -18,6 +17,16 @@ export default function Slider() {
   const openImageModal = (index) => {
     setSelectedIndex(index);
     setShowDetail(true);
+  };
+  let next = () => {
+    setSelectedIndex(
+      selectedIndex == sliderdata.length - 1 ? 0 : selectedIndex + 1
+    );
+  };
+  let prev = () => {
+    setSelectedIndex(
+      selectedIndex === 0 ? sliderdata.length - 1 : selectedIndex - 1
+    );
   };
 
   const closeImageModal = () => {
@@ -27,7 +36,9 @@ export default function Slider() {
 
   return (
     <div className={styles.galleryconteiner}>
-      <h1 className={styles.slidertitle}>See More Images of Vintage Products</h1>
+      <h1 className={styles.slidertitle}>
+        See More Images of Vintage Products
+      </h1>
       <div className={styles.sliderconteiner}>
         <button className="custom-prev">
           <MdKeyboardArrowLeft className={styles.icon} />
@@ -55,9 +66,9 @@ export default function Slider() {
         </button>
       </div>
 
-      {showDetail === true?  (
-<ImageModal index={selectedIndex} />
-      ): null}
+      {showDetail === true ? (
+        <ImageModal index={selectedIndex} onNext={next} onPrev={prev}  close={closeImageModal}/>
+      ) : null}
     </div>
   );
 }

@@ -7,6 +7,10 @@ import EmbraceVintage from "../Components/EmbraceVintage/Embrace Vintage";
 import Gallery from "../Components/Gallery/Gallery";
 import Slider from "../Components/Gallery/Slider/Slider";
 import  Vintage from '../Components/VintageSpotlight/Vintage'
+import FollowUs from "../Components/FollowOninstagram/FollowUs";
+
+
+
 export default function Routefiles() {
   return (
     <div>
@@ -22,6 +26,7 @@ export default function Routefiles() {
       <Gallery/>
       <Slider/>
       <Vintage/>
+      <FollowUs/>
     </div>
   );
 }

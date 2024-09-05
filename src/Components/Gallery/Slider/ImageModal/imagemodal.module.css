@@ -9,19 +9,22 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  cursor: pointer;
   transition: opacity 0.3s ease-in-out;
 }
 .openwindow .arrowicon {
   background-color: rgb(152, 137, 108);
   color: white;
   border-radius: 25px;
+  cursor: pointer;
+}
+.openwindow .arrowicon:hover {
+  background-color: rgb(132, 117, 88);
 }
 .openwindow .nextpage {
   position: relative;
   width: 70%;
   max-width: 800px;
-  height: auto;
+  height: 90%;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
