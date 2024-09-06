@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./slider.module.scss";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,10 +9,32 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import ImageModal from "./ImageModal/ImageModal";
 import { sliderdata } from "../../../Services/data/Gallery/sliderimgdata";
+import Modal from '@mui/material/Modal';
+import { Box } from "@mui/material";
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 1000,
+  height:800,
+  bgcolor: 'rgba(255, 255, 255, 0.8)',
+  boxShadow: 24,
+  // p: 4,
+};
 
 export default function Slider() {
   const [showDetail, setShowDetail] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(null);
+  const [open, setOpen] = useState(false);
+  const handleOpen = (index) => {
+    console.log("clicked");
+    setSelectedIndex(index);
+    setOpen(true);
+  };
+  const handleClose = () => setOpen(false);
+  
 
   const openImageModal = (index) => {
     setSelectedIndex(index);
@@ -45,7 +67,7 @@ export default function Slider() {
         </button>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={10}
+
           loop={true}
           slidesPerView={3}
           navigation={{
@@ -56,7 +78,7 @@ export default function Slider() {
           {sliderdata.map((elem, index) => (
             <SwiperSlide key={elem.id} className={styles.swiper}>
               <div className={styles.slider} key={elem.id}>
-                <img src={elem.img} onClick={() => openImageModal(index)} />
+                <img src={elem.img} onClick={() => handleOpen(index)} />
               </div>
             </SwiperSlide>
           ))}
@@ -65,9 +87,21 @@ export default function Slider() {
           <MdKeyboardArrowRight className={styles.icon} />
         </button>
       </div>
-
-      {showDetail === true ? (
-        <ImageModal index={selectedIndex} onNext={next} onPrev={prev}  close={closeImageModal}/>
+      {open ? (
+        <div className={styles.parentModal}>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+          className={styles.modal}
+        >
+          <Box sx={style}>
+            <ImageModal index={selectedIndex} onNext={next} onPrev={prev}  close={handleClose}/>
+          </Box>
+        </Modal>
+      </div>
+        
       ) : null}
     </div>
   );

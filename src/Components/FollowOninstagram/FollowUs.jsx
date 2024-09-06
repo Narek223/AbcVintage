@@ -30,7 +30,7 @@ export default function FollowUs() {
             disableOnInteraction: false, 
             pauseOnMouseEnter: false, 
           }}
-          speed={1000} 
+          speed={3000} 
           loop={true}
           allowTouchMove={false} 
           breakpoints={{

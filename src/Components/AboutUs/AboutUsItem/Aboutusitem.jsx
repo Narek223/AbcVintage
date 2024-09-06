@@ -2,7 +2,9 @@ import React from 'react'
 import styles from './aboutusitem.module.scss'
 
 
-export default function ({imgsrc,vintageimg,text,title,isReversed}) {
+export default function ({data}) {
+  let {imgsrc,textureimg,text,title,isReversed}=data
+
   return (
   <div className={`${styles.abcVintageLove} ${isReversed? styles.reversed :""}`}>
     <div className={styles.vintageimg}>
@@ -13,7 +15,7 @@ export default function ({imgsrc,vintageimg,text,title,isReversed}) {
       <p>
         {text}
       </p>
-      <img src={vintageimg} />
+      <img src={textureimg} />
     </div>
   </div>
 
