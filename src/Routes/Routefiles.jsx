@@ -8,8 +8,8 @@ import Gallery from "../Components/Gallery/Gallery";
 import Slider from "../Components/Gallery/Slider/Slider";
 import  Vintage from '../Components/VintageSpotlight/Vintage'
 import FollowUs from "../Components/FollowOninstagram/FollowUs";
-
-
+import Contact from '../Components/ContactUs/Contact'
+import Footer from "../Components/Footer/Footer";
 
 export default function Routefiles() {
   return (
@@ -27,6 +27,8 @@ export default function Routefiles() {
       <Slider/>
       <Vintage/>
       <FollowUs/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
