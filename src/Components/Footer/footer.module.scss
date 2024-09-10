@@ -69,12 +69,21 @@
       .contact {
         width: 290px;
         height: 260px;
+        display: flex;
+        flex-direction: column;
+        gap:18px;
+    
+     
+     
+   
       }
 
       .follow {
         width: 151px;
         height: 260px;
-
+        display: flex;
+        flex-direction: column;
+        gap:18px;
         .socialItem {
           color: white;
           font-size: 22px;

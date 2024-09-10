@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './followus.module.scss';
 import { RiInstagramLine } from "react-icons/ri";
 import { imgslider } from '../../Services/data/followoninstagram/followimgdata';
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";

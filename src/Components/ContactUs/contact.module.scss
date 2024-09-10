@@ -1,9 +1,10 @@
 .contactconteiner {
   height: 1150px;
-
   padding: 100px 200px;
+
   .title {
     padding: 70px 0;
+
     h1 {
       font-weight: 400;
       font-size: 64px;
@@ -11,6 +12,7 @@
       opacity: 90%;
     }
   }
+
   .contactus {
     display: flex;
     height: 783px;
@@ -19,69 +21,85 @@
       width: 500px;
       height: 783px;
       margin-right: 24px;
-      .formikConteiner{
-        margin:24px 0;
-        display: flex;
-        align-items: stretch;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-      height: 470px;
-      input{
-        margin: 18px 0;
-        border-radius: 15px;
-        outline: none;
-        height: 54px;
-        border: 1px solid rgba(152, 137, 108, 1);
-        padding: 15px;
-      }
-      .error{
-        font-size: 15px;
-        color: red;
-        text-align: center;
-        padding: 5px 0;
-      }
-      textarea{
-        height: 173px;
-        border-radius: 15px;
-        border: 1px solid rgba(152, 137, 108, 1);
-        padding: 15px;
-        resize: none;
-      }
+      
+      
+      
+      
 
-      }
-      button{
-        background-color: rgba(152, 137, 108, 1);
-        color:white;
-        border: none;
-        padding:10px;
-        font-size: 22px;
-        border-radius:20px;
-        width: 250px;
-        height:64px;
-        cursor:pointer;
-      }
       h1 {
-        
-
         text-align: center;
         font-weight: 600;
         font-size: 36px;
         line-height: 46px;
         color: rgba(93, 64, 55, 1);
       }
+
+      .formikConteiner {
+        margin: 24px 0;
+      
+      
+      
+      
+      
+
+        .form{
+          display: flex;
+          align-items: stretch;
+          justify-content: center;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          height: 470px;
+       
+        }
+        input {
+          margin: 18px 0;
+          border-radius: 15px;
+          outline: none;
+          height: 54px;
+          border: 1px solid rgba(152, 137, 108, 1);
+          padding: 15px;
+        }
+
+        .error {
+          font-size: 15px;
+          color: red;
+          text-align: center;
+          padding: 5px 0;
+        }
+
+        textarea {
+          height: 173px;
+          border-radius: 15px;
+          border: 1px solid rgba(152, 137, 108, 1);
+          padding: 15px;
+          resize: none;
+        }
+      }
+
+      button {
+        background-color: rgba(152, 137, 108, 1);
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 22px;
+        border-radius: 20px;
+        width: 250px;
+        height: 64px;
+        cursor: pointer;
+        align-self: center; 
+        margin-top: 20px; 
+      }
     }
+
     .mapconteiner {
       width: 990px;
       height: 738px;
-  
- 
-      .map{
+
+      .map {
         border-radius: 30px;
         width: 100%;
         height: 100%;
-        border:none;
-
+        border: none;
       }
     }
   }
