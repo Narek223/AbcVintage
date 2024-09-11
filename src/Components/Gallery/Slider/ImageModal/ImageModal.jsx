@@ -1,16 +1,15 @@
 // ImageModal.jsx
-import React  from 'react';
+import React from 'react';
 import styles from './imagemodal.module.scss';
 import { sliderdata } from '../../../../Services/data/Gallery/sliderimgdata';
 import vector from '../../../../assets/Gallery/Vector.png';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 
-export default function ImageModal({ index,onNext,onPrev,close}) {
- 
+export default function ImageModal({ index, onNext, onPrev, close }) {
   return (
     <div className={styles.openwindow}>
-      <div className={styles.arrowLeft} >
-        <MdKeyboardArrowLeft onClick={onPrev} size={40} className={styles.arrowicon} />
+      <div className={styles.arrowLeft} onClick={onPrev}>
+        <MdKeyboardArrowLeft size={24} className={styles.arrowicon} />
       </div>
       <div className={styles.nextpage}>
         <div className={styles.imgconteiner}>
@@ -24,8 +23,8 @@ export default function ImageModal({ index,onNext,onPrev,close}) {
           <button onClick={close}>Close</button>
         </div>
       </div>
-      <div className={styles.arrowRight} >
-        <MdKeyboardArrowRight onClick={onNext} size={40} className={styles.arrowicon}  />
+      <div className={styles.arrowRight} onClick={onNext}>
+        <MdKeyboardArrowRight size={24} className={styles.arrowicon} />
       </div>
     </div>
   );

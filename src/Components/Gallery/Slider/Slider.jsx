@@ -17,10 +17,13 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 1000,
-  height:800,
-  bgcolor: 'rgba(255, 255, 255, 0.8)',
-  boxShadow: 24,
+  width: '50%',
+  height:"100%",
+
+  border: 'none', // Убедитесь, что бордер отключен
+  boxShadow: 'none', // Убедитесь, что нет теней, которые могут выглядеть как бордер
+  outline: 'none',
+
   // p: 4,
 };
 
@@ -95,6 +98,14 @@ export default function Slider() {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
           className={styles.modal}
+          slotProps={{
+            backdrop: {
+              sx: {
+                backgroundColor: 'rgba(255, 255, 255, 0.8)', 
+                border:'none'
+              },
+            },
+          }}
         >
           <Box sx={style}>
             <ImageModal index={selectedIndex} onNext={next} onPrev={prev}  close={handleClose}/>
