@@ -1,7 +1,5 @@
 import React from "react";
-
 import Home from "./Components/Home/Home";
-import AboutUs from "./Components/AboutUs/AboutUs";
 import Routefiles from "./Routes/Routefiles";
 import "./App.css";
 

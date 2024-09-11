@@ -19,6 +19,7 @@ export default function Routefiles() {
   const galleryref = useRef(null);
   const vintajeref = useRef(null);
   const contactref = useRef(null);
+  
   return (
     <div>
       <Header

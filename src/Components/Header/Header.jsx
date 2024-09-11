@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./header.module.scss";
 import HeaderInfo from "./HeaderInfo/HeaderInfo";
 import logo from "../../assets/Header/logo.png";
-
+import { scrollToSection } from "../../Functions/Header/scrollToSection";
 
 export default function Header({
   home,
@@ -12,16 +12,9 @@ export default function Header({
   Spotlight,
   contact
 }) {
+  
   let [isScrolled, setisScrolled] = useState(false);
 
-
-  
-  const scrollToSection = (ref) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
- 
-    }
-  };
   useEffect(() => {
     const handleScroll = () => {
       return window.scrollY > 0 ? setisScrolled(true) : setisScrolled(false);
