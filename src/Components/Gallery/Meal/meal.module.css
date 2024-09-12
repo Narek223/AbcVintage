@@ -35,8 +35,8 @@
   padding: 10px 0;
 }
 .meal .Celebration .celebrationText h1 {
+  font-family: "aurora";
   line-height: 55px;
-  padding: 10px 100px;
   font-weight: 400;
   font-size: 30px;
   opacity: 70%;

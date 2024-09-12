@@ -1,5 +1,6 @@
 .galleryconteiner {
   margin: 20px 0;
+  margin-bottom: 100px;
   padding: 0 100px;
 }
 .galleryconteiner .parentModal {
@@ -13,7 +14,8 @@
   font-weight: 400;
   color: rgb(93, 64, 55);
   height: 88px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  font-family: "aurora";
 }
 .galleryconteiner .sliderconteiner {
   display: flex;

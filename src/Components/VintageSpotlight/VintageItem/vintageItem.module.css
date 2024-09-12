@@ -24,6 +24,7 @@
   opacity: 70%;
 }
 .vintageItem .info h1 {
+  font-family: "aurora";
   font-weight: 400;
   font-size: 36px;
   padding: 30px;

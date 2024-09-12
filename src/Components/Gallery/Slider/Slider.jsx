@@ -20,15 +20,15 @@ const style = {
   width: '50%',
   height:"100%",
 
-  border: 'none', // Убедитесь, что бордер отключен
-  boxShadow: 'none', // Убедитесь, что нет теней, которые могут выглядеть как бордер
+  border: 'none', 
+  boxShadow: 'none', 
   outline: 'none',
 
   // p: 4,
 };
 
 export default function Slider() {
-  const [showDetail, setShowDetail] = useState(false);
+
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [open, setOpen] = useState(false);
   const handleOpen = (index) => {
@@ -39,10 +39,7 @@ export default function Slider() {
   const handleClose = () => setOpen(false);
   
 
-  const openImageModal = (index) => {
-    setSelectedIndex(index);
-    setShowDetail(true);
-  };
+
   let next = () => {
     setSelectedIndex(
       selectedIndex == sliderdata.length - 1 ? 0 : selectedIndex + 1
@@ -54,10 +51,7 @@ export default function Slider() {
     );
   };
 
-  const closeImageModal = () => {
-    setShowDetail(false);
-    setSelectedIndex(null);
-  };
+ 
 
   return (
     <div className={styles.galleryconteiner}>

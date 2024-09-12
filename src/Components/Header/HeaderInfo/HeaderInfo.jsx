@@ -10,7 +10,7 @@ const HeaderInfo = () => {
         <p>Call Us: +123456789</p>
         <nav className={styles.iconsImg}>
           {socialMediaIcons.map((icon) => (
-            <img key={icon.id} src={icon.src} alt={icon.alt} />
+            <a href=""><img key={icon.id} src={icon.src} alt={icon.alt} /></a>
           ))}
         </nav>
         <p>

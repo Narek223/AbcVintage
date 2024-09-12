@@ -1,4 +1,5 @@
 .conteiner {
+  margin-top: 100px;
   padding: 20px 200px 20px 200px;
 }
 .conteiner .gallarytitle {
@@ -6,51 +7,7 @@
   font-weight: 400;
   color: #5d4037;
   opacity: 70%;
-}
-.conteiner .galleryConteiner {
-  display: flex;
-  height: 610px;
-  margin: 50px 0;
-}
-.conteiner .galleryConteiner .Sideboard {
-  padding: 0 30px;
-  width: 543px;
-  margin: 0 20px 0 0;
-}
-.conteiner .galleryConteiner .Sideboard p:nth-child(2) {
-  width: 483px;
-  height: 290px;
-  text-align: start;
-  font-size: 22px;
-  color: #000000;
-  opacity: 70%;
-  line-height: 28px;
-}
-.conteiner .galleryConteiner .Sideboard .sideboardText {
-  width: 400px;
-  height: 220px;
-  margin: 20px;
-  padding: 10px 0;
-  text-align: center;
-}
-.conteiner .galleryConteiner .Sideboard .sideboardText h1 {
-  font-size: 30px;
-  opacity: 70%;
-  color: rgb(0, 0, 0);
-  padding: 10px 0;
-}
-.conteiner .galleryConteiner .Sideboard .sideboardText p {
-  padding: 10px 0;
-}
-.conteiner .galleryConteiner .Sideboard .sideboardText img {
-  padding: 10px 0;
-}
-.conteiner .galleryConteiner .galleryImgCont img {
-  width: 950px;
-  height: 610px;
-  border: 8px solid white;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1490196078);
-  border-radius: 100px 0 0 0;
+  font-family: "aurora";
 }
 
 @media screen and (max-width: 1860px) {

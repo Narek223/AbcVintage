@@ -83,6 +83,7 @@
   font-weight: 400;
   color: rgb(93, 64, 55);
   margin-bottom: 10px;
+  font-family: "aurora";
 }
 .openwindow .nextpage .imageModelText button {
   cursor: pointer;

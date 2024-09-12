@@ -1,0 +1,52 @@
+.galleryConteiner {
+  display: flex;
+  height: 610px;
+  margin: 50px 0;
+}
+.galleryConteiner.reversed {
+  flex-direction: row-reverse;
+}
+.galleryConteiner .Sideboard {
+  padding: 30px 30px;
+  width: 543px;
+  margin: 0 20px 0 0;
+}
+.galleryConteiner .Sideboard p:nth-child(2) {
+  width: 483px;
+  height: 290px;
+  text-align: start;
+  font-size: 22px;
+  color: #000000;
+  opacity: 70%;
+  line-height: 28px;
+}
+.galleryConteiner .Sideboard .sideboardText {
+  width: 400px;
+  height: 220px;
+  margin: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+.galleryConteiner .Sideboard .sideboardText h1 {
+  font-family: "aurora";
+  font-size: 22px;
+  opacity: 70%;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+}
+.galleryConteiner .Sideboard .sideboardText p {
+  padding: 10px 0;
+}
+.galleryConteiner .Sideboard .sideboardText img {
+  padding: 10px 0;
+}
+.galleryConteiner .galleryImgCont img {
+  width: 950px;
+  height: 610px;
+  border: 8px solid white;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 100px 0 0 0;
+}
+.galleryConteiner .galleryImgCont img.fiximgborder {
+  border-radius: 0 100px 0 0;
+}/*# sourceMappingURL=galleryitem.module.css.map */

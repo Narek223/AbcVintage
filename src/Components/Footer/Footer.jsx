@@ -38,7 +38,7 @@ export default function Footer() {
 
           <div className={styles.contact}>
             <h1>Contact</h1>
-            <p>Email:ABCvintage@mail.com</p>
+            <p>Email:<a href="mailto:ABCvintage@gmail.com"/>ABCvintage@mail.com<a/></p>
             <p>Call Us: +123456789</p>
             <p>Address: Prague 1, Czech</p>
           </div>

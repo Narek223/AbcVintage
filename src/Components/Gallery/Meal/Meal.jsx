@@ -1,12 +1,12 @@
-import React from 'react'
-import styles from './meal.module.scss'
+import React from "react";
+import styles from "./meal.module.scss";
 import teaImg from "../../../assets/Gallery/miniTea.png";
 import vector from "../../../assets/Gallery/Vector.png";
 
 export default function Meal() {
   return (
     <div>
-         <div className={styles.meal}>
+      <div className={styles.meal}>
         <div className={styles.mealImg}>
           <img src={teaImg} />
         </div>
@@ -31,5 +31,5 @@ export default function Meal() {
         </div>
       </div>
     </div>
-  )
+  );
 }

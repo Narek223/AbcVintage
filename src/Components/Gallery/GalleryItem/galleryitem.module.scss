@@ -1,0 +1,58 @@
+.galleryConteiner {
+    display: flex;
+
+    height: 610px;
+    margin: 50px 0;
+    &.reversed {
+      flex-direction: row-reverse;
+    }
+    .Sideboard {
+      padding: 30px 30px;
+      width: 543px;
+      margin: 0 20px 0 0;
+      p:nth-child(2) {
+        width: 483px;
+        height: 290px;
+        text-align: start;
+        font-size: 22px;
+        color: #000000;
+        opacity: 70%;
+        line-height: 28px;
+      }
+      .sideboardText {
+        width: 400px;
+        height: 220px;
+
+        margin: 20px;
+        padding: 10px 0;
+        text-align: center;
+        h1 {
+          font-family: "aurora";
+          font-size: 22px;
+          opacity: 70%;
+          color: rgba(0, 0, 0, 1);
+          padding: 10px 0;
+        }
+        p {
+          padding: 10px 0;
+        }
+        img {
+          padding: 10px 0;
+        }
+      }
+    }
+    .galleryImgCont {
+
+     
+      img {
+        width: 950px;
+        height: 610px;
+        border: 8px solid white;
+        box-shadow: 0px 0px 30px 0px #00000026;
+        border-radius: 100px 0 0 0;
+        &.fiximgborder{
+          border-radius: 0 100px 0 0;
+        }
+      }
+    }
+  }

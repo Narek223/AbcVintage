@@ -34,8 +34,8 @@ export default function Header({
         >
           <img src={logo} onClick={() => scrollToSection(home)} />
           <ul>
-            <li onClick={() => scrollToSection(home)}>Home </li>
-            <li onClick={() => scrollToSection(aboutRef)}> About Us</li>
+            <li onClick={() => scrollToSection(home)}>Home</li>
+            <li onClick={() => scrollToSection(aboutRef)}>About Us</li>
             <li onClick={() => scrollToSection(benefits)}>Benefits</li>
             <li onClick={() => scrollToSection(gallery)}>Gallery</li>
             <li onClick={() => scrollToSection(Spotlight)}>Spotlight</li>

@@ -30,6 +30,9 @@
   position: fixed;
   animation: scrollDown 0.3s forwards;
 }
+.headerConteiner header .headerNav .active {
+  color: red;
+}
 .headerConteiner header .headerNav img {
   width: 205px;
   height: 56px;

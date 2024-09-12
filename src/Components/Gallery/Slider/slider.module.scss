@@ -1,5 +1,6 @@
 .galleryconteiner {
   margin: 20px 0;
+  margin-bottom: 100px;
   padding: 0 100px;
 .parentModal{
   background-color: beige;
@@ -12,7 +13,8 @@
     font-weight: 400;
     color: rgba(93, 64, 55, 1);
     height: 88px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    font-family: "aurora";
   }
 
   .sliderconteiner {
@@ -58,9 +60,7 @@
         border: 5px solid white;
         transition: transform 0.3s ease;
 
-        // &:hover {
-        //   transform: scale(1.05);
-        // }
+      
       }
     }
   }

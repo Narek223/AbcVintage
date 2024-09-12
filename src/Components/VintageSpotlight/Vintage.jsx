@@ -10,11 +10,9 @@ export default function Vintage() {
         <h1>Vintage Spotlight</h1>
       </div>
 
-
-{vintageItems.map((elem) => (
-           <VintageItem  key={elem.id} data={elem}/>
-        ))}
-     
+      {vintageItems.map((elem) => (
+        <VintageItem key={elem.id} data={elem} />
+      ))}
     </div>
   );
 }

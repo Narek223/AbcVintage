@@ -22,6 +22,7 @@ export default function FollowUs() {
 
       <div className={styles.followusImgContainer}>
         <Swiper
+        spaceBetween={20}
           modules={[Autoplay]}
           slidesPerView={5}
           autoplay={{
