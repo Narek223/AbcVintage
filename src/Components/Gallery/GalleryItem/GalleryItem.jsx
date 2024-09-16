@@ -2,10 +2,8 @@ import React from "react";
 import styles from "./galleryitem.module.scss";
 
 export default function GalleryItem({ data }) {
-
-
-  let { isReversed, title, heading, vectorimg, description, text,img } = data;
-
+  
+  let { isReversed, title, heading, vectorimg, description, text, img } = data;
 
   return (
     <div

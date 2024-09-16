@@ -5,16 +5,16 @@
   header {
     width: 100%;
     position: relative;
-   
-   
-   @keyframes scrollDown {
-    from{
-        top:60px;
-    }to{
-        top:0px
+
+    @keyframes scrollDown {
+      from {
+        top: 60px;
+      }
+      to {
+        top: 0px;
+      }
     }
-   }
-   
+
     .headerNav {
       position: fixed;
       top: 60px;
@@ -23,35 +23,214 @@
       width: 100%;
       height: 60px;
       border: 0.5px solid rgba(152, 137, 108, 1);
-      padding: 20px 200px 20px 200px;
+      padding: 20px 200px;
       display: flex;
       align-items: center;
+
       &.scrolled {
         position: fixed;
-        animation: scrollDown 0.3s forwards; // Применение анимации
+        animation: scrollDown 0.3s forwards;
       }
-      
-      
-      
-      .active{
+
+      .icons {
+        display: none;
+      }
+
+      .active {
         color: red;
       }
-     
+
       img {
+        cursor: pointer;
         width: 205px;
         height: 56px;
       }
-      ul {
-        display: flex;
-        justify-content: flex-end;
+      .listbox {
         width: 100%;
-        li {
-          color: rgba(93, 64, 55, 1);
-          padding: 0 20px;
-          list-style: none;
-          cursor: pointer;
+
+        .responsivenavigation {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+
+          li {
+            color: rgba(93, 64, 55, 1);
+            padding: 0 20px;
+            list-style: none;
+            cursor: pointer;
+          }
         }
       }
     }
   }
+}
+
+@media screen and (max-width:1450px) {
+  .headerConteiner {
+    header {
+      .headerNav {
+        padding: 20px 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .headerConteiner {
+    header {
+      .headerNav {
+        padding: 20px 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  @keyframes slideUp {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideDown {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+
+  .headerConteiner {
+    header {
+
+      .headerNav {
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+        top: 0; 
+        
+        padding: 30px 20px 5px 20px;
+        position: relative;
+        img{
+          width: 150px;
+    height: 56px;
+    object-fit: contain;
+        }
+.icons{
+  color: rgba(152, 137, 108, 1);
+}
+        .listbox {
+          display: none;
+
+          &.changebg {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1000;
+          
+      
+      
+      
+       
+       
+            .list {
+              padding: 20px 30px;
+              display: flex;
+              align-items: baseline;
+              width: 50%;
+              animation: slideUp 0.3s ease, opacity 0.3s ease;
+            
+              background-color: rgba(152, 137, 108, 1);
+              .responsivenavigation {
+
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 10px;
+                position: relative;
+
+               > li {
+                  font-size: 19px;
+                  text-align: start;
+                  font-weight: 400;
+                  line-height: 20px;
+                  padding: 10px 0;
+                  color: white;
+                  cursor: pointer;
+                }
+              }
+
+              .clear {
+                .p {
+                  width: 24px;
+                  height: 24px;
+                  font-weight: 400;
+                }
+              }
+            }
+
+            .socialicons {
+              display: flex;
+              li{
+                padding: 0 8px 0 0;
+              }
+              img {
+                display: flex;
+                height: auto;
+                width: auto;
+              }
+            }
+          }
+        }
+
+        .icons {
+          display: block;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  .headerConteiner {
+  
+    header {
+      .headerNav {
+        padding: 30px 20px 5px 20px;
+  
+        .icons{
+          width: 18px;
+          height: 12px;
+        }
+img{
+  object-fit: contain;
+  width: 120px;
+  height: 42px;
+}
+ .listbox {
+  &.changebg {
+    .list{
+      width: 70%;
+    }
+  }
+}
+      }
+    }
+  }
+
 }

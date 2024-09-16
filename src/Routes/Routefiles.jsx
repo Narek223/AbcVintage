@@ -30,7 +30,7 @@ export default function Routefiles() {
         Spotlight={vintajeref}
         contact={contactref}
       />
-      <section ref={homeref}>
+      {/* <section ref={homeref}>
         <Home />
       </section>
 
@@ -55,7 +55,7 @@ export default function Routefiles() {
         <Contact />
       </section>
 
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

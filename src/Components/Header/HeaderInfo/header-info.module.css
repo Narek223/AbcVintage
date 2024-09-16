@@ -17,4 +17,20 @@
 }
 .contactConteiner .contactInformation .iconsImg img {
   margin: 0 5px;
+}
+
+@media screen and (max-width: 1450px) {
+  .contactConteiner {
+    padding: 20px 100px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .contactConteiner {
+    padding: 20px 50px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .contactConteiner {
+    display: none;
+  }
 }/*# sourceMappingURL=header-info.module.css.map */
