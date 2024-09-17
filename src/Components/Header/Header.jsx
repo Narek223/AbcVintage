@@ -6,6 +6,8 @@ import { scrollToSection } from "../../Functions/Header/scrollToSection";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClear } from "react-icons/md";
 import { socialMediaIcons } from "../../Services/data/header/HeaderData";
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
 
 export default function Header({
   home,
@@ -17,7 +19,6 @@ export default function Header({
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [show, setShow] = useState(false);
-  let ref = useRef();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,21 +43,43 @@ export default function Header({
     };
   }, [show]);
 
-  useEffect(() => {
-    const close = (e) => {
-      if (ref.current && !ref.current.contains(e.target)) {
-        setShow(false);
-      }
-    };
-    document.addEventListener("mousedown", close);
-    return () => {
-      document.removeEventListener("mousedown", close);
-    };
-  }, [ref]);
-
-  const showNavBar = () => {
-    setShow((prev) => !prev);
+  const toggleDrawer = (open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+    setShow(open);
   };
+
+  const drawerContent = (
+    <div
+      className={styles.drawerContent}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
+    >
+      <ul className={styles.responsivenavigation}>
+        <li onClick={() => scrollToSection(home)}>Home </li>
+        <li onClick={() => scrollToSection(aboutRef)}>About Us</li>
+        <li onClick={() => scrollToSection(benefits)}>Benefits</li>
+        <li onClick={() => scrollToSection(gallery)}>Gallery</li>
+        <li onClick={() => scrollToSection(Spotlight)}>Spotlight</li>
+        <li onClick={() => scrollToSection(contact)}>Contact</li>
+        <li>Eng</li>
+        <ul className={styles.socialicons}>
+          {socialMediaIcons.map((icon) => (
+            <li key={icon.id}>
+              <a href="#">
+                <img src={icon.src} alt={icon.alt} />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </ul>
+      <IconButton className={styles.clear} onClick={toggleDrawer(false)}>
+        <MdClear />
+      </IconButton>
+    </div>
+  );
 
   return (
     <div className={styles.headerConteiner}>
@@ -67,64 +90,13 @@ export default function Header({
         >
           <img src={logo} onClick={() => scrollToSection(home)} alt="Logo" />
 
-          <div className={styles.icons} onClick={showNavBar}>
-            {show ?<GiHamburgerMenu /> :<GiHamburgerMenu />}
-          </div>
+          <IconButton onClick={toggleDrawer(true)} className={styles.icons}>
+            <GiHamburgerMenu />
+          </IconButton>
 
-          <div className={`${styles.listbox} ${show ? styles.changebg : ""}`}>
-
-            <div className={styles.list} ref={ref}>
-
-            <ul className={`${styles.responsivenavigation}  ${show ? styles.openNavBar : styles.closeNavBar}`} >
-        <li onClick={() => scrollToSection(home)}>Home </li>
-        <li onClick={() => scrollToSection(aboutRef)}>About Us</li>
-        <li onClick={() => scrollToSection(benefits)}>Benefits</li>
-        <li onClick={() => scrollToSection(gallery)}>Gallery</li>
-        <li onClick={() => scrollToSection(Spotlight)}>Spotlight</li>
-        <li onClick={() => scrollToSection(contact)}>Contact</li>
-        {show === false ? null : <li>Eng</li>}
-        {show===false?null:
-        <ul className={styles.socialicons}>
-         
-         {socialMediaIcons.map((icon) => (
-   <li>  <a href=""><img key={icon.id} src={icon.src} alt={icon.alt} /></a></li>
-   ))}
-         </ul>} 
-      </ul>
-
-
-
-
-
-
-
-   
-      {
-        show === false? null: <div className={styles.clear}>
-        <p className={styles.p} onClick={()=>{setShow(false)}}><MdClear /></p>
-      </div>
-      }
-              
-
-
-
-
-
-
-
-
-
-              
-            </div>
- 
- 
- 
- 
- 
- 
- 
- 
-          </div>
+          <Drawer anchor="left" open={show} onClose={toggleDrawer(false)}>
+            {drawerContent}
+          </Drawer>
         </nav>
       </header>
     </div>
