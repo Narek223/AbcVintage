@@ -88,70 +88,98 @@
     }
   }
   .headerConteiner header .headerNav {
+    height: 72px;
     display: flex;
     justify-content: space-between;
     top: 0;
-    padding: 20px 50px;
+    padding: 30px 20px 5px 20px;
     position: relative;
+  }
+  .headerConteiner header .headerNav img {
+    width: 150px;
+    height: 56px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .headerConteiner header .headerNav .icons {
+    color: rgb(152, 137, 108);
   }
   .headerConteiner header .headerNav .listbox {
     display: none;
-  }
-  .headerConteiner header .headerNav .listbox.changebg {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
-  }
-  .headerConteiner header .headerNav .listbox.changebg .list {
-    padding: 20px 30px;
-    display: flex;
-    align-items: baseline;
-    width: 50%;
-    animation: slideUp 0.3s ease, opacity 0.3s ease;
-    background-color: rgb(152, 137, 108);
-  }
-  .headerConteiner header .headerNav .listbox.changebg .list .responsivenavigation {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
-    position: relative;
-  }
-  .headerConteiner header .headerNav .listbox.changebg .list .responsivenavigation > li {
-    font-size: 19px;
-    text-align: start;
-    font-weight: 400;
-    line-height: 20px;
-    padding: 10px 0;
-    color: white;
-    cursor: pointer;
-  }
-  .headerConteiner header .headerNav .listbox.changebg .list .clear .p {
-    width: 24px;
-    height: 24px;
-    font-weight: 400;
-  }
-  .headerConteiner header .headerNav .listbox.changebg .socialicons {
-    display: flex;
-  }
-  .headerConteiner header .headerNav .listbox.changebg .socialicons li {
-    padding: 0 8px 0 0;
-  }
-  .headerConteiner header .headerNav .listbox.changebg .socialicons img {
-    display: flex;
-    height: auto;
-    width: auto;
   }
   .headerConteiner header .headerNav .icons {
     display: block;
     font-weight: 700;
   }
+}
+@media screen and (max-width: 600px) {
+  .headerConteiner header .headerNav {
+    padding: 30px 20px 5px 20px;
+  }
+  .headerConteiner header .headerNav .icons {
+    width: 18px;
+    height: 12px;
+  }
+  .headerConteiner header .headerNav img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 120px;
+    height: 42px;
+  }
+  .headerConteiner header .headerNav .listbox.changebg .list {
+    width: 70%;
+  }
+}
+.socialicons {
+  display: flex;
+  padding: 8px 16px;
+}
+.socialicons li {
+  list-style: none;
+  padding: 0 8px 0 0;
+}
+.socialicons img {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.listconteiner {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.navtext {
+  width: 50%;
+  display: flex;
+  font-size: 21px;
+  text-align: start;
+  font-weight: 400;
+  color: white;
+}
+.navtext ul {
+  width: 50%;
+}
+.navtext ul li {
+  font-size: 19px;
+}
+
+ul li {
+  font-size: 19px;
+}
+
+.clearIcon {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  font-size: 24px;
+  color: rgb(11, 10, 10);
+  cursor: pointer;
+}
+
+.mek {
+  width: 80%;
 }/*# sourceMappingURL=header.module.css.map */

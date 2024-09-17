@@ -30,11 +30,11 @@ export default function Routefiles() {
         Spotlight={vintajeref}
         contact={contactref}
       />
-      {/* <section ref={homeref}>
+        {/*  <section ref={homeref}>
         <Home />
       </section>
 
-      <section  ref={aboutUsRef}>
+   <section  ref={aboutUsRef}>
         <AboutUs />
       </section>
       <section ref={Benefitsref}>
