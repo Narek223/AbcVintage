@@ -35,7 +35,21 @@ display: flex;
     .vintageimg{
         height: 900px;
         width: 100%;
-  
+       
     }
   }
+}
+
+@media screen and (max-width:1450px) {
+
+  .homepageconteiner {
+    padding:   0 0 0 100px;
+.welcometoAbc{
+
+}
+.imgbox{
+  
+}
+  }
+    
 }

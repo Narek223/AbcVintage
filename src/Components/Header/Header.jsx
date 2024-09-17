@@ -6,8 +6,13 @@ import { scrollToSection } from "../../Functions/Header/scrollToSection";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClear } from "react-icons/md";
 import { socialMediaIcons } from "../../Services/data/header/HeaderData";
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+
 
 export default function Header({
   home,
@@ -19,6 +24,7 @@ export default function Header({
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [show, setShow] = useState(false);
+  let ref = useRef();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,42 +49,51 @@ export default function Header({
     };
   }, [show]);
 
-  const toggleDrawer = (open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-    setShow(open);
+
+  const showNavBar = () => {
+    setShow((prev) => !prev);
   };
 
-  const drawerContent = (
-    <div
-      className={styles.drawerContent}
-      role="presentation"
-      onClick={toggleDrawer(false)}
-      onKeyDown={toggleDrawer(false)}
-    >
-      <ul className={styles.responsivenavigation}>
-        <li onClick={() => scrollToSection(home)}>Home </li>
-        <li onClick={() => scrollToSection(aboutRef)}>About Us</li>
-        <li onClick={() => scrollToSection(benefits)}>Benefits</li>
-        <li onClick={() => scrollToSection(gallery)}>Gallery</li>
-        <li onClick={() => scrollToSection(Spotlight)}>Spotlight</li>
-        <li onClick={() => scrollToSection(contact)}>Contact</li>
-        <li>Eng</li>
-        <ul className={styles.socialicons}>
-          {socialMediaIcons.map((icon) => (
-            <li key={icon.id}>
-              <a href="#">
-                <img src={icon.src} alt={icon.alt} />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </ul>
-      <IconButton className={styles.clear} onClick={toggleDrawer(false)}>
-        <MdClear />
-      </IconButton>
-    </div>
+let  navItems = [
+  { name: "Home", ref: home },
+  { name: "About Us", ref: aboutRef },
+  { name: "Benefits", ref: benefits },
+  { name: "Gallery", ref: gallery },
+  { name: "Spotlight", ref: Spotlight },
+  { name: "Contact", ref: contact },
+];
+  const DrawerList = (
+    <Box className={styles.box} role="presentation" onClick={showNavBar}>
+      <List className={styles.listconteiner}>
+        {navItems.map(
+          (text, index) => (
+            <ListItem onClick={() => scrollToSection(text.ref)} className={styles.navtext} key={index} disablePadding>
+              <ListItemButton>
+                <ListItemText primary={text.name} />
+              </ListItemButton>
+            </ListItem>
+          )
+        )}
+        {show && (
+          <ul className={styles.socialicons}>
+            {socialMediaIcons.map((icon) => (
+              <li key={icon.id}>
+                <a href={icon.link}>
+                  <img src={icon.src} alt={icon.alt} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </List>
+      <p
+    onClick={showNavBar}
+    className={styles.clearIcon}
+  >
+    {" "}
+    <MdClear />
+  </p>
+    </Box>
   );
 
   return (
@@ -90,13 +105,43 @@ export default function Header({
         >
           <img src={logo} onClick={() => scrollToSection(home)} alt="Logo" />
 
-          <IconButton onClick={toggleDrawer(true)} className={styles.icons}>
-            <GiHamburgerMenu />
-          </IconButton>
+          <div className={styles.icons} onClick={showNavBar}>
+            {show ? <GiHamburgerMenu /> : <GiHamburgerMenu />}
+          </div>
 
-          <Drawer anchor="left" open={show} onClose={toggleDrawer(false)}>
-            {drawerContent}
-          </Drawer>
+          <div className={`${styles.listbox} ${show ? styles.changebg : ""}`}>
+            <div className={styles.list} ref={ref}>
+              <Drawer
+                open={show}
+                anchor="right"
+                PaperProps={{
+                  style: {
+                    width: "68%",
+                    backgroundColor: " rgba(152, 137, 108, 1)",
+                  },
+                }}
+                onClose={showNavBar}
+              >
+                {DrawerList}
+              </Drawer>
+              <ul
+                className={`${styles.responsivenavigation}  ${
+                  show ? styles.openNavBar : styles.closeNavBar
+                }`}
+              >
+                <li onClick={() => scrollToSection(home)}>Home </li>
+                <li onClick={() => scrollToSection(aboutRef)}>About Us</li>
+                <li onClick={() => scrollToSection(benefits)}>Benefits</li>
+                <li onClick={() => scrollToSection(gallery)}>Gallery</li>
+                <li onClick={() => scrollToSection(Spotlight)}>Spotlight</li>
+                <li onClick={() => scrollToSection(contact)}>Contact</li>
+                {show === false ? null : <li>Eng</li>}
+                {show === false ? null : (
+                  <ul className={styles.socialicons}></ul>
+                )}
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
     </div>
