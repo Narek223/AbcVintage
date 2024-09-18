@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./aboutusItem.module.scss"
+import styles from "./aboutusitem.module.scss"
 
 
 export default function ({data}) {
