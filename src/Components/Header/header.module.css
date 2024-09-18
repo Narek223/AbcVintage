@@ -64,26 +64,6 @@
   }
 }
 @media screen and (max-width: 1010px) {
-  @keyframes slideUp {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  @keyframes slideDown {
-    from {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    to {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-  }
   .headerConteiner header .headerNav {
     height: 72px;
     display: flex;

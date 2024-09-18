@@ -51,9 +51,10 @@ export default function Header({
 
 
   const showNavBar = () => {
-    setShow((prev) => !prev);
+    setShow(!show)
   };
 
+ 
 let  navItems = [
   { name: "Home", ref: home },
   { name: "About Us", ref: aboutRef },
@@ -61,6 +62,7 @@ let  navItems = [
   { name: "Gallery", ref: gallery },
   { name: "Spotlight", ref: Spotlight },
   { name: "Contact", ref: contact },
+  { name: "Eng", ref: "" },
 ];
   const DrawerList = (
     <Box className={styles.box} role="presentation" onClick={showNavBar}>

@@ -41,4 +41,130 @@
   .homepageconteiner {
     padding: 0 0 0 100px;
   }
+  .homepageconteiner .welcometoAbc {
+    width: 420px;
+  }
+  .homepageconteiner .welcometoAbc img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .homepageconteiner .welcometoAbc {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .homepageconteiner .welcometoAbc {
+    width: 350px;
+  }
+  .homepageconteiner .welcometoAbc h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .homepageconteiner {
+    padding: 20px 0 20px 50px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .homepageconteiner {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .homepageconteiner .welcometoAbc {
+    padding: 10px 0;
+    height: 650px;
+  }
+  .homepageconteiner .welcometoAbc img {
+    width: 70%;
+  }
+  .homepageconteiner .welcometoAbc p {
+    display: none;
+  }
+  .homepageconteiner .welcometoAbc h1 {
+    font-size: 45px;
+  }
+  .homepageconteiner .imgbox {
+    width: 100vw;
+  }
+  .homepageconteiner .imgbox .vintageimg {
+    height: auto;
+    width: 100%;
+    border-radius: 0 0 0 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 600px) {
+  .homepageconteiner .welcometoAbc {
+    height: 550px;
+  }
+  .homepageconteiner .welcometoAbc img {
+    width: 65%;
+  }
+  .homepageconteiner .imgbox .vintageimg {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0 0 0 150px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .homepageconteiner .welcometoAbc {
+    height: 550px;
+  }
+  .homepageconteiner .welcometoAbc img {
+    width: 65%;
+  }
+  .homepageconteiner .imgbox .vintageimg {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 400px) {
+  .homepageconteiner {
+    height: 750px;
+  }
+  .homepageconteiner .welcometoAbc {
+    height: 400px;
+  }
+  .homepageconteiner .welcometoAbc h1 {
+    font-size: 32px;
+    width: 250px;
+  }
+  .homepageconteiner .welcometoAbc img {
+    width: 155px;
+  }
+  .homepageconteiner .imgbox .vintageimg {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 360px) {
+  .homepageconteiner {
+    height: 100%;
+  }
+  .homepageconteiner .welcometoAbc {
+    width: 100%;
+    height: 400px;
+  }
+  .homepageconteiner .welcometoAbc h1 {
+    font-size: 32px;
+    width: 250px;
+  }
+  .homepageconteiner .welcometoAbc img {
+    width: 155px;
+  }
+  .homepageconteiner .imgbox .vintageimg {
+    height: 300px;
+    border-radius: 0 0 0 150px;
+  }
 }/*# sourceMappingURL=home.module.css.map */
