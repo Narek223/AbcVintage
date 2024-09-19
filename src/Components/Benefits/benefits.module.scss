@@ -2,6 +2,10 @@
     margin: 100px 0;
     padding: 100px 200px 100px 200px;
     height: 725px;
+    .swiper{
+        overflow: hidden;
+   
+    }
     .title {
         width: 100%;
         min-height: 100px;
@@ -25,10 +29,38 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        .swiperslider{
+           border: 5px solid #c2b3b3;
+           
+        }
     }
 }
 @media screen and (max-width: 1800px) {
     .benefitsConteiner {
+        .title {
+            .text {
+            }
+        }
+        .benefitsdata {
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .benefitsConteiner {
+        padding:20px 100px;
+        .title {
+            .text {
+            }
+        }
+        .benefitsdata {
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .benefitsConteiner {
+        padding:20px 50px;
         .title {
             .text {
             }

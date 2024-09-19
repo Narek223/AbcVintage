@@ -23,4 +23,45 @@
   color: rgba(255, 255, 255, 0.8);
   opacity: 70%;
   width: 100%;
+}
+
+@media screen and (max-width: 1860px) {
+  .benefitscart {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 1750px) {
+  .benefitscart {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1640px) {
+  .benefitscart {
+    width: 280px;
+  }
+  .benefitscart .benefitsinfo h1 {
+    padding: 0;
+  }
+  .benefitscart p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1580px) {
+  .benefitscart {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .benefitscart {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .benefitscart {
+    width: 280px;
+  }
+  .benefitscart .benefitsinfo img {
+    width: 80px;
+    height: 80px;
+  }
 }/*# sourceMappingURL=benefitscart.module.css.map */
