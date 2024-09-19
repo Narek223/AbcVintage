@@ -9,26 +9,25 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import ImageModal from "./ImageModal/ImageModal";
 import { sliderdata } from "../../../Services/data/Gallery/sliderimgdata";
-import Modal from '@mui/material/Modal';
+import Modal from "@mui/material/Modal";
 import { Box } from "@mui/material";
 
 const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: '50%',
-  height:"100%",
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "50%",
+  height: "100%",
 
-  border: 'none', 
-  boxShadow: 'none', 
-  outline: 'none',
+  border: "none",
+  boxShadow: "none",
+  outline: "none",
 
   // p: 4,
 };
 
 export default function Slider() {
-
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [open, setOpen] = useState(false);
   const handleOpen = (index) => {
@@ -37,8 +36,6 @@ export default function Slider() {
     setOpen(true);
   };
   const handleClose = () => setOpen(false);
-  
-
 
   let next = () => {
     setSelectedIndex(
@@ -51,8 +48,6 @@ export default function Slider() {
     );
   };
 
- 
-
   return (
     <div className={styles.galleryconteiner}>
       <h1 className={styles.slidertitle}>
@@ -64,7 +59,6 @@ export default function Slider() {
         </button>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-
           loop={true}
           slidesPerView={3}
           navigation={{
@@ -86,27 +80,31 @@ export default function Slider() {
       </div>
       {open ? (
         <div className={styles.parentModal}>
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-          className={styles.modal}
-          slotProps={{
-            backdrop: {
-              sx: {
-                backgroundColor: 'rgba(255, 255, 255, 0.8)', 
-                border:'none'
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className={styles.modal}
+            slotProps={{
+              backdrop: {
+                sx: {
+                  backgroundColor: "rgba(255, 255, 255, 0.8)",
+                  border: "none",
+                },
               },
-            },
-          }}
-        >
-          <Box sx={style}>
-            <ImageModal index={selectedIndex} onNext={next} onPrev={prev}  close={handleClose}/>
-          </Box>
-        </Modal>
-      </div>
-        
+            }}
+          >
+            <Box sx={style}>
+              <ImageModal
+                index={selectedIndex}
+                onNext={next}
+                onPrev={prev}
+                close={handleClose}
+              />
+            </Box>
+          </Modal>
+        </div>
       ) : null}
     </div>
   );

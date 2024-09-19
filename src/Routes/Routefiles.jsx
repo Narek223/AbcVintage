@@ -37,12 +37,12 @@ export default function Routefiles() {
 <section  ref={aboutUsRef}>
         <AboutUs />
       </section>
-    {/*      <section ref={Benefitsref}>
+       <section ref={Benefitsref}>
         <Benefits />
-      </section>
+      </section> 
 
       <EmbraceVintage />
-      <section ref={galleryref}>
+       {/*   <section ref={galleryref}>
         <Gallery />
       </section>
       <Slider />

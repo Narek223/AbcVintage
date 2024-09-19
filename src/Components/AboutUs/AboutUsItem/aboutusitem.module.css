@@ -79,4 +79,128 @@
   .abcVintageLove .aboutUsHistory img {
     height: 215px;
   }
+}
+@media screen and (max-width: 1500px) {
+  .abcVintageLove:nth-child(1) .aboutUsHistory {
+    margin: 0 0 0 30px;
+  }
+  .abcVintageLove .aboutUsHistory p {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 15px 0;
+    opacity: 80%;
+    color: rgb(0, 0, 0);
+    text-align: start;
+  }
+  .abcVintageLove .aboutUsHistory h1 {
+    font-size: 50px;
+  }
+  .abcVintageLove .aboutUsHistory img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1390px) {
+  .abcVintageLove:nth-child(2) .aboutUsHistory {
+    margin: 0 30px 0 0;
+    padding: 80px 0px 30px 20px;
+  }
+  .abcVintageLove .vintageimg img {
+    width: 600px;
+    height: 600px;
+  }
+  .abcVintageLove .aboutUsHistory img {
+    height: 180px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .abcVintageLove .aboutUsHistory h1 {
+    margin: 10px 0;
+  }
+  .abcVintageLove .aboutUsHistory img {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .abcVintageLove {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .abcVintageLove:nth-child(1) .aboutUsHistory {
+    margin: 0;
+  }
+  .abcVintageLove:nth-child(1) .vintageimg img {
+    padding: 0 20px 0 0;
+  }
+  .abcVintageLove:nth-child(2) .vintageimg {
+    border: 0 100px 0 0;
+  }
+  .abcVintageLove:nth-child(2) .vintageimg img {
+    border: 0 100px 0 0;
+    padding: 0 0 0 20px;
+  }
+  .abcVintageLove:nth-child(2) .aboutUsHistory {
+    padding: 0;
+  }
+  .abcVintageLove.reversed {
+    flex-direction: column-reverse;
+  }
+  .abcVintageLove .vintageimg:nth-child(2) img {
+    padding: 0 0 0 20px;
+  }
+  .abcVintageLove .vintageimg img {
+    width: 100%;
+  }
+  .abcVintageLove .aboutUsHistory {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  .abcVintageLove .aboutUsHistory p {
+    padding: 20px 30px;
+  }
+  .abcVintageLove .aboutUsHistory h1 {
+    margin: 10px 0;
+  }
+  .abcVintageLove .aboutUsHistory img {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .abcVintageLove {
+    margin: 0;
+  }
+  .abcVintageLove .vintageimg img {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .abcVintageLove {
+    margin: 0;
+  }
+  .abcVintageLove .vintageimg img {
+    width: 100%;
+    height: 400px;
+  }
+  .abcVintageLove .aboutUsHistory p {
+    font-size: 16px;
+  }
+  .abcVintageLove .aboutUsHistory h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .abcVintageLove {
+    margin: 0;
+  }
+  .abcVintageLove .vintageimg img {
+    height: 300px;
+  }
+  .abcVintageLove .aboutUsHistory p {
+    font-size: 16px;
+  }
+  .abcVintageLove .aboutUsHistory h1 {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=aboutusitem.module.css.map */

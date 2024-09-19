@@ -21,7 +21,7 @@
   font-size: 50px;
   font-weight: 400;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 50px;
   line-height: 92px;
   font-family: "aurora";
@@ -32,7 +32,7 @@
   border: none;
   border-radius: 25px;
   color: white;
-  background-color: #98896C;
+  background-color: #98896c;
   cursor: pointer;
   font-size: 22px;
   box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.0901960784);
@@ -51,5 +51,99 @@
 @media screen and (max-width: 1550px) {
   .EmbraceVintageComponent .vintageElegance {
     left: 46%;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .EmbraceVintageComponent .vintageElegance {
+    left: 40%;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .EmbraceVintageComponent .vintageElegance {
+    left: 35%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .EmbraceVintageComponent .vintageElegance {
+    left: 30%;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .EmbraceVintageComponent .vintageElegance {
+    left: 22%;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .EmbraceVintageComponent {
+    width: 100%;
+  }
+  .EmbraceVintageComponent .vintageElegance {
+    margin: 0;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .EmbraceVintageComponent {
+    width: 100%;
+  }
+  .EmbraceVintageComponent .vintageElegance {
+    margin: 0;
+    left: 15%;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .EmbraceVintageComponent {
+    background-position: 25% 25%;
+    height: 700px;
+    width: 100%;
+  }
+  .EmbraceVintageComponent .vintageElegance {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: static;
+    background-color: transparent;
+  }
+  .EmbraceVintageComponent .vintageElegance button {
+    margin-top: 30%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .EmbraceVintageComponent {
+    background-size: cover;
+  }
+  .EmbraceVintageComponent .vintageElegance button {
+    margin-top: 40%;
+    font-size: 16px;
+    height: 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .EmbraceVintageComponent .vintageElegance button {
+    margin-top: 45%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .EmbraceVintageComponent {
+    background-position: 30%;
+  }
+  .EmbraceVintageComponent .vintageElegance button {
+    margin-top: 55%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .EmbraceVintageComponent .vintageElegance h1 {
+    font-size: 45px;
+  }
+  .EmbraceVintageComponent .vintageElegance button {
+    margin-top: 60%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .EmbraceVintageComponent .vintageElegance button {
+    margin-top: 70%;
   }
 }/*# sourceMappingURL=embracevintage.module.css.map */

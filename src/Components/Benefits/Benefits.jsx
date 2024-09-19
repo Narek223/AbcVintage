@@ -3,6 +3,11 @@ import BenefitsImg from "../../assets/Benefits/Benefits.png";
 import styles from "./benefits.module.scss";
 import BenefitsCart from "./BenefitsCart/BenefitsCart";
 import { benefitsdata } from "../../Services/data/benefits/benefitsData";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 
 export default function Benefits() {
   return (
@@ -17,11 +22,17 @@ export default function Benefits() {
           </p>
         </div>
       </div>
+      <Swiper
+        slidesPerView={4}
+        // loop={true}
+        // spaceBetween={24}
+      >
       <div className={styles.benefitsdata}>
         {benefitsdata.map((elem) => (
-          <BenefitsCart key={elem.id} data={elem} />
+           <SwiperSlide key={elem.id}> <BenefitsCart key={elem.id} data={elem} /></SwiperSlide> 
         ))}
       </div>
+      </Swiper>
     </div>
   );
 }

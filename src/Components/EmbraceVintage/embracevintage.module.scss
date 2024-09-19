@@ -1,11 +1,11 @@
-.EmbraceVintageComponent{
+.EmbraceVintageComponent {
     border: 1px solid #000;
     height: 800px;
     width: 100%;
-    background-image:url('../../assets/EmbraceVintage/EmbraceVintage.png');
+    background-image: url("../../assets/EmbraceVintage/EmbraceVintage.png");
     background-position: center;
-   position: relative;
-    .vintageElegance{
+    position: relative;
+    .vintageElegance {
         height: 366px;
         width: 766px;
         background-color: rgba(255, 255, 255, 0.1);
@@ -14,49 +14,181 @@
         position: absolute;
         top: 217px;
         left: 55%;
-        h1{
+        h1 {
             height: 250px;
             font-size: 50px;
             font-weight: 400;
             text-align: center;
-            color: #FFFFFF;
-            padding: 50px ;
-            line-height: 92px; 
-             font-family: "aurora";
+            color: #ffffff;
+            padding: 50px;
+            line-height: 92px;
+            font-family: "aurora";
         }
-        button{
+        button {
             width: 325px;
             height: 64px;
             border: none;
             border-radius: 25px;
-            color:white;
-            background-color:#98896C ;
+            color: white;
+            background-color: #98896c;
             cursor: pointer;
             font-size: 22px;
             box-shadow: 0px 0px 54px 0px #00000017;
-
         }
     }
 }
 
 @media screen and (max-width: 1760px) {
-    .EmbraceVintageComponent{
-    .vintageElegance{
-left: 50%;
-}
+    .EmbraceVintageComponent {
+        .vintageElegance {
+            left: 50%;
+        }
     }
 }
 @media screen and (max-width: 1600px) {
-    .EmbraceVintageComponent{
-    .vintageElegance{
-left: 48%;
-}
+    .EmbraceVintageComponent {
+        .vintageElegance {
+            left: 48%;
+        }
     }
 }
 @media screen and (max-width: 1550px) {
-    .EmbraceVintageComponent{
-    .vintageElegance{
-left: 46%;
-}
+    .EmbraceVintageComponent {
+        .vintageElegance {
+            left: 46%;
+        }
     }
 }
+@media screen and (max-width: 1450px) {
+    .EmbraceVintageComponent {
+        .vintageElegance {
+            left: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .EmbraceVintageComponent {
+        .vintageElegance {
+            left: 35%;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .EmbraceVintageComponent {
+        .vintageElegance {
+            left: 30%;
+        }
+    }
+}
+@media screen and (max-width: 1120px) {
+    .EmbraceVintageComponent {
+        .vintageElegance {
+            left: 22%;
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .EmbraceVintageComponent {
+        width: 100%;
+        .vintageElegance {
+            margin: 0;
+            left: 20%;
+
+            button {
+            }
+        }
+    }
+}
+@media screen and (max-width: 1050px) {
+    .EmbraceVintageComponent {
+        width: 100%;
+        .vintageElegance {
+            margin: 0;
+            left: 15%;
+
+            button {
+            }
+        }
+    }
+}
+@media screen and (max-width: 1010px) {
+    .EmbraceVintageComponent {
+        background-position: 25% 25%;
+        height: 700px;
+        width: 100%;
+        .vintageElegance {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: static;
+            background-color: transparent;
+            button {
+                margin-top: 30%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .EmbraceVintageComponent {
+        background-size: cover;
+        .vintageElegance {
+            button {
+                margin-top: 40%;
+                font-size: 16px;
+                height: 48px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .EmbraceVintageComponent {
+        .vintageElegance {
+            button {
+                margin-top: 45%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 570px) {
+    .EmbraceVintageComponent {
+        background-position: 30% ;
+        .vintageElegance {
+            button {
+                margin-top: 55%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .EmbraceVintageComponent {
+
+        .vintageElegance {
+            h1{
+                font-size: 45px;
+            }
+            button {
+                margin-top: 60%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .EmbraceVintageComponent {
+
+        .vintageElegance {
+            h1{
+                
+            }
+            button {
+                margin-top: 70%;
+            }
+        }
+    }
+}
+

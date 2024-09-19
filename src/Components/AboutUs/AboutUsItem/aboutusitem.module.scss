@@ -1,125 +1,125 @@
 @mixin textstyles {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 25px;
-  padding: 15px 0;
-  opacity: 80%;
-  color: rgba(0, 0, 0, 1);
-  text-align: start;
-}
-
-.abcVintageLove {
-  display: flex;
-  width: 100%;
-  height: 700px;
-  margin: 50px 0;
-  &:nth-child(2) {
-    .aboutUsHistory {
-      margin: 0 30px 0 0;
-      padding: 120px 0px 30px 20px;
-    }
-  }
-  &.reversed {
-    flex-direction: row-reverse;
-  }
-  .vintageimg {
-    img {
-      width: 890px;
-      height: 700px;
-    }
-  }
-  .aboutUsHistory {
-    margin: 0 30px;
-    width: 606px;
-    height: 700px;
-    h1 {
-      font-weight: 400;
-      font-size: 64px;
-      color: rgba(93, 64, 55, 1);
-      margin: 30px 0;
-      font-family: "aurora";
-    }
-    p {
-      @include textstyles();
-    }
-    img {
-      height: 255px;
-    }
-  }
-}
-
-@media screen and (max-width: 1730px) {
-  .abcVintageLove {
-    .vintageimg {
-      img {
-        width: 800px;
-      }
-    }
-    .aboutUsHistory {
-      img {
-        height: 245px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 1690px) {
-  .abcVintageLove {
-    .vintageimg {
-      img {
-      }
-    }
-
-    .aboutUsHistory {
-      width: 550px;
-      img {
-        height: 235px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 1630px) {
-  .abcVintageLove {
-    .vintageimg {
-      img {
-        width: 700px;
-      }
-    }
-
-    .aboutUsHistory {
-      img {
-        height: 215px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1540px) {
-  @mixin textstyles {
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 22px;
     line-height: 25px;
     padding: 15px 0;
     opacity: 80%;
     color: rgba(0, 0, 0, 1);
     text-align: start;
-  }
+}
 
-  .abcVintageLove {
+.abcVintageLove {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    margin: 50px 0;
+    &:nth-child(2) {
+        .aboutUsHistory {
+            margin: 0 30px 0 0;
+            padding: 120px 0px 30px 20px;
+        }
+    }
+    &.reversed {
+        flex-direction: row-reverse;
+    }
     .vintageimg {
-      img {
-        width: 700px;
-      }
+        img {
+            width: 890px;
+            height: 700px;
+        }
     }
-
     .aboutUsHistory {
-      p {
-        @include textstyles();
-      }
-
-      img {
-        height: 215px;
-      }
+        margin: 0 30px;
+        width: 606px;
+        height: 700px;
+        h1 {
+            font-weight: 400;
+            font-size: 64px;
+            color: rgba(93, 64, 55, 1);
+            margin: 30px 0;
+            font-family: "aurora";
+        }
+        p {
+            @include textstyles();
+        }
+        img {
+            height: 255px;
+        }
     }
-  }
+}
+
+@media screen and (max-width: 1730px) {
+    .abcVintageLove {
+        .vintageimg {
+            img {
+                width: 800px;
+            }
+        }
+        .aboutUsHistory {
+            img {
+                height: 245px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1690px) {
+    .abcVintageLove {
+        .vintageimg {
+            img {
+            }
+        }
+
+        .aboutUsHistory {
+            width: 550px;
+            img {
+                height: 235px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1630px) {
+    .abcVintageLove {
+        .vintageimg {
+            img {
+                width: 700px;
+            }
+        }
+
+        .aboutUsHistory {
+            img {
+                height: 215px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    @mixin textstyles {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 15px 0;
+        opacity: 80%;
+        color: rgba(0, 0, 0, 1);
+        text-align: start;
+    }
+
+    .abcVintageLove {
+        .vintageimg {
+            img {
+                width: 700px;
+            }
+        }
+
+        .aboutUsHistory {
+            p {
+                @include textstyles();
+            }
+
+            img {
+                height: 215px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -130,123 +130,199 @@
         opacity: 80%;
         color: rgba(0, 0, 0, 1);
         text-align: start;
-      }
+    }
     .abcVintageLove {
         &:nth-child(1) {
             .aboutUsHistory {
-              margin: 0 0 0 30px;
+                margin: 0 0 0 30px;
             }
-          }
+        }
         .vintageimg {
-        
-        
-        
-        
-        
-        
-          img {
-       
-          }
+            img {
+            }
         }
         .aboutUsHistory {
-          p {
-            @include textstyles();
-          }
-          h1{
-            font-size: 50px;
-          }
-          img {
-            height: 200px;
-          }
+            p {
+                @include textstyles();
+            }
+            h1 {
+                font-size: 50px;
+            }
+            img {
+                height: 200px;
+            }
         }
-      }
+    }
 }
-
 
 @media screen and (max-width: 1390px) {
     .abcVintageLove {
         &:nth-child(2) {
             .aboutUsHistory {
-              margin: 0 30px 0 0;
-              padding: 80px 0px 30px 20px;
+                margin: 0 30px 0 0;
+                padding: 80px 0px 30px 20px;
             }
-          }
+        }
         .vintageimg {
-          img {
-           width: 600px;
-           height: 600px;
-          }
+            img {
+                width: 600px;
+                height: 600px;
+            }
         }
         .aboutUsHistory {
-          img {
-          height: 180px;
-          }
+            img {
+                height: 180px;
+            }
         }
-      }
-
-
+    }
 }
-
 
 @media screen and (max-width: 1080px) {
     .abcVintageLove {
         .vintageimg {
-          img {
-         
-         
-          }
+            img {
+            }
         }
         .aboutUsHistory {
-            h1{
+            h1 {
                 margin: 10px 0;
             }
-          img {
-       height: 150px;
-          }
+            img {
+                height: 150px;
+            }
         }
-      }
-
-
+    }
 }
 @media screen and (max-width: 1010px) {
     .abcVintageLove {
+ 
         flex-direction: column-reverse;
-        
-height: auto;
-&:nth-child(2) {
-    .aboutUsHistory {
 
-      padding: 0;
-    }
-  }
-  &:nth-child(1) {
-    .aboutUsHistory {
-margin: 0;
-      padding: 0;
-    }
-  }
-&.reversed {
-    flex-direction: column-reverse;
-  }
+        height: auto;
+
+        &:nth-child(1) {
+            .aboutUsHistory {
+                margin: 0;
+            }
+            .vintageimg {
+                img {
+                    padding: 0 20px 0 0;
+                }
+            }
+        }
+        &:nth-child(2) {
+            .vintageimg {
+                border: 0 100px 0 0;
+                img {
+                    border: 0 100px 0 0;
+                    padding: 0 0 0 20px;
+                }
+            }
+            .aboutUsHistory {
+                padding: 0;
+            }
+        }
+
+        &.reversed {
+            flex-direction: column-reverse;
+        }
         .vintageimg {
-          img {
-         width: 100%;
-         
-          }
+            &:nth-child(2) {
+                img {
+                    padding: 0 0 0 20px;
+                }
+            }
+            img {
+                width: 100%;
+            }
         }
         .aboutUsHistory {
             margin: 0;
             padding: 0;
             width: 100%;
             height: auto;
-            h1{
+            p {
+                padding: 20px 30px;
+            }
+            h1 {
                 margin: 10px 0;
             }
-          img {
-   display: none;
-          }
+            img {
+                display: none;
+            }
         }
-      }
-
-
+    }
 }
+@media screen and (max-width: 750px) {
+    .abcVintageLove {
+        margin: 0;
+
+        .vintageimg {
+            img {
+            }
+        }
+
+        .vintageimg {
+            img {
+                width: 100%;
+                height: 500px;
+            }
+        }
+        .aboutUsHistory {
+            p {
+            }
+            h1 {
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .abcVintageLove {
+        margin: 0;
+
+        .vintageimg {
+            img {
+            }
+        }
+
+        .vintageimg {
+            img {
+                width: 100%;
+                height: 400px;
+            }
+        }
+        .aboutUsHistory {
+            p {
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 45px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .abcVintageLove {
+        margin: 0;
+
+        .vintageimg {
+            img {
+                height: 300px;
+            }
+        }
+
+        .vintageimg {
+           
+        }
+        .aboutUsHistory {
+            p {
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
