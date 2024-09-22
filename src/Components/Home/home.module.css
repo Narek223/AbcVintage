@@ -1,18 +1,32 @@
 .homepageconteiner {
   height: 1000px;
   padding: 0 0 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .homepageconteiner .welcometoAbc {
   width: 467px;
   height: 900px;
   padding: 50px 20px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .homepageconteiner .welcometoAbc h1 {
   font-family: "aurora";
   width: 466px;
@@ -20,8 +34,9 @@
   font-size: 50px;
   font-weight: 400;
   line-height: 60px;
-  color: rgb(93, 64, 55);
+  color: #5d4037;
 }
+
 .homepageconteiner .welcometoAbc p {
   font-size: 21px;
   font-weight: 400;
@@ -29,9 +44,11 @@
   opacity: 70%;
   text-align: start;
 }
+
 .homepageconteiner .imgbox {
   width: 100%;
 }
+
 .homepageconteiner .imgbox .vintageimg {
   height: 900px;
   width: 100%;
@@ -44,15 +61,20 @@
   .homepageconteiner .welcometoAbc {
     width: 420px;
   }
+  .homepageconteiner .welcometoAbc h1 {
+    font-size: 50px;
+  }
   .homepageconteiner .welcometoAbc img {
     width: 80%;
   }
 }
+
 @media screen and (max-width: 1330px) {
   .homepageconteiner .welcometoAbc {
     width: 400px;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .homepageconteiner .welcometoAbc {
     width: 350px;
@@ -61,19 +83,29 @@
     font-size: 40px;
   }
 }
+
 @media screen and (max-width: 1150px) {
   .homepageconteiner {
     padding: 20px 0 20px 50px;
   }
 }
+
 @media screen and (max-width: 1010px) {
   .homepageconteiner {
     height: 100%;
     padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .homepageconteiner .welcometoAbc {
     padding: 10px 0;
@@ -99,6 +131,7 @@
        object-fit: cover;
   }
 }
+
 @media screen and (max-width: 600px) {
   .homepageconteiner .welcometoAbc {
     height: 550px;
@@ -114,6 +147,7 @@
     border-radius: 0 0 0 150px;
   }
 }
+
 @media screen and (max-width: 470px) {
   .homepageconteiner .welcometoAbc {
     height: 550px;
@@ -128,6 +162,7 @@
        object-fit: cover;
   }
 }
+
 @media screen and (max-width: 400px) {
   .homepageconteiner {
     height: 750px;
@@ -149,6 +184,7 @@
        object-fit: cover;
   }
 }
+
 @media screen and (max-width: 360px) {
   .homepageconteiner {
     height: 100%;
@@ -168,4 +204,5 @@
     height: 300px;
     border-radius: 0 0 0 150px;
   }
-}/*# sourceMappingURL=home.module.css.map */
+}
+/*# sourceMappingURL=home.module.css.map */

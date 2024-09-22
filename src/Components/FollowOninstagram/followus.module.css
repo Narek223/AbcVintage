@@ -1,16 +1,25 @@
 .followusContainer {
   padding: 100px 0;
   height: 796px;
-  background-color: rgb(152, 137, 108);
+  background-color: #98896c;
 }
+
 .followusContainer .followusText {
   text-align: center;
   height: 218px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 28px;
 }
+
 .followusContainer .followusText h1 {
   color: white;
   font-weight: 700;
@@ -18,38 +27,52 @@
   height: 83px;
   margin: 0;
 }
+
 .followusContainer .followusText p {
   font-weight: 400;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 30px;
   height: 40px;
   margin: 0;
 }
+
 .followusContainer .followusText button {
   cursor: pointer;
   margin: 30px 0;
   font-size: 25px;
   padding: 10px 20px;
-  background-color: rgb(152, 137, 108);
+  background-color: #98896c;
   color: white;
   border: 1px solid white;
   border-radius: 25px;
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .followusContainer .followusText button .icon {
   margin-right: 5px;
   font-size: 35px;
 }
+
 .followusContainer .followusImgContainer {
   width: 100%;
   overflow: hidden;
   padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .followusContainer .followusImgContainer .image {
   width: 320px;
   margin: 0 24px;
-}/*# sourceMappingURL=followus.module.css.map */
+}
+/*# sourceMappingURL=followus.module.css.map */

@@ -6,15 +6,45 @@
   
     &.reversed {
       flex-direction: row-reverse;
+      padding: 20px 0 ;
+  .imageContainer {
+    img{
+  
+      border-radius: 100px 0 0 0;
+    
+    }
+  }
+
+
+
+
     }
   
     .imageContainer {
       width: 879px;
       height: 547px;
+     
+      &:nth-of-type(even) { 
+        img {
+          border-radius: 100px 0 0 0;
+          background-color: black;
+        }
+      }
+   
+      &:nth-of-type(odd) { 
+        img {
+          border-radius: 0 100px 0 0;
+        }
+      }
+  
+    
       img {
+        border-radius: 100px 0 0 0;
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: cover;
+    
+
       }
     }
   
@@ -41,3 +71,84 @@
     }
   }
   
+  @media screen and (max-width: 1600px) {
+
+    .vintageItem{
+      display: flex;
+      align-items: center;
+      .imageContainer{
+height: 450px;
+      }
+      .info{
+        
+      }
+
+  }
+  }
+  @media screen and (max-width: 1440px) {
+    .vintageItem{
+      display: flex;
+      align-items: center;
+      .imageContainer{
+img{
+  height: 100%;
+}
+      }
+      .info{
+        p{
+          font-size: 18px;
+        }
+        
+      }
+  }
+  }
+  @media screen and (max-width: 1040px) {
+    .vintageItem{
+      
+    height: 600px;
+      .imageContainer{
+ img{
+
+ }
+      }
+      .info{
+
+        h1{
+          padding: 30px 0;
+        }
+        p{
+       
+        }
+        
+      }
+  }
+  }
+  @media screen and (max-width: 1010px) {
+    .vintageItem{
+padding: 16px 20px;
+   flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        &.reversed {
+          flex-direction: column-reverse;
+          img{
+            padding: 20px 0;
+          }
+        }
+      .imageContainer{
+ img{
+  padding: 20px 0;
+ }
+      }
+      .info{
+        width: 100%;
+        text-align: center;
+        h1{
+          padding: 30px 0;
+        }
+        p{
+          text-align: center;
+        }
+        
+      }
+  }
+  }

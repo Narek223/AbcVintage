@@ -2,19 +2,30 @@
   background-color: #98896c;
   width: 100%;
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: white;
   padding: 20px 200px 20px 200px;
 }
+
 .contactConteiner .contactInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 30px;
 }
+
 .contactConteiner .contactInformation .iconsImg {
   padding: 0 35px;
 }
+
 .contactConteiner .contactInformation .iconsImg img {
   margin: 0 5px;
 }
@@ -24,13 +35,16 @@
     padding: 20px 100px;
   }
 }
+
 @media screen and (max-width: 1150px) {
   .contactConteiner {
     padding: 20px 50px;
   }
 }
+
 @media screen and (max-width: 1010px) {
   .contactConteiner {
     display: none;
   }
-}/*# sourceMappingURL=header-info.module.css.map */
+}
+/*# sourceMappingURL=header-info.module.css.map */

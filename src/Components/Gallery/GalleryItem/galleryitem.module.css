@@ -1,16 +1,24 @@
 .galleryConteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 610px;
   margin: 50px 0;
 }
+
 .galleryConteiner.reversed {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
+
 .galleryConteiner .Sideboard {
   padding: 30px 30px;
   width: 543px;
   margin: 0 20px 0 0;
 }
+
 .galleryConteiner .Sideboard p:nth-child(2) {
   width: 483px;
   height: 290px;
@@ -20,6 +28,7 @@
   opacity: 70%;
   line-height: 28px;
 }
+
 .galleryConteiner .Sideboard .sideboardText {
   width: 400px;
   height: 220px;
@@ -27,26 +36,32 @@
   padding: 10px 0;
   text-align: center;
 }
+
 .galleryConteiner .Sideboard .sideboardText h1 {
   font-family: "aurora";
   font-size: 22px;
   opacity: 70%;
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 10px 0;
 }
+
 .galleryConteiner .Sideboard .sideboardText p {
   padding: 10px 0;
 }
+
 .galleryConteiner .Sideboard .sideboardText img {
   padding: 10px 0;
 }
+
 .galleryConteiner .galleryImgCont img {
   width: 950px;
   height: 610px;
   border: 8px solid white;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1490196078);
+  -webkit-box-shadow: 0px 0px 30px 0px #00000026;
+          box-shadow: 0px 0px 30px 0px #00000026;
   border-radius: 100px 0 0 0;
 }
+
 .galleryConteiner .galleryImgCont img.fiximgborder {
   border-radius: 0 100px 0 0;
 }
@@ -56,26 +71,31 @@
     width: 860px;
   }
 }
+
 @media screen and (max-width: 1770px) {
   .galleryConteiner .galleryImgCont img {
     width: 800px;
   }
 }
+
 @media screen and (max-width: 1720px) {
   .galleryConteiner .galleryImgCont img {
     width: 750px;
   }
 }
+
 @media screen and (max-width: 1680px) {
   .galleryConteiner .galleryImgCont img {
     width: 700px;
   }
 }
+
 @media screen and (max-width: 1620px) {
   .galleryConteiner .galleryImgCont img {
     width: 650px;
   }
 }
+
 @media screen and (max-width: 1570px) {
   .galleryConteiner .Sideboard {
     width: 500px;
@@ -87,6 +107,7 @@
     width: 650px;
   }
 }
+
 @media screen and (max-width: 1536px) {
   .galleryConteiner .Sideboard {
     width: 400px;
@@ -101,4 +122,5 @@
   .galleryConteiner .galleryImgCont img {
     width: 700px;
   }
-}/*# sourceMappingURL=galleryitem.module.css.map */
+}
+/*# sourceMappingURL=galleryitem.module.css.map */
