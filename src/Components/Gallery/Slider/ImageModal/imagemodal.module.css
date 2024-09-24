@@ -1,146 +1,100 @@
 .openwindow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   z-index: 10;
   position: relative;
 }
-
 .openwindow img {
   image-rendering: auto;
-  -webkit-filter: contrast(1.2) brightness(1.1);
-          filter: contrast(1.2) brightness(1.1);
+  filter: contrast(1.2) brightness(1.1);
 }
-
 .openwindow .arrowLeft,
 .openwindow .arrowRight {
   width: 40px;
   height: 40px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 11;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #98896c;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(152, 137, 108);
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-
 .openwindow .arrowLeft:hover,
 .openwindow .arrowRight:hover {
-  background-color: #847558;
+  background-color: rgb(132, 117, 88);
 }
-
 .openwindow .arrowLeft .arrowicon,
 .openwindow .arrowRight .arrowicon {
   color: #fff;
 }
-
 .openwindow .arrowLeft {
   left: 10px;
 }
-
 .openwindow .arrowRight {
   right: 10px;
 }
-
 .openwindow .nextpage {
   width: 90%;
   max-width: 950px;
   max-height: 90vh;
   background-color: rgba(255, 255, 255, 0.95);
-  -webkit-box-shadow: 0 0 54px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 54px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 54px rgba(0, 0, 0, 0.25);
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
   border-radius: 10px;
 }
-
 .openwindow .nextpage .imgconteiner {
   height: 500px;
   width: 100%;
   text-align: center;
   border-radius: 8px;
 }
-
 .openwindow .nextpage .imgconteiner img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
 }
-
 .openwindow .nextpage .imageModelText {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 10px;
   gap: 8px;
 }
-
 .openwindow .nextpage .imageModelText p {
   font-size: 18px;
   color: #5d4037;
   margin: 5px 0;
 }
-
 .openwindow .nextpage .imageModelText h1 {
   font-size: 30px;
   font-weight: 400;
-  color: #5d4037;
+  color: rgb(93, 64, 55);
   margin-bottom: 10px;
-  font-family: 'aurora';
+  font-family: "aurora";
 }
-
 .openwindow .nextpage .imageModelText button {
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 18px;
   border: none;
-  background-color: #98896c;
+  background-color: rgb(152, 137, 108);
   color: #fff;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-
 .openwindow .nextpage .imageModelText button:hover {
-  background-color: #847558;
-}
-/*# sourceMappingURL=imagemodal.module.css.map */
+  background-color: rgb(132, 117, 88);
+}/*# sourceMappingURL=imagemodal.module.css.map */

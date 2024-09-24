@@ -50,12 +50,12 @@ export default function Routefiles() {
         <Vintage />
       </section>
 
-         {/*  <FollowUs />
+           <FollowUs /> 
       <section ref={contactref}>
         <Contact />
       </section>
 
-      <Footer /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

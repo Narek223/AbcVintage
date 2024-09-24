@@ -2,89 +2,70 @@
   height: 1150px;
   padding: 100px 200px;
 }
-
 .contactconteiner .title {
   padding: 70px 0;
 }
-
 .contactconteiner .title h1 {
   font-family: "aurora";
   font-weight: 400;
   font-size: 64px;
-  color: #5d4037;
+  color: rgb(93, 64, 55);
   opacity: 90%;
 }
-
 .contactconteiner .contactus {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 783px;
 }
-
 .contactconteiner .contactus .formconteiner {
   width: 500px;
   height: 783px;
   margin-right: 24px;
 }
-
-.contactconteiner .contactus .formconteiner h1 {
+.contactconteiner .contactus .formconteiner .contactustitle {
+  width: 100%;
+}
+.contactconteiner .contactus .formconteiner .contactustitle h1 {
+  padding: 0 50px;
   text-align: center;
   font-weight: 600;
   font-size: 36px;
   line-height: 46px;
-  color: #5d4037;
+  color: rgb(93, 64, 55);
 }
-
 .contactconteiner .contactus .formconteiner .formikConteiner {
   margin: 24px 0;
 }
-
 .contactconteiner .contactus .formconteiner .formikConteiner .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
   height: 470px;
 }
-
 .contactconteiner .contactus .formconteiner .formikConteiner input {
   margin: 18px 0;
   border-radius: 15px;
   outline: none;
   height: 54px;
-  border: 1px solid #98896c;
+  border: 1px solid rgb(152, 137, 108);
   padding: 15px;
 }
-
 .contactconteiner .contactus .formconteiner .formikConteiner .error {
   font-size: 15px;
   color: red;
   text-align: center;
   padding: 5px 0;
 }
-
 .contactconteiner .contactus .formconteiner .formikConteiner textarea {
   height: 173px;
   border-radius: 15px;
-  border: 1px solid #98896c;
+  border: 1px solid rgb(152, 137, 108);
   padding: 15px;
   resize: none;
 }
-
 .contactconteiner .contactus .formconteiner button {
-  background-color: #98896c;
+  background-color: rgb(152, 137, 108);
   color: white;
   border: none;
   padding: 10px;
@@ -93,21 +74,123 @@
   width: 250px;
   height: 64px;
   cursor: pointer;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-top: 20px;
 }
-
 .contactconteiner .contactus .mapconteiner {
   width: 990px;
   height: 738px;
 }
-
 .contactconteiner .contactus .mapconteiner .map {
   border-radius: 30px;
   width: 100%;
   height: 100%;
   border: none;
 }
-/*# sourceMappingURL=contact.module.css.map */
+
+@media screen and (max-width: 1600px) {
+  .contactconteiner .contactus .formconteiner .contactustitle h1 {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1530px) {
+  .contactconteiner .contactus .formconteiner .contactustitle h1 {
+    font-size: 32px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .contactconteiner {
+    padding: 0 100px;
+  }
+  .contactconteiner .title h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1205px) {
+  .contactconteiner .contactus .formconteiner .contactustitle h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .contactconteiner {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 1035px) {
+  .contactconteiner .contactus .formconteiner .contactustitle h1 {
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .contactconteiner {
+    padding: 0;
+    height: auto;
+  }
+  .contactconteiner .title {
+    padding: 10px 0;
+  }
+  .contactconteiner .contactus {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contactconteiner .contactus .formconteiner {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle h1 {
+    font-size: 25px;
+  }
+  .contactconteiner .contactus .formconteiner .formikConteiner {
+    margin: 0px 0 20px 0;
+  }
+  .contactconteiner .contactus .mapconteiner {
+    border-radius: none;
+    width: 100%;
+  }
+  .contactconteiner .contactus .mapconteiner .map {
+    min-height: 500px;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contactconteiner .title {
+    padding: 10px 0;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle {
+    padding: 0 50px;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle h1 {
+    line-height: 22px;
+    font-size: 18px;
+  }
+  .contactconteiner .contactus .formconteiner button {
+    height: 48px;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contactconteiner .title h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contactconteiner .title h1 {
+    font-size: 32px;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle h1 {
+    font-size: 16px;
+  }
+  .contactconteiner .contactus .formconteiner .formikConteiner .form textarea {
+    margin: 15px 0 15px 0;
+  }
+  .contactconteiner .contactus .formconteiner .formikConteiner .form .error {
+    font-size: 14px;
+    line-height: 0;
+  }
+}/*# sourceMappingURL=contact.module.css.map */

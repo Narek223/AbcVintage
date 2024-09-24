@@ -19,10 +19,13 @@ export default function Contact() {
 
       <div className={styles.contactus}>
         <div className={styles.formconteiner}>
+          <div className={styles.contactustitle}>
           <h1>
             Contact us via the form below & we'll get back to you as soon as we
             can
           </h1>
+          </div>
+         
           <Formik
             validationSchema={validationSchema}
             initialValues={initialValues}
@@ -30,47 +33,48 @@ export default function Contact() {
             validateOnBlur={true}
           >
             {({ isValid }) => (
-           
-
-       
               <Form className={styles.formikConteiner}>
-                   <div className={styles.form}>
-                <Field type="text" name="name" placeholder="Enter your name" />
-                <ErrorMessage
-                  name="name"
-                  component="p"
-                  className={styles.error}
-                />
+                <div className={styles.form}>
+                  <Field
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                  />
+                  <ErrorMessage
+                    name="name"
+                    component="p"
+                    className={styles.error}
+                  />
 
-                <Field
-                  type="tel"
-                  name="phoneNumber"
-                  placeholder="Enter your phone number"
-                />
-                <ErrorMessage
-                  name="phoneNumber"
-                  component="p"
-                  className={styles.error}
-                />
+                  <Field
+                    type="tel"
+                    name="phoneNumber"
+                    placeholder="Enter your phone number"
+                  />
+                  <ErrorMessage
+                    name="phoneNumber"
+                    component="p"
+                    className={styles.error}
+                  />
 
-                <Field
-                  type="email"
-                  name="email"
-                  placeholder="Enter your Email"
-                />
-                <ErrorMessage
-                  name="email"
-                  component="p"
-                  className={styles.error}
-                />
+                  <Field
+                    type="email"
+                    name="email"
+                    placeholder="Enter your Email"
+                  />
+                  <ErrorMessage
+                    name="email"
+                    component="p"
+                    className={styles.error}
+                  />
 
-                <Field as="textarea" name="message" placeholder="Message" />
-                <ErrorMessage
-                  name="message"
-                  component="p"
-                  className={styles.error}
-                />
-       </div>
+                  <Field as="textarea" name="message" placeholder="Message" className={styles.texarea} />
+                  <ErrorMessage
+                    name="message"
+                    component="p"
+                    className={styles.error}
+                  />
+                </div>
                 <button type="submit" disabled={!isValid}>
                   Submit
                 </button>

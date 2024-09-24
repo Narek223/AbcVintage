@@ -46,3 +46,29 @@
   }
     
 
+  @media screen and (max-width: 600px) {
+    .vintageConteiner {
+      padding: 0  20px;
+      .vintagetitle {
+        h1 {
+          font-size: 35px;
+        }
+      }
+    }
+    
+  }
+    
+
+  @media screen and (max-width: 400px) {
+    .vintageConteiner {
+      padding: 0  20px;
+      .vintagetitle {
+        h1 {
+          font-size: 32px;
+        }
+      }
+    }
+    
+  }
+    
+

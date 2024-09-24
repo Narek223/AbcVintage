@@ -5,6 +5,17 @@
 
 }
 
+/* .swiper-pagination-bullet {
+  width: 100px !important;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(213, 205, 205, 0.2);
+} */
+
  @font-face {
   font-family: "aurora";
   src: url('../src/Fonts/aurora-2-webfont.zip');

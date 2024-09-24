@@ -1,6 +1,6 @@
 .followusContainer {
     padding: 100px 0;
-    height: 796px;
+    min-height: 400px;
     background-color: rgba(152, 137, 108, 1);
   
     .followusText {
@@ -55,9 +55,21 @@
       display: flex;
   
       .image {
-        width: 320px;
-        margin: 0 24px;
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      
       }
     }
   }
   
+  @media screen and (max-width: 1600px) {
+    .followusContainer {
+      min-height: 300px;
+      max-height: 1000px;
+.followusText{
+
+}
+    }
+  }

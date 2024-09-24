@@ -5,7 +5,8 @@ import BenefitsCart from "./BenefitsCart/BenefitsCart";
 import { benefitsdata } from "../../Services/data/benefits/benefitsData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 
 
@@ -25,8 +26,17 @@ export default function Benefits() {
       </div>
       <Swiper
         className={styles.swiper}
+        style={{
+          "--swiper-pagination-color": "black",
+          "--swiper-pagination-bullet-inactive-color": "red",
+          "--swiper-pagination-bullet-inactive-opacity": "1",
+          "--swiper-pagination-bullet-size": "16px",
+          "--swiper-pagination-bullet-horizontal-gap": "6px"
+        }}
         pagination={{
-          clickable: false,
+      
+          bulletClass: `swiper-pagination-bullet ${styles['feature-pagination']}`,
+          clickable: true,
         }}
         modules={[Pagination]}
         spaceBetween={10}
@@ -37,9 +47,11 @@ export default function Benefits() {
 
           1000: {
             slidesPerView: 3.5,
+            spaceBetween:0,
           },
           700: {
             slidesPerView: 2.5,
+            spaceBetween:10,
           },
           400: {
             slidesPerView: 1.5,

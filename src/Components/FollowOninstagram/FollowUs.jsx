@@ -28,23 +28,31 @@ export default function FollowUs() {
           autoplay={{
             delay: 1, 
             disableOnInteraction: false, 
-            pauseOnMouseEnter: false, 
+            pauseOnMouseEnter: true, 
           }}
           speed={3000} 
           loop={true}
           allowTouchMove={false} 
           breakpoints={{
-            640: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-            1280: {
+            1500: {
               slidesPerView: 5,
+            },
+  
+            1000: {
+              slidesPerView: 4,
+            
+            },
+            700: {
+              slidesPerView: 3,
+           
+            },
+            400: {
+              slidesPerView: 1.5,
+            
+            },
+            320: {
+              slidesPerView: 1.5,
+           
             },
           }}
         >
