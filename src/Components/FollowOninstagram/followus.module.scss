@@ -76,13 +76,57 @@
 }
 @media screen and (max-width: 1010px) {
   .followusContainer {
+    padding: 50px 0;
     .followusText {
       h1 {
         font-size: 50px;
       }
-      p{
-        font-size:25px;
+      p {
+        font-size: 25px;
       }
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .followusContainer {
+    .followusText {
+      padding: 0 20px;
+
+      h1 {
+        font-size: 30px;
+      }
+      button {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .followusContainer {
+   
+    .followusText {
+      padding: 0;
+      p {
+        font-size: 16px;
+        padding: 0 20px;
+      }
+      h1 {
+        padding: 0;
+        font-size: 30px;
+        line-height: 38px;
+      }
+      button {
+        font-size: 16px;
+      }
+    }
+
+   
+   
+   
+   
+   
+   
+   
+  }
+}
+

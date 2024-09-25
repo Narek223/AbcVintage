@@ -4,10 +4,11 @@ import { RiInstagramLine } from "react-icons/ri";
 import { imgslider } from '../../Services/data/followoninstagram/followimgdata';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { swiperbreakpoints } from '../../Services/data/followoninstagram/breakpoints';
 import "swiper/css";
 
 export default function FollowUs() {
-
+        
 
 
   return (
@@ -33,29 +34,7 @@ export default function FollowUs() {
           speed={3000} 
           loop={true}
           allowTouchMove={false} 
-          breakpoints={{
-            1500: {
-              slidesPerView: 5,
-            },
-  
-            1000: {
-              slidesPerView: 4,
-            
-            },
-            700: {
-              slidesPerView: 3,
-           
-            },
-            400: {
-              slidesPerView: 1.5,
-            
-            },
-            320: {
-              slidesPerView: 1.5,
-           
-            },
-          }}
-        >
+          breakpoints={swiperbreakpoints}>
           {imgslider.map((elem) => (
             <SwiperSlide key={elem.id} className={styles.image}>
               <img src={elem.img} alt={`Slide ${elem.id}`} />
