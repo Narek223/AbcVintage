@@ -47,7 +47,8 @@ export default function Footer() {
             <h1>Follow Us</h1>
             {socialMediaIcons.map((icon) => (
               <div key={icon.id} className={styles.socialItem}>
-                <img src={icon.src} alt={icon.alt} /> {icon.text}
+                <img src={icon.src} alt={icon.alt} /> 
+              <p> {icon.text}</p> 
               </div>
             ))}
           </div>

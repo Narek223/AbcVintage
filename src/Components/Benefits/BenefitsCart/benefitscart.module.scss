@@ -158,7 +158,7 @@
 }
 @media screen and (max-width: 520px) {
   .benefitscart {
-    width:100%;
+    width: 100%;
     padding: 15px;
 
     .benefitsinfo {
@@ -167,6 +167,9 @@
         height: 60px;
       }
     }
+  }
+  p {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -182,6 +185,9 @@
         height: 60px;
       }
     }
+    p {
+      font-size: 16px;
+    }
   }
 }
 @media screen and (max-width: 400px) {
@@ -190,14 +196,14 @@
     padding: 15px;
     text-align: start;
     .benefitsinfo {
-      .text{
-        p{
+      .text {
+        p {
           font-size: 16px;
         }
       }
-    
-    
-    
+    }
+    p {
+      font-size: 16px;
     }
   }
 }
@@ -206,8 +212,8 @@
     width: 228px;
     padding: 15px;
     text-align: start;
-    .benefitsinfo {
+    p {
+      font-size: 16px;
     }
   }
 }
-

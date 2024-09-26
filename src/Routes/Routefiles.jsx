@@ -19,7 +19,7 @@ export default function Routefiles() {
   const galleryref = useRef(null);
   const vintajeref = useRef(null);
   const contactref = useRef(null);
-  
+
   return (
     <div>
       <Header
@@ -30,19 +30,19 @@ export default function Routefiles() {
         Spotlight={vintajeref}
         contact={contactref}
       />
-         <section ref={homeref}>
+      <section ref={homeref}>
         <Home />
-        </section>
+      </section>
 
-<section  ref={aboutUsRef}>
+      <section ref={aboutUsRef}>
         <AboutUs />
       </section>
-       <section ref={Benefitsref}>
+      <section ref={Benefitsref}>
         <Benefits />
-      </section> 
+      </section>
 
       <EmbraceVintage />
-       {/*   <section ref={galleryref}>
+      {/*   <section ref={galleryref}>
         <Gallery />
       </section>
       <Slider />*/}
@@ -50,12 +50,12 @@ export default function Routefiles() {
         <Vintage />
       </section>
 
-           <FollowUs /> 
+      <FollowUs />
       <section ref={contactref}>
         <Contact />
       </section>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
