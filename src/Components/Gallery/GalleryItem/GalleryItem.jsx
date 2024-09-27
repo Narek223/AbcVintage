@@ -26,6 +26,14 @@ export default function GalleryItem({ data }) {
           className={` ${isReversed ? styles.fiximgborder : null}`}
           src={img}
         />
+        <div className={styles.sideboardTexttwo}>
+          <p>{title}</p>
+          <h1>{heading}</h1>
+          {/* <img src={vectorimg} /> */}
+          <p>{description}</p>
+    
+      
+      </div>
       </div>
     </div>
   );

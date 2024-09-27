@@ -42,10 +42,10 @@ export default function Routefiles() {
       </section>
 
       <EmbraceVintage />
-      {/*   <section ref={galleryref}>
+        <section ref={galleryref}>
         <Gallery />
       </section>
-      <Slider />*/}
+      {/* <Slider />*/}
       <section ref={vintajeref}>
         <Vintage />
       </section>

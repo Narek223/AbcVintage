@@ -340,7 +340,7 @@
         }
         .about {
           width: 100%;
-          height: 220px;
+          height: 200px;
           h1 {
             text-align: center;
             padding: 0;
@@ -353,11 +353,11 @@
         }
         .contact {
           width: 100%;
-          height: 220px;
+          height: 200px;
           align-items: center;
         }
         .mainMenu {
-          height: 220px;
+          height: 200px;
           h1 {
             text-align: center;
           }
@@ -391,6 +391,141 @@
           ul {
             li {
               margin: 0 30px;
+            }
+          }
+        }
+      
+      
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .footerContainer {
+    .one {
+      .footer {
+        .about {
+          height: 150px;
+          p {
+            padding: 0 200px;
+            width: 100%;
+          }
+        }
+        .mainMenu {
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  .footerContainer {
+    .one {
+      .footer {
+        .about {
+          height: 150px;
+          p {
+            padding: 0 100px;
+            width: 100%;
+          }
+        }
+        .mainMenu {
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .footerContainer {
+    .one {
+      .footer {
+        .about {
+          height: 150px;
+          p {
+            padding: 0 50px;
+            width: 100%;
+          }
+        }
+        .mainMenu {
+          width: 180px;
+        }
+      }
+    }
+     .copyrightConteiner {
+      padding: 20px 0;
+      .copyright {
+        h1{
+          font-size: 25px;
+        }
+        p{
+          font-size: 14px;  
+        }
+     
+      }
+      .navlinks {
+        nav{
+          margin: 5px 0;
+          ul {
+         
+            li {
+              font-size: 14px;
+              margin: 0 30px;
+            }
+          }
+        }
+      
+      
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footerContainer {
+    .one {
+      .footer {
+        p{
+          font-size: 16px;
+        }
+        .about {
+         
+          p {
+            padding: 0 20px;
+            width: 100%;
+          }
+        }
+       .mainMenu{
+        nav{
+          justify-content: space-evenly;
+          ul{
+            li{
+              font-size: 16px;
+            }
+          }
+        }
+       }
+      }
+    }
+    .copyrightConteiner {
+      padding: 20px 0;
+      .copyright {
+        h1{
+          font-size: 25px;
+        }
+        p{
+          font-size: 14px;  
+        }
+     
+      }
+      .navlinks {
+        nav{
+          margin: 5px 0;
+          ul {
+         
+            li {
+              font-size: 12px;
+              margin: 0 20px;
             }
           }
         }

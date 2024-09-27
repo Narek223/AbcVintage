@@ -120,4 +120,264 @@
   margin: 0 20px;
   font-size: 22px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1605px) {
+  .footerContainer .one .footer .about p {
+    width: 80%;
+  }
+  .footerContainer .one .footer .mainMenu {
+    width: 200px;
+  }
+  .footerContainer .copyrightConteiner {
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .footerContainer .copyrightConteiner .copyright {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .footerContainer .one h1 {
+    font-size: 30px;
+  }
+  .footerContainer .one p {
+    font-size: 21px;
+  }
+  .footerContainer .one .footer p {
+    font-size: 20px;
+  }
+  .footerContainer .one .footer .mainMenu {
+    width: 190px;
+  }
+  .footerContainer .one .footer .mainMenu nav ul li {
+    font-size: 21px;
+  }
+  .footerContainer .copyrightConteiner .copyright {
+    gap: 50px;
+  }
+  .footerContainer .copyrightConteiner .copyright h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1460px) {
+  .footerContainer .one .footer {
+    padding: 64px 100px;
+  }
+  .footerContainer .copyrightConteiner {
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+  .footerContainer .copyrightConteiner .copyright {
+    gap: 120px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .footerContainer .one .footer p {
+    font-size: 18px;
+  }
+  .footerContainer .one .footer .about p {
+    width: 85%;
+  }
+  .footerContainer .one .footer .contact {
+    margin: 0 10px;
+  }
+  .footerContainer .one .footer .mainMenu {
+    width: 170px;
+  }
+  .footerContainer .one .footer .mainMenu nav ul li {
+    font-size: 18px;
+  }
+  .footerContainer .copyrightConteiner .copyright p {
+    font-size: 18px;
+  }
+  .footerContainer .copyrightConteiner .navlinks nav ul li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .footerContainer .copyrightConteiner .copyright {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .footerContainer .one .footer {
+    padding: 64px 50px;
+  }
+  .footerContainer .one .footer h1 {
+    font-size: 25px;
+  }
+  .footerContainer .one .footer p {
+    font-size: 18px;
+  }
+  .footerContainer .copyrightConteiner {
+    padding: 0 50px;
+  }
+  .footerContainer .copyrightConteiner .copyright {
+    gap: 50px;
+  }
+  .footerContainer .copyrightConteiner .navlinks nav ul li {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 1038px) {
+  .footerContainer .one .footer .about p {
+    width: 90%;
+  }
+  .footerContainer .one .footer .mainMenu {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .footerContainer {
+    min-height: 500px;
+    padding: 20px;
+  }
+  .footerContainer .one .footer {
+    padding: 20px 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .footerContainer .one .footer .logo {
+    display: none;
+  }
+  .footerContainer .one .footer h1 {
+    padding: 0;
+  }
+  .footerContainer .one .footer .about {
+    width: 100%;
+    height: 200px;
+  }
+  .footerContainer .one .footer .about h1 {
+    text-align: center;
+    padding: 0;
+  }
+  .footerContainer .one .footer .about p {
+    width: 100%;
+    padding: 0 250px;
+    text-align: center;
+  }
+  .footerContainer .one .footer .contact {
+    width: 100%;
+    height: 200px;
+    align-items: center;
+  }
+  .footerContainer .one .footer .mainMenu {
+    height: 200px;
+  }
+  .footerContainer .one .footer .mainMenu h1 {
+    text-align: center;
+  }
+  .footerContainer .one .footer .follow {
+    width: 100%;
+    height: 200px;
+    align-items: center;
+  }
+  .footerContainer .one .footer .follow h1 {
+    text-align: center;
+  }
+  .footerContainer .copyrightConteiner {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .footerContainer .copyrightConteiner .copyright {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footerContainer .copyrightConteiner .copyright p {
+    margin: 5px 0;
+  }
+  .footerContainer .copyrightConteiner .navlinks nav {
+    margin: 5px 0;
+  }
+  .footerContainer .copyrightConteiner .navlinks nav ul li {
+    margin: 0 30px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footerContainer .one .footer .about {
+    height: 150px;
+  }
+  .footerContainer .one .footer .about p {
+    padding: 0 200px;
+    width: 100%;
+  }
+  .footerContainer .one .footer .mainMenu {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .footerContainer .one .footer .about {
+    height: 150px;
+  }
+  .footerContainer .one .footer .about p {
+    padding: 0 100px;
+    width: 100%;
+  }
+  .footerContainer .one .footer .mainMenu {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footerContainer .one .footer .about {
+    height: 150px;
+  }
+  .footerContainer .one .footer .about p {
+    padding: 0 50px;
+    width: 100%;
+  }
+  .footerContainer .one .footer .mainMenu {
+    width: 180px;
+  }
+  .footerContainer .copyrightConteiner {
+    padding: 20px 0;
+  }
+  .footerContainer .copyrightConteiner .copyright h1 {
+    font-size: 25px;
+  }
+  .footerContainer .copyrightConteiner .copyright p {
+    font-size: 14px;
+  }
+  .footerContainer .copyrightConteiner .navlinks nav {
+    margin: 5px 0;
+  }
+  .footerContainer .copyrightConteiner .navlinks nav ul li {
+    font-size: 14px;
+    margin: 0 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footerContainer .one .footer p {
+    font-size: 16px;
+  }
+  .footerContainer .one .footer .about p {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .footerContainer .one .footer .mainMenu nav {
+    justify-content: space-evenly;
+  }
+  .footerContainer .one .footer .mainMenu nav ul li {
+    font-size: 16px;
+  }
+  .footerContainer .copyrightConteiner {
+    padding: 20px 0;
+  }
+  .footerContainer .copyrightConteiner .copyright h1 {
+    font-size: 25px;
+  }
+  .footerContainer .copyrightConteiner .copyright p {
+    font-size: 14px;
+  }
+  .footerContainer .copyrightConteiner .navlinks nav {
+    margin: 5px 0;
+  }
+  .footerContainer .copyrightConteiner .navlinks nav ul li {
+    font-size: 12px;
+    margin: 0 20px;
+  }
 }/*# sourceMappingURL=footer.module.css.map */

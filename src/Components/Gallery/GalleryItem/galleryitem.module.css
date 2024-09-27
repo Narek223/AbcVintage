@@ -1,10 +1,14 @@
 .galleryConteiner {
   display: flex;
+  justify-content: center;
   height: 610px;
   margin: 50px 0;
 }
 .galleryConteiner.reversed {
   flex-direction: row-reverse;
+}
+.galleryConteiner .sideboardTexttwo {
+  display: none;
 }
 .galleryConteiner .Sideboard {
   padding: 30px 30px;
@@ -88,17 +92,110 @@
   }
 }
 @media screen and (max-width: 1536px) {
+  .galleryConteiner.reversed .sideboardText {
+    height: 240px;
+    width: 100%;
+  }
+  .galleryConteiner.reversed .sideboardText:nth-child(1) {
+    margin: 20px 0;
+  }
+  .galleryConteiner.reversed p {
+    padding: 0 0 0 30px;
+  }
   .galleryConteiner .Sideboard {
     width: 400px;
+    padding: 1px;
   }
   .galleryConteiner .Sideboard p:nth-child(2) {
     line-height: 20px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .galleryConteiner .Sideboard .sideboardText {
+    height: 240px;
     width: 100%;
   }
+  .galleryConteiner .Sideboard .sideboardText:nth-child(1) {
+    margin: 20px 0;
+  }
+  .galleryConteiner .Sideboard .sideboardText:nth-child(2) {
+    margin: 20px;
+  }
   .galleryConteiner .galleryImgCont img {
+    height: 580px;
     width: 700px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .galleryConteiner .Sideboard .sideboardText {
+    height: 250px;
+    margin: 20px;
+  }
+  .galleryConteiner .galleryImgCont img {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .galleryConteiner .Sideboard .sideboardText {
+    height: 250px;
+    margin: 20px;
+  }
+  .galleryConteiner .Sideboard .sideboardText h1 {
+    padding: 10px 20px;
+  }
+  .galleryConteiner .galleryImgCont img {
+    width: 550px;
+    height: 550px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .galleryConteiner {
+    height: auto;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+  .galleryConteiner.reversed {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+  .galleryConteiner .Sideboard {
+    width: auto;
+    text-align: center;
+  }
+  .galleryConteiner .Sideboard .sideboardText {
+    display: none;
+  }
+  .galleryConteiner .galleryImgCont {
+    border: 8px solid white;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1490196078);
+    border-radius: 100px 0 0 0;
+  }
+  .galleryConteiner .galleryImgCont img {
+    border: none;
+    box-shadow: 0;
+    border-radius: none;
+    width: 100%;
+    height: 550px;
+  }
+  .galleryConteiner .galleryImgCont img:nth-child(2) {
+    width: auto;
+  }
+  .galleryConteiner .galleryImgCont .sideboardTexttwo {
+    display: block;
+    margin: 20px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .galleryConteiner .galleryImgCont .sideboardTexttwo h1 {
+    font-family: "aurora";
+    font-size: 22px;
+    opacity: 70%;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+  }
+  .galleryConteiner .galleryImgCont .sideboardTexttwo p {
+    padding: 10px 0;
+  }
+  .galleryConteiner .galleryImgCont .sideboardTexttwo img {
+    padding: 10px 0;
   }
 }/*# sourceMappingURL=galleryitem.module.css.map */

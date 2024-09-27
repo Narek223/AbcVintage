@@ -8,4 +8,15 @@
   color: #5d4037;
   opacity: 70%;
   font-family: "aurora";
+}
+
+@media screen and (max-width: 1450px) {
+  .conteiner {
+    padding: 20px 100px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .conteiner {
+    padding: 20px 50px;
+  }
 }/*# sourceMappingURL=gallery.module.css.map */

@@ -90,12 +90,13 @@
 
 @media screen and (max-width: 1600px) {
   .contactconteiner .contactus .formconteiner .contactustitle h1 {
+    font-size: 30px;
     padding: 0;
   }
 }
 @media screen and (max-width: 1530px) {
   .contactconteiner .contactus .formconteiner .contactustitle h1 {
-    font-size: 32px;
+    font-size: 30px;
     padding: 0;
   }
 }
@@ -125,7 +126,7 @@
 @media screen and (max-width: 1010px) {
   .contactconteiner {
     padding: 0;
-    height: auto;
+    min-height: 500px;
   }
   .contactconteiner .title {
     padding: 10px 0;
@@ -153,7 +154,7 @@
     width: 100%;
   }
   .contactconteiner .contactus .mapconteiner .map {
-    min-height: 500px;
+    min-height: 400px;
     border-radius: 0;
   }
 }

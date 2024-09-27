@@ -45,6 +45,7 @@ export default function Footer() {
 
           <div className={styles.follow}>
             <h1>Follow Us</h1>
+            
             {socialMediaIcons.map((icon) => (
               <div key={icon.id} className={styles.socialItem}>
                 <img src={icon.src} alt={icon.alt} /> 
@@ -61,6 +62,7 @@ export default function Footer() {
           <p>Copyright @ 2024 ABC Vintage All rights reserved.</p>
         </div>
         <div className={styles.navlinks}>
+
           <nav>
             <ul>
               <li>Eng</li>
