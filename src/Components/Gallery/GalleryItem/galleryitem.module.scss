@@ -202,19 +202,31 @@
 
 @media screen and (max-width: 1010px) {
   .galleryConteiner {
+    
     &.reversed {
+      border: none;
       flex-direction: column-reverse;
       flex-wrap: nowrap;
+      .galleryImgCont{
+        border-radius: 100px 0 0 0;
+      }
+      p{
+    
+        padding: 0;
+      }
     }
     height: auto;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
 
     .Sideboard {
-  
+  margin: 0;
       width: auto;
       text-align: center;
-
+p:nth-child(2){
+  height: auto;
+  line-height: 25px;
+}
       .sideboardText {
         display: none;
       }
@@ -222,21 +234,33 @@
     .galleryImgCont {
       border: 8px solid white;
       box-shadow: 0px 0px 30px 0px #00000026;
-      border-radius: 100px 0 0 0;
+      border-radius:0 100px 0 0 ;
+    
+    
+
+      margin: 20px 0;
+ 
+ 
+ 
       img {
         border: none;
-        box-shadow: 0;
-        border-radius: none;
+        box-shadow: none;
         width: 100%;
         height: 550px;
+        transform: scaleX(-1);
         &:nth-child(2) {
           width: auto;
         }
         
       }
       .sideboardTexttwo {
+
+        img{
+          width: auto;
+          height: auto;
+        }
         display: block;
-        margin: 20px;
+
         padding: 10px 0;
         text-align: center;
         h1 {

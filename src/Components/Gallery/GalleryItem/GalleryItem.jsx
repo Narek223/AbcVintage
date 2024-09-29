@@ -28,8 +28,8 @@ export default function GalleryItem({ data }) {
         />
         <div className={styles.sideboardTexttwo}>
           <p>{title}</p>
-          <h1>{heading}</h1>
-          {/* <img src={vectorimg} /> */}
+          <h1>Style Your Sideboard</h1>
+          <img src={vectorimg} />
           <p>{description}</p>
     
       

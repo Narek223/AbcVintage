@@ -4,15 +4,8 @@ import HeaderInfo from "./HeaderInfo/HeaderInfo";
 import logo from "../../assets/Header/logo.png";
 import { scrollToSection } from "../../Functions/Header/scrollToSection";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClear } from "react-icons/md";
-import { socialMediaIcons } from "../../Services/data/header/HeaderData";
-import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-
+import DrawerList from "./Drawer/DrawerList";
 
 export default function Header({
   home,
@@ -49,54 +42,18 @@ export default function Header({
     };
   }, [show]);
 
-
   const showNavBar = () => {
-    setShow(!show)
+    setShow(!show);
   };
 
- 
-let  navItems = [
-  { name: "Home", ref: home },
-  { name: "About Us", ref: aboutRef },
-  { name: "Benefits", ref: benefits },
-  { name: "Gallery", ref: gallery },
-  { name: "Spotlight", ref: Spotlight },
-  { name: "Contact", ref: contact },
-  { name: "Eng", ref: "" },
-];
-  const DrawerList = (
-    <Box className={styles.box} role="presentation" onClick={showNavBar}>
-      <List className={styles.listconteiner}>
-        {navItems.map(
-          (text, index) => (
-            <ListItem onClick={() => scrollToSection(text.ref)} className={styles.navtext} key={index} disablePadding>
-              <ListItemButton>
-                <ListItemText primary={text.name} />
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
-        {show && (
-          <ul className={styles.socialicons}>
-            {socialMediaIcons.map((icon) => (
-              <li key={icon.id}>
-                <a href={icon.link}>
-                  <img src={icon.src} alt={icon.alt} />
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
-      </List>
-      <p
-    onClick={showNavBar}
-    className={styles.clearIcon}
-  >
-    {" "}
-    <MdClear />
-  </p>
-    </Box>
-  );
+  let navItems = [
+    { name: "Home", ref: home },
+    { name: "About Us", ref: aboutRef },
+    { name: "Benefits", ref: benefits },
+    { name: "Gallery", ref: gallery },
+    { name: "Spotlight", ref: Spotlight },
+    { name: "Contact", ref: contact },
+  ];
 
   return (
     <div className={styles.headerConteiner}>
@@ -124,7 +81,13 @@ let  navItems = [
                 }}
                 onClose={showNavBar}
               >
-                {DrawerList}
+                {
+                  <DrawerList
+                    navItems={navItems}
+                    showNavBar={showNavBar}
+                    show={show}
+                  />
+                }
               </Drawer>
               <ul
                 className={`${styles.responsivenavigation}  ${
