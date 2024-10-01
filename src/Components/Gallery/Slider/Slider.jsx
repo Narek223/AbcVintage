@@ -31,7 +31,6 @@ export default function Slider() {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [open, setOpen] = useState(false);
   const handleOpen = (index) => {
-    console.log("clicked");
     setSelectedIndex(index);
     setOpen(true);
   };
@@ -59,6 +58,18 @@ export default function Slider() {
         </button>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
+          breakpoints={{
+            1500:{
+              slidesPerView:3
+            },
+            1000:{
+              slidesPerView:2
+            },
+            320:{
+              slidesPerView:1.5
+            }
+           
+          }}
           loop={true}
           slidesPerView={3}
           navigation={{

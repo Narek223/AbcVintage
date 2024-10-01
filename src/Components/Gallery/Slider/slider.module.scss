@@ -65,3 +65,20 @@
     }
   }
 }
+@media screen and (max-width: 1010px) {
+  .galleryconteiner{
+    padding: 0 20px;
+    .sliderconteiner{
+      button{
+        display: none;
+      }
+      .custom-prev{
+        display: none;
+      }
+      .custom-next{
+        display: none;
+      }
+    }
+  }
+
+  }

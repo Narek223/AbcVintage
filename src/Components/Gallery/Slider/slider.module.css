@@ -56,4 +56,19 @@
   border-radius: 0 150px 0 0;
   border: 5px solid white;
   transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 1010px) {
+  .galleryconteiner {
+    padding: 0 20px;
+  }
+  .galleryconteiner .sliderconteiner button {
+    display: none;
+  }
+  .galleryconteiner .sliderconteiner .custom-prev {
+    display: none;
+  }
+  .galleryconteiner .sliderconteiner .custom-next {
+    display: none;
+  }
 }/*# sourceMappingURL=slider.module.css.map */
