@@ -4,6 +4,8 @@ import styles from './imagemodal.module.scss';
 import { sliderdata } from '../../../../Services/data/Gallery/sliderimgdata';
 import vector from '../../../../assets/Gallery/Vector.png';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
+import Sideboard from '../../../../shered_components/gallery/Sideboard';
+
 
 export default function ImageModal({ index, onNext, onPrev, close }) {
   return (
@@ -15,11 +17,13 @@ export default function ImageModal({ index, onNext, onPrev, close }) {
         <div className={styles.imgconteiner}>
           <img src={sliderdata[index].img} alt="Selected" />
         </div>
+       
         <div className={styles.imageModelText}>
-          <p>Designed for Generations</p>
+        <Sideboard h1="Style Your Sideboard" title="Designed for Generations" description="Our favorite sideboards and decors"/>
+          {/* <p>Designed for Generations</p>
           <h1>Style Your Sideboard</h1>
           <img src={vector} alt="Vector" />
-          <p>Our favorite sideboards and decors</p>
+          <p>Our favorite sideboards and decors</p> */}
           <button onClick={close}>Close</button>
         </div>
       </div>

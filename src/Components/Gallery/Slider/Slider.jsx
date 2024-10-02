@@ -11,6 +11,7 @@ import ImageModal from "./ImageModal/ImageModal";
 import { sliderdata } from "../../../Services/data/Gallery/sliderimgdata";
 import Modal from "@mui/material/Modal";
 import { Box } from "@mui/material";
+import { gallerybreakpoints } from "../../../Services/data/Gallery/galleryBreakpoints";
 
 const style = {
   position: "absolute",
@@ -28,12 +29,14 @@ const style = {
 };
 
 export default function Slider() {
+
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [open, setOpen] = useState(false);
   const handleOpen = (index) => {
     setSelectedIndex(index);
     setOpen(true);
   };
+  
   const handleClose = () => setOpen(false);
 
   let next = () => {
@@ -41,6 +44,7 @@ export default function Slider() {
       selectedIndex == sliderdata.length - 1 ? 0 : selectedIndex + 1
     );
   };
+
   let prev = () => {
     setSelectedIndex(
       selectedIndex === 0 ? sliderdata.length - 1 : selectedIndex - 1
@@ -58,20 +62,12 @@ export default function Slider() {
         </button>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          breakpoints={{
-            1500:{
-              slidesPerView:3
-            },
-            1000:{
-              slidesPerView:2
-            },
-            320:{
-              slidesPerView:1.5
-            }
-           
-          }}
+          breakpoints={gallerybreakpoints}
           loop={true}
-          slidesPerView={3}
+          pagination={{
+            bulletClass: `swiper-pagination-bullet`,
+            clickable: false,
+          }}
           navigation={{
             nextEl: ".custom-next",
             prevEl: ".custom-prev",

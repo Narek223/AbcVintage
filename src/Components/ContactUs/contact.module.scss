@@ -200,6 +200,7 @@
   .contactconteiner {
     padding: 0;
     min-height: 500px;
+  
     .title {
       padding: 10px 0;
       h1 {
@@ -241,8 +242,7 @@
   .contactconteiner {
     .title {
       padding: 10px 0;
-      h1 {
-      }
+     
     }
     .contactus {
       .formconteiner {
@@ -253,19 +253,13 @@
             font-size: 18px;
           }
         }
-
-        .formikConteiner {
-        }
         button {
           height: 48px;
           width: 100%;
           font-size: 16px;
         }
       }
-      .mapconteiner {
-        .map {
-        }
-      }
+    
     }
   }
 }
@@ -306,10 +300,7 @@
           }
         }
       }
-      .mapconteiner {
-        .map {
-        }
-      }
+    
     }
   }
 }

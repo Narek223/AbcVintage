@@ -2,32 +2,23 @@
     margin: 100px 0;
     padding: 100px 200px 100px 200px;
     height: 725px;
-    .swiper{
+    .swiper {
         margin: 0;
-        .feature-pagination{
-      
-        }
-        .swiper-wrapper{
-            .swiper-slide{
-          
-                .swiper-pagination{
+       
+        .swiper-wrapper {
+            .swiper-slide {
+                .swiper-pagination {
                     .swiper-pagination-bullet {
                         background-color: black;
-                      
-        
-                     
                     }
                 }
             }
         }
-       
-       
-       
     }
     .title {
         width: 100%;
         min-height: 100px;
-        h1{
+        h1 {
             font-family: "aurora";
             font-size: 64px;
             font-weight: 400;
@@ -53,9 +44,8 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        .swiperslider{
-           border: 5px solid #c2b3b3;
-           
+        .swiperslider {
+            border: 5px solid #c2b3b3;
         }
     }
 }
@@ -72,23 +62,17 @@
 
 @media screen and (max-width: 1450px) {
     .benefitsConteiner {
-        padding:20px 100px;
+        padding: 20px 100px;
         .title {
-           
-            h1{
+            h1 {
                 font-size: 50px;
             }
-           
-           
+
             .text {
-               
-               
-               
-                p{
+                p {
                     font-size: 18px;
                     width: 60%;
                 }
-               
             }
         }
         .benefitsdata {
@@ -98,16 +82,14 @@
 
 @media screen and (max-width: 1170px) {
     .benefitsConteiner {
-        padding:20px 50px;
-        .swiper{
-        
+        padding: 20px 50px;
+        .swiper {
         }
         .title {
             .text {
-            P{
-                
-                width: 90%;
-            }
+                P {
+                    width: 90%;
+                }
             }
         }
         .benefitsdata {
@@ -117,45 +99,20 @@
 
 @media screen and (max-width: 1010px) {
     .benefitsConteiner {
-      width: 100%;
-      padding: 20px 0 20px 20px;
-  .swiper{
-    
-  }
-  
+        width: 100%;
+        padding: 20px 0 20px 20px;
+        .swiper {
+        }
+
         .title {
             .text {
-                p{
+                p {
                     padding: 0 20px 0 0;
                     width: 100%;
                 }
-             
             }
         }
         .benefitsdata {
-           
-           
-    
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

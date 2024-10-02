@@ -25,6 +25,7 @@ export default function Benefits() {
       </div>
       <Swiper
         className={styles.swiper}
+        
         style={{
           "--swiper-pagination-color": "black",
           "--swiper-pagination-bullet-inactive-color": "red",
@@ -32,11 +33,12 @@ export default function Benefits() {
           "--swiper-pagination-bullet-size": "16px",
           "--swiper-pagination-bullet-horizontal-gap": "6px",
         }}
+        modules={[Pagination]}
         pagination={{
           bulletClass: `swiper-pagination-bullet ${styles["feature-pagination"]}`,
           clickable: true,
         }}
-        modules={[Pagination]}
+
         spaceBetween={10}
         breakpoints={benefitsBreakpoints}>
         <div className={styles.benefitsdata}>

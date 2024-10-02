@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "./galleryitem.module.scss";
+import Sideboard from "../../../shered_components/gallery/Sideboard";
+
+
 
 export default function GalleryItem({ data }) {
   
@@ -26,14 +29,15 @@ export default function GalleryItem({ data }) {
           className={` ${isReversed ? styles.fiximgborder : null}`}
           src={img}
         />
-        <div className={styles.sideboardTexttwo}>
-          <p>{title}</p>
+        <Sideboard h1="Style Your Sideboard" title="Designed for Generations" description="Our favorite sideboards and decors"/>
+        {/* <div className={styles.sideboardTexttwo}>
+          <p>{}</p>
           <h1>Style Your Sideboard</h1>
           <img src={vectorimg} />
           <p>{description}</p>
     
       
-      </div>
+      </div> */}
       </div>
     </div>
   );
