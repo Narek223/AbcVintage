@@ -65,8 +65,8 @@ export default function Slider() {
           breakpoints={gallerybreakpoints}
           loop={true}
           pagination={{
-            bulletClass: `swiper-pagination-bullet`,
-            clickable: false,
+            el: ".swiper-pagination",
+            clickable: true,
           }}
           navigation={{
             nextEl: ".custom-next",

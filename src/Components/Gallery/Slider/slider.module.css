@@ -26,10 +26,7 @@
   border: 0 100px 0 0;
 }
 .galleryconteiner .sliderconteiner .swiper .swiper-wrapper .swiper-slide .swiper-pagination {
-  position: static;
-}
-.galleryconteiner .sliderconteiner .swiper .swiper-wrapper .swiper-slide .swiper-pagination .swiper-pagination-bullet {
-  background-color: black;
+  color: black;
 }
 .galleryconteiner .sliderconteiner button {
   width: 68px;
