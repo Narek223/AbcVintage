@@ -26,7 +26,7 @@ export default function DrawerList({ navItems, showNavBar, show }) {
             </ListItemButton>
           </ListItem>
         ))}
-        <Divider className={styles.divider} />
+        <Divider sx={{ backgroundColor: 'white' }} className={styles.divider} />
         <ListItem className={styles.navtext} disablePadding>
           <ListItemButton>
             <ListItemText primary="Eng" />

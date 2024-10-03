@@ -76,7 +76,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 8px;
 }
 .footerContainer .one .footer .follow .socialItem img {
   width: 24px;
