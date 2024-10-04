@@ -9,7 +9,6 @@
 }
 .openwindow img {
   image-rendering: auto;
-  filter: contrast(1.2) brightness(1.1);
 }
 .openwindow .arrowLeft,
 .openwindow .arrowRight {
@@ -47,7 +46,7 @@
   max-height: 90vh;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 54px rgba(0, 0, 0, 0.25);
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +60,7 @@
   border-radius: 8px;
 }
 .openwindow .nextpage .imgconteiner img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   border-radius: 8px;
 }
@@ -99,8 +98,27 @@
   background-color: rgb(132, 117, 88);
 }
 
-@media screen and (max-width: 400px) {
-  .openwindow .nextpage {
-    max-height: 70vh;
+@media screen and (max-width: 1550px) {
+  .openwindow .nextpage .imageModelText {
+    gap: 0;
+  }
+  .openwindow .nextpage .imageModelText h1 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .openwindow .nextpage .imageModelText p {
+    font-size: 14px;
+  }
+  .openwindow .nextpage .imageModelText h1 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .openwindow .nextpage .imgconteiner {
+    height: 350px;
+  }
+  .openwindow .nextpage .imgconteiner img {
+    width: 100%;
   }
 }/*# sourceMappingURL=imagemodal.module.css.map */

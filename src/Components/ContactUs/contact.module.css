@@ -53,15 +53,16 @@
 }
 .contactconteiner .contactus .formconteiner .formikConteiner .error {
   font-size: 15px;
-  color: red;
-  text-align: center;
-  padding: 5px 0;
+  color: rgb(152, 137, 108);
+  text-align: start;
+  padding: 5px;
 }
 .contactconteiner .contactus .formconteiner .formikConteiner textarea {
   height: 173px;
   border-radius: 15px;
   border: 1px solid rgb(152, 137, 108);
   padding: 15px;
+  margin: 18px 0;
   resize: none;
 }
 .contactconteiner .contactus .formconteiner button {

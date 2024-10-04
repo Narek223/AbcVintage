@@ -31,8 +31,8 @@ export default function FollowUs() {
             disableOnInteraction: false, 
             pauseOnMouseEnter: true, 
           }}
-          speed={3000} 
-          loop={true}
+           speed={3000} 
+           loop={true}
           allowTouchMove={false} 
           breakpoints={swiperbreakpoints}>
           {imgslider.map((elem) => (

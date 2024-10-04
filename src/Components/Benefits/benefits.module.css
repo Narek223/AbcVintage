@@ -3,12 +3,6 @@
   padding: 100px 200px 100px 200px;
   height: 725px;
 }
-.benefitsConteiner .swiper {
-  margin: 0;
-}
-.benefitsConteiner .swiper .swiper-wrapper .swiper-slide .swiper-pagination .swiper-pagination-bullet {
-  background-color: black;
-}
 .benefitsConteiner .title {
   width: 100%;
   min-height: 100px;

@@ -165,14 +165,29 @@ margin:  15px 0 0 0;
 }
 @media screen and (max-width: 600px) {
   .vintageItem {
+    height: auto;
     min-height: 200px;
     margin: 0;
     padding: 0;
-    .imageContainer {
-      width: 100%;
-      img {
+    &:nth-child(odd) {
+      .imageContainer {
+        height: auto;
+        img {
+          height: 200px;
+          border-radius: 100px 0 0 0;
+        }
       }
     }
+    &:nth-child(even) {
+      .imageContainer {
+        height: auto;
+        img {
+          height: 200px;
+          border-radius: 0 100px 0 0;
+        }
+      }
+    }
+  
     .info {
       padding: 0;
       h1 {

@@ -15,6 +15,7 @@ export default function Header({
   Spotlight,
   contact,
 }) {
+  
   const [isScrolled, setIsScrolled] = useState(false);
   const [show, setShow] = useState(false);
   let ref = useRef();

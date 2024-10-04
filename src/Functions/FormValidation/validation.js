@@ -7,9 +7,7 @@ import * as Yup from "yup";
 export let validationSchema = Yup.object({
     name: Yup.string()
       .required("Please enter your Username")
-      .matches(/^[A-Z]/g, "username must start with capital letter")
-      .min(4, "Minimum username length 4")
-      .max(8, "Maximum username length 8"),
+      .min(4, "Minimum username length 4"),
     email: Yup.string()
       .required("Please enter your email")
       .email("This isn't not correct email format")

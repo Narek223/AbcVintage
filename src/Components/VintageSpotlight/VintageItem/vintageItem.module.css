@@ -127,12 +127,24 @@
 }
 @media screen and (max-width: 600px) {
   .vintageItem {
+    height: auto;
     min-height: 200px;
     margin: 0;
     padding: 0;
   }
-  .vintageItem .imageContainer {
-    width: 100%;
+  .vintageItem:nth-child(odd) .imageContainer {
+    height: auto;
+  }
+  .vintageItem:nth-child(odd) .imageContainer img {
+    height: 200px;
+    border-radius: 100px 0 0 0;
+  }
+  .vintageItem:nth-child(even) .imageContainer {
+    height: auto;
+  }
+  .vintageItem:nth-child(even) .imageContainer img {
+    height: 200px;
+    border-radius: 0 100px 0 0;
   }
   .vintageItem .info {
     padding: 0;

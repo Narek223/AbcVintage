@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   padding: 10px 0;
+  text-align: start;
 }
 .benefitscart .benefitsinfo h1 {
   padding: 0 13px;
