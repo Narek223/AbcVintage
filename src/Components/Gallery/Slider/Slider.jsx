@@ -13,20 +13,24 @@ import Modal from "@mui/material/Modal";
 import { Box } from "@mui/material";
 import { gallerybreakpoints } from "../../../Services/data/Gallery/galleryBreakpoints";
 
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "50%",
-  height: "100%",
+// const style = {
+//   position: "absolute",
+//   top: "50%",
+//   left: "50%",
+//   transform: "translate(-50%, -50%)",
+//   width: {
+//     xs: "80%",   
+//     sm: "80%",   
+//     md: "50%",   
+//   },
+//   height: "100%",
 
-  border: "none",
-  boxShadow: "none",
-  outline: "none",
+//   border: "none",
+//   boxShadow: "none",
+//   outline: "none",
 
-  // p: 4,
-};
+//   // p: 4,
+// };
 
 export default function Slider() {
 
@@ -65,7 +69,8 @@ export default function Slider() {
           breakpoints={gallerybreakpoints}
           loop={true}
           pagination={{
-            el: ".swiper-pagination",
+            // el: '.swiper-pagination',
+    
             clickable: true,
           }}
           navigation={{
@@ -102,7 +107,7 @@ export default function Slider() {
               },
             }}
           >
-            <Box sx={style}>
+            <Box className={styles.modalBox} >
               <ImageModal
                 index={selectedIndex}
                 onNext={next}
