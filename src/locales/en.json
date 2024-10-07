@@ -1,0 +1,66 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "benefits": "Benefits",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "spotlight": "Spotlight",
+    "call": "Call us"
+  },
+  "home": {
+    "welcome": "Welcome to ABC Vintage",
+    "text": "Where history meets style. Based in the heart of   Prague, we specialize in curating a unique collection     of authentic vintage treasures that add charm and character to any space or wardrobe."
+  },
+
+  "about": {
+    "section1Title": "About us",
+    "section1Text": "ABC Vintage was born out of a deep love for history and a passion for preserving the beauty of the past. Our journey began in the cobblestone streets of Prague, where our founder, an avid collector of vintage items, spent years curating a personal collection of treasures from across Europe. What started as a personal hobby quickly evolved into a mission: to share the timeless elegance and craftsmanship of vintage goods with a wider audience.",
+    "section2Text": "Since opening our doors, we have dedicated ourselves to sourcing only the finest vintage pieces, each with its own unique story and charm. From meticulously crafted porcelain to iconic mid-century furniture, our collection reflects the rich cultural heritage and artistic traditions of bygone eras. Every item we offer is handpicked for its quality, authenticity, and the sense of nostalgia it evokes."
+  },
+  "benefits": {
+    "mainpart": {
+      "title": "Benefits",
+      "text": "At ABC Vintage, we believe that every piece has a story to tell. Whether you’re looking to add a touch of history to your home or find a unique item that  stands out."
+    },
+    "curatedAuthenticity": {
+      "title": "Curated Authenticity",
+      "text": "Every item in our collection is carefully selected and verified for authenticity, ensuring you’re purchasing genuine vintage pieces with a rich history."
+    },
+    "diverseSelection": {
+      "title": "Diverse Selection",
+      "text": "From elegant porcelain and timeless furniture to unique cutlery and classic clothing, our wide range of vintage products caters to various tastes and styles."
+    },
+    "sustainableShopping": {
+      "title": "Sustainable Shopping",
+      "text": "By choosing vintage, you’re embracing sustainability and contributing to a more eco-friendly lifestyle by reducing waste and supporting the reuse of beautiful, timeless items."
+    },
+    "customerExperience": {
+      "title": "Zkušenosti zákazníků",
+      "text": "We offer exceptional customer service, with personalized assistance to help you find the perfect items and support throughout your shopping experience."
+    }
+  },
+  "gallery": {
+    "section1": {
+      "title": "Designed for Generations",
+      "heading": "Style Your Sideboard",
+      "description": "Our favorite sideboards and decors",
+      "text": "Sideboards, also known as buffets, have a rich history dating back to the 16th century in Europe. Originally, they were designed as simple wooden tables where food could be placed before being served in dining rooms. Over time, sideboards evolved to include drawers, cupboards, and other storage spaces, making them more functional for holding dishes, cutlery, and linens. Today, sideboards are still valued for their versatility and functionality, often used not only in dining rooms but also in living rooms and hallways."
+    },
+    "section2": {
+      "title": "A Taste of Tradition",
+      "heading": "Where Every Meal Becomes a Celebration",
+      "description": "Our favorite dishess",
+      "text": "Porcelain has a fascinating history that dates back over a thousand years, originating in China during the Tang Dynasty (618–907 AD). The Chinese were the first to develop the techniques for producing porcelain, which is a type of ceramic made from a mixture of kaolin clay and other minerals, fired at very high temperatures. This process results in a material that is both translucent and highly durable, setting porcelain apart from other ceramics."
+    }
+  },
+  "EmbraceVintage": {
+    "vintage": "Embrace Vintage Elegance",
+    "shop": "Shop now"
+  },
+  "FollowUs":{
+    "followUsTitle":"Follow Us on Instagram",
+     "followUsText":"Be the first to know about new arrivals and exclusive offers!",
+     "followUsButton":"Follow Us "
+}
+}

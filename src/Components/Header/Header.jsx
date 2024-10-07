@@ -6,6 +6,7 @@ import { scrollToSection } from "../../Functions/Header/scrollToSection";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Drawer from "@mui/material/Drawer";
 import DrawerList from "./Drawer/DrawerList";
+import { useTranslation } from 'react-i18next';
 
 export default function Header({
   home,
@@ -15,9 +16,11 @@ export default function Header({
   Spotlight,
   contact,
 }) {
+  
   const [isScrolled, setIsScrolled] = useState(false);
   const [show, setShow] = useState(false);
   let ref = useRef();
+  const { t } = useTranslation(); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -93,13 +96,13 @@ export default function Header({
                 className={`${styles.responsivenavigation}  ${
                   show ? styles.openNavBar : styles.closeNavBar
                 }`}
-              >
-                <li onClick={() => scrollToSection(home)}>Home </li>
-                <li onClick={() => scrollToSection(aboutRef)}>About Us</li>
-                <li onClick={() => scrollToSection(benefits)}>Benefits</li>
-                <li onClick={() => scrollToSection(gallery)}>Gallery</li>
-                <li onClick={() => scrollToSection(Spotlight)}>Spotlight</li>
-                <li onClick={() => scrollToSection(contact)}>Contact</li>
+              >       
+      <li onClick={() => scrollToSection(home)}>{t('header.home')}</li>
+      <li onClick={() => scrollToSection(aboutRef)}>{t('header.about')}</li>
+      <li onClick={() => scrollToSection(benefits)}>{t('header.benefits')}</li>
+      <li onClick={() => scrollToSection(gallery)}>{t('header.gallery')}</li>
+      <li onClick={() => scrollToSection(Spotlight)}>{t('header.spotlight')}</li>
+      <li onClick={() => scrollToSection(contact)}>{t('header.contact')}</li> 
                 {show === false ? null : <li>Eng</li>}
                 {show === false ? null : (
                   <ul className={styles.socialicons}></ul>

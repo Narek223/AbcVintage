@@ -1,9 +1,11 @@
-import sliderimg from '../../../assets/FollowUs/Frame 1686562955.png'
-import sliderimgtwo from '../../../assets/FollowUs/Frame 1686562974.png'
-import sliderimgthree from '../../../assets/FollowUs/Frame 1686562975.png'
-import sliderimgfour from '../../../assets/FollowUs/Frame 1686562977.png'
-import sliderimgfife from '../../../assets/FollowUs/Frame 1686562976.png'
-import sliderimgsix from '../../../assets/FollowUs/Frame 1686562952.png'
+import sliderimg from '../../../assets/FollowUs/display-antique-porcelain-dolls.png'
+import sliderimgtwo from '../../../assets/FollowUs/A1CEE3D2-CE74-4FC5-A5A6-A1EA0508E01A 1 (2).png'
+import sliderimgthree from '../../../assets/FollowUs/A1CEE3D2-CE74-4FC5-A5A6-A1EA0508E01A 1 (3).png'
+import sliderimgfour from '../../../assets/FollowUs/A1CEE3D2-CE74-4FC5-A5A6-A1EA0508E01A 1 (4).png'
+import sliderimgfife from '../../../assets/FollowUs/A1CEE3D2-CE74-4FC5-A5A6-A1EA0508E01A 1 (6).png'
+import sliderimgsix from '../../../assets/EmbraceVintage/EmbraceVintage.png'
+
+
 
 export const imgslider=[
     {id:1,img:sliderimg},

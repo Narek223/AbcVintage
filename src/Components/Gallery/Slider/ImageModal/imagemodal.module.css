@@ -1,106 +1,171 @@
 .openwindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
   z-index: 10;
   position: relative;
 }
+
 .openwindow img {
   image-rendering: auto;
-  filter: contrast(1.2) brightness(1.1);
 }
+
 .openwindow .arrowLeft,
 .openwindow .arrowRight {
   width: 40px;
   height: 40px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(152, 137, 108);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #98896c;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
+
 .openwindow .arrowLeft:hover,
 .openwindow .arrowRight:hover {
-  background-color: rgb(132, 117, 88);
+  background-color: #847558;
 }
+
 .openwindow .arrowLeft .arrowicon,
 .openwindow .arrowRight .arrowicon {
   color: #fff;
 }
+
 .openwindow .arrowLeft {
   left: 10px;
 }
+
 .openwindow .arrowRight {
   right: 10px;
 }
+
 .openwindow .nextpage {
   width: 90%;
   max-width: 950px;
   max-height: 90vh;
   background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 0 54px rgba(0, 0, 0, 0.25);
-  padding: 20px;
+  -webkit-box-shadow: 0 0 54px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 54px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   border-radius: 10px;
 }
+
 .openwindow .nextpage .imgconteiner {
   height: 400px;
   width: 100%;
   text-align: center;
   border-radius: 8px;
 }
+
 .openwindow .nextpage .imgconteiner img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   border-radius: 8px;
 }
+
 .openwindow .nextpage .imageModelText {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 10px;
   gap: 8px;
 }
+
 .openwindow .nextpage .imageModelText p {
   font-size: 18px;
   color: #5d4037;
   margin: 5px 0;
 }
+
 .openwindow .nextpage .imageModelText h1 {
   font-size: 30px;
   font-weight: 400;
-  color: rgb(93, 64, 55);
+  color: #5d4037;
   margin-bottom: 10px;
   font-family: "aurora";
 }
+
 .openwindow .nextpage .imageModelText button {
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 18px;
   border: none;
-  background-color: rgb(152, 137, 108);
+  background-color: #98896c;
   color: #fff;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
+
 .openwindow .nextpage .imageModelText button:hover {
-  background-color: rgb(132, 117, 88);
+  background-color: #847558;
 }
 
-@media screen and (max-width: 400px) {
-  .openwindow .nextpage {
-    max-height: 70vh;
+@media screen and (max-width: 1550px) {
+  .openwindow .nextpage .imageModelText {
+    gap: 0;
   }
-}/*# sourceMappingURL=imagemodal.module.css.map */
+  .openwindow .nextpage .imageModelText h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .openwindow .nextpage .imageModelText p {
+    font-size: 14px;
+  }
+  .openwindow .nextpage .imageModelText h1 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .openwindow .nextpage .imgconteiner {
+    height: 350px;
+  }
+  .openwindow .nextpage .imgconteiner img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=imagemodal.module.css.map */

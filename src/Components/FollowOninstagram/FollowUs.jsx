@@ -6,18 +6,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { swiperbreakpoints } from '../../Services/data/followoninstagram/breakpoints';
 import "swiper/css";
+import { useTranslation } from 'react-i18next';
 
 export default function FollowUs() {
-        
+  const { t } = useTranslation();
+
 
 
   return (
     <div className={styles.followusContainer}>
       <div className={styles.followusText}>
-        <h1>Follow Us on Instagram</h1>
-        <p>Be the first to know about new arrivals and exclusive offers!</p>
+        <h1>{t('FollowUs.followUsTitle')}</h1>
+        <p>{t('FollowUs.followUsText')}</p>
         <button>
-          <RiInstagramLine className={styles.icon} /> Follow us
+          <RiInstagramLine className={styles.icon} /> {t('FollowUs.followUsButton')}
         </button>
       </div>
 
@@ -31,8 +33,8 @@ export default function FollowUs() {
             disableOnInteraction: false, 
             pauseOnMouseEnter: true, 
           }}
-          speed={3000} 
-          loop={true}
+           speed={3000} 
+           loop={true}
           allowTouchMove={false} 
           breakpoints={swiperbreakpoints}>
           {imgslider.map((elem) => (

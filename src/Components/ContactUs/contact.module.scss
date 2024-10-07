@@ -56,9 +56,9 @@
 
         .error {
           font-size: 15px;
-          color: red;
-          text-align: center;
-          padding: 5px 0;
+          color: rgba(152, 137, 108, 1);
+          text-align: start;
+          padding: 5px;
         }
 
         textarea {
@@ -66,6 +66,7 @@
           border-radius: 15px;
           border: 1px solid rgba(152, 137, 108, 1);
           padding: 15px;
+          margin: 18px 0;
           resize: none;
         }
       }

@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "./embracevintage.module.scss";
+import { useTranslation } from 'react-i18next';
+
 
 export default function EmbraceVintage() {
+
+
+  const { t } = useTranslation(); 
+
   return (
     <div className={styles.EmbraceVintageComponent}>
       <div className={styles.vintageElegance}>
@@ -9,7 +15,7 @@ export default function EmbraceVintage() {
           Embrace Vintage
           <br /> Elegance
         </h1>
-        <button>Shop now</button>
+        <button>{t("EmbraceVintage.shop")}</button>
       </div>
     </div>
   );

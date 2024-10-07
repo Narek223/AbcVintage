@@ -4,6 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { validationSchema } from "../../Functions/FormValidation/validation";
 
 export default function Contact() {
+  
   const initialValues = {
     name: "",
     phoneNumber: "",

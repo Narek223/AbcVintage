@@ -2,11 +2,12 @@ import React from "react";
 import styles from "./vintageItem.module.scss";
 
 export default function VintageItem({ data }) {
+
   const { imgSrc, title, description, isReversed } = data;
+
   return (
     <div
-      className={`${styles.vintageItem} ${isReversed ? styles.reversed : ""}`}
-    >
+      className={`${styles.vintageItem} ${isReversed ? styles.reversed : ""}`}>
       <div className={styles.imageContainer}>
         <img src={imgSrc} alt={title} />
       </div>

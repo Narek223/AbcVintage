@@ -13,25 +13,6 @@ import Modal from "@mui/material/Modal";
 import { Box } from "@mui/material";
 import { gallerybreakpoints } from "../../../Services/data/Gallery/galleryBreakpoints";
 
-// const style = {
-//   position: "absolute",
-//   top: "50%",
-//   left: "50%",
-//   transform: "translate(-50%, -50%)",
-//   width: {
-//     xs: "80%",   
-//     sm: "80%",   
-//     md: "50%",   
-//   },
-//   height: "100%",
-
-//   border: "none",
-//   boxShadow: "none",
-//   outline: "none",
-
-//   // p: 4,
-// };
-
 export default function Slider() {
 
   const [selectedIndex, setSelectedIndex] = useState(null);

@@ -1,0 +1,67 @@
+{
+  "header": {
+    "home": "Domů",
+    "about": "O nás",
+    "benefits": "Výhody",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "spotlight": "V centru pozornosti",
+    "call": "Zavolejte nám"
+  },
+
+  "home": {
+    "welcome": "Vítejte v ABC Vintage",
+    "text": "Kde se historie potkává se stylem. Sídlíme v srdci Prahy a specializujeme se na jedinečnou kolekci autentických vintage pokladů, které dodají šarm acharakter každému prostoru nebo šatníku."
+  },
+  "about": {
+    "section1Title": "O nás",
+    "section1Text": "ABC Vintage vzniklo z hluboké lásky k historii a vášně pro uchovávání krásy minulosti. Naše cesta začala na dlážděných ulicích Prahy, kde náš zakladatel, vášnivý sběratel starožitností, strávil roky sbíráním osobní kolekce pokladů z celé Evropy. To, co začalo jako osobní koníček, se rychle vyvinulo v misi: sdílet nadčasovou eleganci a řemeslné zpracování starožitností s širší veřejností.",
+    "section2Text": "Od otevření našich dveří jsme se zavázali k tomu, že budeme vybírat pouze ty nejlepší starožitnosti, každou s vlastním jedinečným příběhem a kouzlem. Od pečlivě zpracovaného porcelánu až po ikonický nábytek ze středního století, naše kolekce odráží bohaté kulturní dědictví a umělecké tradice minulých epoch. Každý kus, který nabízíme, je vybrán ručně pro svou kvalitu, autentičnost a smysl pro nostalgii, který vyvolává."
+  },
+  
+       "benefits": {
+       "mainpart":{
+        "title":"Výhody",
+          "text":"Ve společnosti ABC Vintage věříme, že každý kus má svůj příběh. Ať už chcete do svého domova přidat dotek historie, nebo najít jedinečný předmět, který vynikne."
+       },
+         "curatedAuthenticity": {
+           "title": "Kurátorská autenticita",
+           "text": "Každá položka v naší kolekci je pečlivě vybírána a ověřována z hlediska pravosti, což zaručuje, že kupujete originální vintage kousky s bohatou historií."
+         },
+         "diverseSelection": {
+           "title": "Rozmanitý výběr",
+           "text": "Naše široká nabídka vintage produktů vyhovuje různým vkusům a stylům - od elegantního porcelánu a nadčasového nábytku až po jedinečné příbory a klasické oblečení."
+         },
+         "sustainableShopping": {
+           "title": "Udržitelné nákupy",
+           "text": "Výběrem vintage se hlásíte k udržitelnosti a přispíváte k ekologičtějšímu životnímu stylu tím, že snižujete množství odpadu a podporujete opětovné použití krásných, nadčasových předmětů."
+         },
+         "customerExperience": {
+           "title": "Zákaznický zážitek",
+           "text": "Nabízíme výjimečný zákaznický servis, osobní asistenci, která vám pomůže najít perfektní zboží, a podporu po celou dobu nakupování."
+         }
+       },
+       "gallery": {
+              "section1": {
+                "title": "Navrženo pro generace",
+                "heading": "Styl vašeho příborníku",
+                "description": "Naše oblíbené příborníky a dekory",
+                "text": "Příborníky, známé také jako bufety, mají v Evropě bohatou historii sahající až do 16. století. Původně byly navrženy jako jednoduché dřevěné stoly, na které se v jídelnách odkládaly pokrmy před servírováním. Postupem času se příborníky vyvinuly tak, že obsahovaly zásuvky, skříňky a další úložné prostory, takže se staly funkčnějšími pro uložení nádobí, příborů a prádla. Dnes jsou kredence stále ceněny pro svou všestrannost a funkčnost, často se používají nejen v jídelnách, ale také v obývacích pokojích a předsíních."
+              },
+              "section2": {
+                "title": "Chuť tradice",
+                "heading": "Kde se každé jídlo stává oslavou",
+                "description": "Naše oblíbená jídla",
+                "text": "Porcelán má fascinující historii starou více než tisíc let a vznikl v Číně za dynastie Tchang (618-907 n. l.). Číňané jako první vyvinuli techniku výroby porcelánu, což je druh keramiky vyráběný ze směsi kaolinové hlíny a dalších minerálů, vypalovaný při velmi vysokých teplotách. Výsledkem tohoto procesu je průsvitný a vysoce odolný materiál, který porcelán odlišuje od ostatní keramiky."
+              }
+            },
+  "EmbraceVintage": {
+    "vintage": "Přijměte vintage eleganci",
+    "shop": "Nakupujte nyní"
+  },
+  "FollowUs":{
+       "followUsTitle":"Sledujte nás na Instagramu",
+        "followUsText":"Buďte první, kdo se dozví o novinkách a exkluzivních nabídkách!",
+        "followUsButton":"Sledujte nás "
+  }
+}
