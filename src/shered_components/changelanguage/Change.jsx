@@ -15,9 +15,11 @@ export default function Change() {
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleMenuClose = () => {
     setAnchorEl(null);
   };
+  
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
     if (lang === "Eng") {
