@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "./galleryitem.module.scss";
 import Sideboard from "../../../shered_components/gallery/Sideboard";
-
+import { useTranslation } from 'react-i18next'; 
 
 
 export default function GalleryItem({ data }) {
   
   let { isReversed, title, heading, vectorimg, description, text, img } = data;
 
+  const { t } = useTranslation(); 
+  
   return (
     <div
       className={`${styles.galleryConteiner} ${
@@ -29,7 +31,7 @@ export default function GalleryItem({ data }) {
           className={` ${isReversed ? styles.fiximgborder : null}`}
           src={img}
         />
-        <Sideboard h1="Style Your Sideboard" title="Designed for Generations" description="Our favorite sideboards and decors"/>
+        <Sideboard h1={t("gallery.section1.heading")}  title={t("gallery.section1.title")} description={t("gallery.section1.description")}/>
         {/* <div className={styles.sideboardTexttwo}>
           <p>{}</p>
           <h1>Style Your Sideboard</h1>

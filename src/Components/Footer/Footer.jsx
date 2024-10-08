@@ -2,32 +2,37 @@ import React from "react";
 import styles from "./footer.module.scss";
 import logo from "../../assets/footer/footerlogo.png";
 import { socialMediaIcons } from "../../Services/data/header/HeaderData";
+import { useTranslation } from 'react-i18next'; 
+import Change from "../../shered_components/changelanguage/Change";
 
 export default function Footer() {
+
+
+  const { t } = useTranslation(); 
+  
   return (
     <div className={styles.footerContainer}>
       <div className={styles.one}>
         <div className={styles.footer}>
           <div className={styles.about}>
-            <h1>About</h1>
+            <h1>{t("footer.about.title")}</h1>
             <p>
-              Discover timeless treasures at ABC Vintage in Prague. We offer a
-              curated selection of vintage products.
+            {t("footer.about.text")}
             </p>
           </div>
 
           <div className={styles.mainMenu}>
-            <h1>Main menu</h1>
+            <h1>{t("footer.mainMenu.title")}</h1>
             <nav>
               <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Benefits</li>
+                <li>{t("footer.mainMenu.items.home")}</li>
+                <li>{t("footer.mainMenu.items.aboutUs")}</li>
+                <li>{t("footer.mainMenu.items.benefits")}</li>
               </ul>
               <ul>
-                <li>Gallery</li>
-                <li>Spotlight</li>
-                <li>Contact</li>
+                <li>{t("footer.mainMenu.items.gallery")}</li>
+                <li>{t("footer.mainMenu.items.spotlight")}</li>
+                <li>{t("footer.mainMenu.items.contact")}</li>
               </ul>
             </nav>
           </div>
@@ -37,14 +42,14 @@ export default function Footer() {
           </div>
 
           <div className={styles.contact}>
-            <h1>Contact</h1>
-            <p>Email:<a href="mailto:ABCvintage@gmail.com"/>ABCvintage@mail.com<a/></p>
-            <p>Call Us: +123456789</p>
-            <p>Address: Prague 1, Czech</p>
+            <h1>{t("footer.contact.title")}</h1>
+            <p>{t("footer.contact.email")}<a href="mailto:ABCvintage@gmail.com"/> ABCvintage@mail.com<a/></p>
+            <p>{t("footer.contact.callUs")}</p>
+            <p>{t("footer.contact.address")}</p>
           </div>
 
           <div className={styles.follow}>
-            <h1>Follow Us</h1>
+            <h1>{t("footer.followUs")}</h1>
             
             {socialMediaIcons.map((icon) => (
               <div key={icon.id} className={styles.socialItem}>
@@ -59,15 +64,16 @@ export default function Footer() {
       <div className={styles.copyrightConteiner}>
         <div className={styles.copyright}>
           <h1>Abc Vintage</h1>
-          <p>Copyright @ 2024 ABC Vintage All rights reserved.</p>
+          <p>{t("footer.copyright")}</p>
         </div>
         <div className={styles.navlinks}>
 
           <nav>
             <ul>
-              <li>Eng</li>
-              <li>Privacy</li>
-              <li>Cookie preferences</li>
+             
+              <Change/>
+              <li>{t("footer.navLinks.privacy")}</li>
+              <li>{t("footer.navLinks.privacy")}</li>
             </ul>
           </nav>
         </div>

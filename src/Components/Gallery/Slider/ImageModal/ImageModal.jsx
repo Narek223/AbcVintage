@@ -5,9 +5,10 @@ import { sliderdata } from '../../../../Services/data/Gallery/sliderimgdata';
 import vector from '../../../../assets/Gallery/Vector.png';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 import Sideboard from '../../../../shered_components/gallery/Sideboard';
-
+import { useTranslation } from 'react-i18next';
 
 export default function ImageModal({ index, onNext, onPrev, close }) {
+  const { t } = useTranslation(); 
 
   return (
     <div className={styles.openwindow}>
@@ -22,11 +23,11 @@ export default function ImageModal({ index, onNext, onPrev, close }) {
        
         <div className={styles.imageModelText}>
         {/* <Sideboard h1="Style Your Sideboard" title="Designed for Generations" description="Our favorite sideboards and decors"/> */}
-           <p>Designed for Generations</p>
-          <h1>Style Your Sideboard</h1>
+           <p>{t("gallery.section1.title")}</p>
+          <h1>{t("gallery.section1.heading")}</h1>
           <img src={vector} alt="Vector" />
-          <p>Our favorite sideboards and decors</p> 
-          <button onClick={close}>Close</button>
+          <p>{ t("gallery.section2.description")}</p> 
+          <button onClick={close}>{ t("gallery.section1.close")}</button>
         </div>
       </div>
       <div className={styles.arrowRight} onClick={onNext}>

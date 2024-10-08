@@ -2,9 +2,11 @@ import React from "react";
 import styles from "./contact.module.scss";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { validationSchema } from "../../Functions/FormValidation/validation";
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
-  
+  const { t } = useTranslation(); 
+
   const initialValues = {
     name: "",
     phoneNumber: "",
@@ -15,16 +17,13 @@ export default function Contact() {
   return (
     <div className={styles.contactconteiner}>
       <div className={styles.title}>
-        <h1>Contact Us</h1>
+        <h1>{t("ContactUs.title")}</h1>
       </div>
 
       <div className={styles.contactus}>
         <div className={styles.formconteiner}>
           <div className={styles.contactustitle}>
-          <h1>
-            Contact us via the form below & we'll get back to you as soon as we
-            can
-          </h1>
+          <h1>{t("ContactUs.formtext")}</h1>
           </div>
          
           <Formik
@@ -39,7 +38,7 @@ export default function Contact() {
                   <Field
                     type="text"
                     name="name"
-                    placeholder="Enter your name"
+                    placeholder={t("ContactUs.form.name")}
                   />
                   <ErrorMessage
                     name="name"
@@ -50,7 +49,7 @@ export default function Contact() {
                   <Field
                     type="tel"
                     name="phoneNumber"
-                    placeholder="Enter your phone number"
+                    placeholder={t("ContactUs.form.phone")}
                   />
                   <ErrorMessage
                     name="phoneNumber"
@@ -61,7 +60,7 @@ export default function Contact() {
                   <Field
                     type="email"
                     name="email"
-                    placeholder="Enter your Email"
+                    placeholder={t("ContactUs.form.email")}
                   />
                   <ErrorMessage
                     name="email"
@@ -69,7 +68,7 @@ export default function Contact() {
                     className={styles.error}
                   />
 
-                  <Field as="textarea" name="message" placeholder="Message" className={styles.texarea} />
+                  <Field as="textarea" name="message" placeholder={t("ContactUs.form.message")}  className={styles.texarea} />
                   <ErrorMessage
                     name="message"
                     component="p"
@@ -77,7 +76,7 @@ export default function Contact() {
                   />
                 </div>
                 <button type="submit" disabled={!isValid}>
-                  Submit
+                {t("ContactUs.form.submit")}
                 </button>
               </Form>
             )}

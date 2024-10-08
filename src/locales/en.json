@@ -41,26 +41,102 @@
     }
   },
   "gallery": {
+    "title": "Gallery",
     "section1": {
       "title": "Designed for Generations",
       "heading": "Style Your Sideboard",
       "description": "Our favorite sideboards and decors",
-      "text": "Sideboards, also known as buffets, have a rich history dating back to the 16th century in Europe. Originally, they were designed as simple wooden tables where food could be placed before being served in dining rooms. Over time, sideboards evolved to include drawers, cupboards, and other storage spaces, making them more functional for holding dishes, cutlery, and linens. Today, sideboards are still valued for their versatility and functionality, often used not only in dining rooms but also in living rooms and hallways."
+      "text": "Sideboards, also known as buffets, have a rich history dating back to the 16th century in Europe. Originally, they were designed as simple wooden tables where food could be placed before being served in dining rooms. Over time, sideboards evolved to include drawers, cupboards, and other storage spaces, making them more functional for holding dishes, cutlery, and linens. Today, sideboards are still valued for their versatility and functionality, often used not only in dining rooms but also in living rooms and hallways.",
+      "close": "Close"
     },
     "section2": {
       "title": "A Taste of Tradition",
       "heading": "Where Every Meal Becomes a Celebration",
       "description": "Our favorite dishess",
       "text": "Porcelain has a fascinating history that dates back over a thousand years, originating in China during the Tang Dynasty (618–907 AD). The Chinese were the first to develop the techniques for producing porcelain, which is a type of ceramic made from a mixture of kaolin clay and other minerals, fired at very high temperatures. This process results in a material that is both translucent and highly durable, setting porcelain apart from other ceramics."
+    },
+    "slider": {
+      "sliderTitle": "See More Images of Vintage Products"
     }
   },
+
+  "VintageSpotlight": {
+    "title": "Vintage Spotlight",
+    "Elegance": {
+      "title": "The Elegance of Victorian Porcelain",
+      "description": "Explore the history and craftsmanship of Victorian porcelain, a symbol of elegance in the 19th century."
+    },
+    "Mid-Century": {
+      "title": "Mid-Century Modern Furniture",
+      "description": "Discover the timeless appeal of mid-century modern furniture, known for its sleek lines and minimalist design."
+    },
+    "TheCharm": {
+      "title": " `The Charm of Vintage Cameras`",
+      "description": "Step back in time with our collection of vintage cameras, where form meets function in these beautifully crafted pieces that capture both moments and the essence of an era."
+    }
+  },
+
   "EmbraceVintage": {
     "vintage": "Embrace Vintage Elegance",
     "shop": "Shop now"
   },
-  "FollowUs":{
-    "followUsTitle":"Follow Us on Instagram",
-     "followUsText":"Be the first to know about new arrivals and exclusive offers!",
-     "followUsButton":"Follow Us "
-}
+  "FollowUs": {
+    "followUsTitle": "Follow Us on Instagram",
+    "followUsText": "Be the first to know about new arrivals and exclusive offers!",
+    "followUsButton": "Follow Us "
+  },
+  "ContactUs": {
+    "title": "Contact Us",
+    "formtext": "Contact us via the form  below & well get back to  you as soon as we can",
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Submit",
+      "errors": {
+        "username": "Please enter your Username",
+        "minimum":"Minimum username length 4",
+        "mail": "Please enter your email",
+        "incorect":"This isn't not correct email format",
+        "phone": "Phone number is required",
+        "contein": "Phone number can only contain numbers, +, -, and ()",
+        "toshort": "Phone number is too short",
+        "tolong": "Phone number is too long",
+        "short": "too short",
+            "long": "too long"
+      }
+    }
+  },
+
+  "footer": {
+    "about": {
+      "title": "About",
+      "text": "Discover timeless treasures at ABC Vintage in Prague. We offer a curated selection of vintage products."
+    },
+    "mainMenu": {
+      "title": "Main Menu",
+      "items": {
+        "home": "Home",
+        "aboutUs": "About Us",
+        "benefits": "Benefits",
+        "gallery": "Gallery",
+        "spotlight": "Spotlight",
+        "contact": "Contact"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email: ",
+      "emailAddress": "ABCvintage@mail.com",
+      "callUs": "Call Us: +123456789",
+      "address": "Address: Prague 1, Czech"
+    },
+    "followUs": "Follow Us",
+    "copyright": "Copyright © 2024 ABC Vintage. All rights reserved.",
+    "navLinks": {
+      "privacy": "Privacy Policy",
+      "cookiePreferences": "Cookie Preferences"
+    }
+  }
 }

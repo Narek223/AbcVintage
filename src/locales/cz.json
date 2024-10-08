@@ -18,50 +18,127 @@
     "section1Text": "ABC Vintage vzniklo z hluboké lásky k historii a vášně pro uchovávání krásy minulosti. Naše cesta začala na dlážděných ulicích Prahy, kde náš zakladatel, vášnivý sběratel starožitností, strávil roky sbíráním osobní kolekce pokladů z celé Evropy. To, co začalo jako osobní koníček, se rychle vyvinulo v misi: sdílet nadčasovou eleganci a řemeslné zpracování starožitností s širší veřejností.",
     "section2Text": "Od otevření našich dveří jsme se zavázali k tomu, že budeme vybírat pouze ty nejlepší starožitnosti, každou s vlastním jedinečným příběhem a kouzlem. Od pečlivě zpracovaného porcelánu až po ikonický nábytek ze středního století, naše kolekce odráží bohaté kulturní dědictví a umělecké tradice minulých epoch. Každý kus, který nabízíme, je vybrán ručně pro svou kvalitu, autentičnost a smysl pro nostalgii, který vyvolává."
   },
+
+  "benefits": {
+    "mainpart": {
+      "title": "Výhody",
+      "text": "Ve společnosti ABC Vintage věříme, že každý kus má svůj příběh. Ať už chcete do svého domova přidat dotek historie, nebo najít jedinečný předmět, který vynikne."
+    },
+    "curatedAuthenticity": {
+      "title": "Kurátorská autenticita",
+      "text": "Každá položka v naší kolekci je pečlivě vybírána a ověřována z hlediska pravosti, což zaručuje, že kupujete originální vintage kousky s bohatou historií."
+    },
+    "diverseSelection": {
+      "title": "Rozmanitý výběr",
+      "text": "Naše široká nabídka vintage produktů vyhovuje různým vkusům a stylům - od elegantního porcelánu a nadčasového nábytku až po jedinečné příbory a klasické oblečení."
+    },
+    "sustainableShopping": {
+      "title": "Udržitelné nákupy",
+      "text": "Výběrem vintage se hlásíte k udržitelnosti a přispíváte k ekologičtějšímu životnímu stylu tím, že snižujete množství odpadu a podporujete opětovné použití krásných, nadčasových předmětů."
+    },
+    "customerExperience": {
+      "title": "Zákaznický zážitek",
+      "text": "Nabízíme výjimečný zákaznický servis, osobní asistenci, která vám pomůže najít perfektní zboží, a podporu po celou dobu nakupování."
+    }
+  },
+
+  "gallery": {
+    "title": "Galerie",
+    "section1": {
+      "title": "Navrženo pro generace",
+      "heading": "Styl vašeho příborníku",
+      "description": "Naše oblíbené příborníky a dekory",
+      "text": "Příborníky, známé také jako bufety, mají v Evropě bohatou historii sahající až do 16. století. Původně byly navrženy jako jednoduché dřevěné stoly, na které se v jídelnách odkládaly pokrmy před servírováním. Postupem času se příborníky vyvinuly tak, že obsahovaly zásuvky, skříňky a další úložné prostory, takže se staly funkčnějšími pro uložení nádobí, příborů a prádla. Dnes jsou kredence stále ceněny pro svou všestrannost a funkčnost, často se používají nejen v jídelnách, ale také v obývacích pokojích a předsíních.",
+            "close":"Zavřít"
+    },
+    "section2": {
+      "title": "Chuť tradice",
+      "heading": "Kde se každé jídlo stává oslavou",
+      "description": "Naše oblíbená jídla",
+      "text": "Porcelán má fascinující historii starou více než tisíc let a vznikl v Číně za dynastie Tchang (618-907 n. l.). Číňané jako první vyvinuli techniku výroby porcelánu, což je druh keramiky vyráběný ze směsi kaolinové hlíny a dalších minerálů, vypalovaný při velmi vysokých teplotách. Výsledkem tohoto procesu je průsvitný a vysoce odolný materiál, který porcelán odlišuje od ostatní keramiky."
+    },
+    "slider": {
+      "sliderTitle": "Viz další obrázky vintage produktů"
+    }
+  },
+
+  "VintageSpotlight": {
+    "title":"Vintage Spotlight",
+    "Elegance": {
+      "title": "Elegance viktoriánského porcelánu",
+      "description": "Poznejte historii a řemeslné zpracování viktoriánského porcelánu, který byl v 19. století symbolem elegance."
+    },
+    "Mid-Century": {
+      "title": "Moderní nábytek z poloviny století",
+      "description": "Objevte nadčasový půvab moderního nábytku z poloviny století, který je známý svými elegantními liniemi a minimalistickým designem.."
+    },
+    "TheCharm": {
+      "title": " `Kouzlo historických fotoaparátů`",
+      "description": "Vraťte se v čase s naší kolekcí historických fotoaparátů, kde se forma snoubí s funkcí v těchto nádherně zpracovaných kouscích, které zachycují okamžiky i podstatu doby."
+    }
+  },
   
-       "benefits": {
-       "mainpart":{
-        "title":"Výhody",
-          "text":"Ve společnosti ABC Vintage věříme, že každý kus má svůj příběh. Ať už chcete do svého domova přidat dotek historie, nebo najít jedinečný předmět, který vynikne."
-       },
-         "curatedAuthenticity": {
-           "title": "Kurátorská autenticita",
-           "text": "Každá položka v naší kolekci je pečlivě vybírána a ověřována z hlediska pravosti, což zaručuje, že kupujete originální vintage kousky s bohatou historií."
-         },
-         "diverseSelection": {
-           "title": "Rozmanitý výběr",
-           "text": "Naše široká nabídka vintage produktů vyhovuje různým vkusům a stylům - od elegantního porcelánu a nadčasového nábytku až po jedinečné příbory a klasické oblečení."
-         },
-         "sustainableShopping": {
-           "title": "Udržitelné nákupy",
-           "text": "Výběrem vintage se hlásíte k udržitelnosti a přispíváte k ekologičtějšímu životnímu stylu tím, že snižujete množství odpadu a podporujete opětovné použití krásných, nadčasových předmětů."
-         },
-         "customerExperience": {
-           "title": "Zákaznický zážitek",
-           "text": "Nabízíme výjimečný zákaznický servis, osobní asistenci, která vám pomůže najít perfektní zboží, a podporu po celou dobu nakupování."
-         }
-       },
-       "gallery": {
-              "section1": {
-                "title": "Navrženo pro generace",
-                "heading": "Styl vašeho příborníku",
-                "description": "Naše oblíbené příborníky a dekory",
-                "text": "Příborníky, známé také jako bufety, mají v Evropě bohatou historii sahající až do 16. století. Původně byly navrženy jako jednoduché dřevěné stoly, na které se v jídelnách odkládaly pokrmy před servírováním. Postupem času se příborníky vyvinuly tak, že obsahovaly zásuvky, skříňky a další úložné prostory, takže se staly funkčnějšími pro uložení nádobí, příborů a prádla. Dnes jsou kredence stále ceněny pro svou všestrannost a funkčnost, často se používají nejen v jídelnách, ale také v obývacích pokojích a předsíních."
-              },
-              "section2": {
-                "title": "Chuť tradice",
-                "heading": "Kde se každé jídlo stává oslavou",
-                "description": "Naše oblíbená jídla",
-                "text": "Porcelán má fascinující historii starou více než tisíc let a vznikl v Číně za dynastie Tchang (618-907 n. l.). Číňané jako první vyvinuli techniku výroby porcelánu, což je druh keramiky vyráběný ze směsi kaolinové hlíny a dalších minerálů, vypalovaný při velmi vysokých teplotách. Výsledkem tohoto procesu je průsvitný a vysoce odolný materiál, který porcelán odlišuje od ostatní keramiky."
-              }
-            },
   "EmbraceVintage": {
     "vintage": "Přijměte vintage eleganci",
     "shop": "Nakupujte nyní"
   },
-  "FollowUs":{
-       "followUsTitle":"Sledujte nás na Instagramu",
-        "followUsText":"Buďte první, kdo se dozví o novinkách a exkluzivních nabídkách!",
-        "followUsButton":"Sledujte nás "
-  }
+
+  "FollowUs": {
+    "followUsTitle": "Sledujte nás na Instagramu",
+    "followUsText": "Buďte první, kdo se dozví o novinkách a exkluzivních nabídkách!",
+    "followUsButton": "Sledujte nás "
+  },
+
+  "ContactUs": {
+    "title": "Kontaktujte nás",
+    "formtext": "Kontaktujte nás prostřednictvím níže uvedeného formuláře a ozvěte se nám, jakmile to bude možné.",
+    "form": {
+      "name": "Název",
+      "phone": "Telefon",
+      "email": "Email",
+      "message": "Zpráva",
+      "submit": "Odeslat",
+      "errors": {
+        "username": "Zadejte prosím své uživatelské jméno",
+        "mail": "Zadejte prosím svůj e-mail",
+        "phone": "Vyžaduje se telefonní číslo",
+        "contein": "Telefonní číslo může obsahovat pouze čísla, +, - a ().",
+        "toshort": "Telefonní číslo je příliš krátké",
+        "tolong": "Telefonní číslo je příliš dlouhé",
+        "short": "příliš krátký"
+      }
+    }
+  },
+  
+    "footer": {
+      "about": {
+        "title": "O nás",
+        "text": "Objevte nadčasové poklady v ABC Vintage v Praze. Nabízíme pečlivě vybraný výběr vintage produktů."
+      },
+      "mainMenu": {
+        "title": "Hlavní Menu",
+        "items": {
+          "home": "Domov",
+          "aboutUs": "O nás",
+          "benefits": "Výhody",
+          "gallery": "Galerie",
+          "spotlight": "reflektor",
+          "contact": "Kontakt"
+        }
+      },
+      "contact": {
+        "title": "Kontakt",
+        "email": "E-mail: ",
+        "callUs": "Zavolejte nám: +123456789",
+        "address": "Adresa: Praha 1, Česko"
+      },
+      "followUs": "Sleduj nás",
+      "copyright": "Copyright © 2024 ABC Vintage. Všechna práva vyhrazena.",
+      "navLinks": {
+        "privacy": "Ochrana soukromí",
+        "cookiePreferences": "Preference cookies"
+      }
+    }
+  
+  
 }

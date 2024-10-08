@@ -12,9 +12,10 @@ import { sliderdata } from "../../../Services/data/Gallery/sliderimgdata";
 import Modal from "@mui/material/Modal";
 import { Box } from "@mui/material";
 import { gallerybreakpoints } from "../../../Services/data/Gallery/galleryBreakpoints";
+import { useTranslation } from 'react-i18next';
 
 export default function Slider() {
-
+  const { t } = useTranslation(); 
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [open, setOpen] = useState(false);
   const handleOpen = (index) => {
@@ -39,7 +40,7 @@ export default function Slider() {
   return (
     <div className={styles.galleryconteiner}>
       <h1 className={styles.slidertitle}>
-        See More Images of Vintage Products
+        {t("gallery.slider.sliderTitle")}
       </h1>
       <div className={styles.sliderconteiner}>
         <button className="custom-prev">
@@ -51,7 +52,6 @@ export default function Slider() {
           loop={true}
           pagination={{
             // el: '.swiper-pagination',
-    
             clickable: true,
           }}
           navigation={{
