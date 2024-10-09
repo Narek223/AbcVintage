@@ -13,6 +13,7 @@ import Modal from "@mui/material/Modal";
 import { Box } from "@mui/material";
 import { gallerybreakpoints } from "../../../Services/data/Gallery/galleryBreakpoints";
 import { useTranslation } from 'react-i18next';
+import {swiperstyles} from '../../../Services/data/swiperStyles'
 
 export default function Slider() {
   const { t } = useTranslation(); 
@@ -47,6 +48,7 @@ export default function Slider() {
           <MdKeyboardArrowLeft className={styles.icon} />
         </button>
         <Swiper
+        style={swiperstyles}
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           breakpoints={gallerybreakpoints}
           loop={true}

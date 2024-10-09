@@ -1,28 +1,24 @@
 .benefitscart {
   width: 360px;
   height: 340px;
-  background-color: #98896c;
+  background-color: rgb(152, 137, 108);
   border-radius: 0 50px 0 0;
   margin: 50px 10px;
   padding: 30px;
 }
-
+.benefitscart:hover {
+  cursor: grab;
+}
 .benefitscart .benefitsinfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10px 0;
   text-align: start;
 }
-
 .benefitscart .benefitsinfo h1 {
   padding: 0 13px;
   color: white;
 }
-
 .benefitscart p {
   text-align: start;
   font-weight: 400;
@@ -38,16 +34,18 @@
     width: 330px;
   }
 }
-
 @media screen and (max-width: 1750px) {
   .benefitscart {
     width: 300px;
   }
 }
-
 @media screen and (max-width: 1640px) {
   .benefitscart {
     width: 280px;
+  }
+  .benefitscart .benefitsinfo img {
+    width: 80px;
+    height: 80px;
   }
   .benefitscart .benefitsinfo h1 {
     padding: 0;
@@ -55,20 +53,20 @@
   .benefitscart p {
     font-size: 18px;
   }
+  .benefitscart p:lang(cz) {
+    font-size: 16px;
+  }
 }
-
 @media screen and (max-width: 1580px) {
   .benefitscart {
     width: 280px;
   }
 }
-
 @media screen and (max-width: 1450px) {
   .benefitscart {
     width: 300px;
   }
 }
-
 @media screen and (max-width: 1250px) {
   .benefitscart {
     width: 280px;
@@ -78,28 +76,27 @@
     height: 80px;
   }
 }
-
 @media screen and (max-width: 1020px) {
   .benefitscart {
     width: 250px;
   }
 }
-
 @media screen and (max-width: 1020px) {
   .benefitscart {
     width: 250px;
   }
 }
-
 @media screen and (max-width: 1000px) {
   .benefitscart {
-    width: 300px;
+    width: 350px;
+  }
+  .benefitscart .benefitsinfo h1:nth-of-type(1) {
+    padding: 0 50px 0 0;
   }
 }
-
 @media screen and (max-width: 840px) {
   .benefitscart {
-    width: 250px;
+    width: 90%;
     padding: 15px;
   }
   .benefitscart .benefitsinfo {
@@ -110,19 +107,14 @@
     height: 60px;
   }
 }
-
 @media screen and (max-width: 700px) {
   .benefitscart {
     width: 90%;
     padding: 15px;
   }
   .benefitscart .benefitsinfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     margin: 25px 0;
   }
   .benefitscart .benefitsinfo h1 {
@@ -134,7 +126,6 @@
     height: 60px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .benefitscart {
     width: 100%;
@@ -145,7 +136,6 @@
     height: 60px;
   }
 }
-
 @media screen and (max-width: 520px) {
   .benefitscart {
     width: 100%;
@@ -159,7 +149,6 @@
     font-size: 16px;
   }
 }
-
 @media screen and (max-width: 450px) {
   .benefitscart {
     width: 100%;
@@ -177,7 +166,6 @@
     font-size: 16px;
   }
 }
-
 @media screen and (max-width: 400px) {
   .benefitscart {
     width: 100%;
@@ -191,7 +179,6 @@
     font-size: 16px;
   }
 }
-
 @media screen and (max-width: 370px) {
   .benefitscart {
     width: 228px;
@@ -201,5 +188,4 @@
   .benefitscart p {
     font-size: 16px;
   }
-}
-/*# sourceMappingURL=benefitscart.module.css.map */
+}/*# sourceMappingURL=benefitscart.module.css.map */

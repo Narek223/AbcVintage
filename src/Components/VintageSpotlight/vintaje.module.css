@@ -2,50 +2,44 @@
   margin: 30px 0;
   padding: 20px 200px;
 }
-
 .vintageConteiner .vintagetitle h1 {
   font-family: "aurora";
   font-size: 64px;
-  color: #5d4037;
+  color: rgb(93, 64, 55);
   font-weight: 400;
 }
 
 @media screen and (max-width: 1450px) {
   .vintageConteiner {
-    padding: 0  100px;
+    padding: 0 100px;
   }
   .vintageConteiner .vintagetitle h1 {
     font-size: 50px;
   }
 }
-
 @media screen and (max-width: 1150px) {
   .vintageConteiner {
-    padding: 0  50px;
+    padding: 0 50px;
   }
 }
-
 @media screen and (max-width: 1010px) {
   .vintageConteiner {
-    padding: 0  20px;
+    padding: 0 20px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .vintageConteiner {
-    padding: 0  20px;
+    padding: 0 20px;
   }
   .vintageConteiner .vintagetitle h1 {
     font-size: 35px;
   }
 }
-
 @media screen and (max-width: 400px) {
   .vintageConteiner {
-    padding: 0  20px;
+    padding: 0 20px;
   }
   .vintageConteiner .vintagetitle h1 {
     font-size: 32px;
   }
-}
-/*# sourceMappingURL=vintaje.module.css.map */
+}/*# sourceMappingURL=vintaje.module.css.map */

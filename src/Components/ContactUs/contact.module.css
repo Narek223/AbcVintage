@@ -32,6 +32,9 @@
   line-height: 46px;
   color: rgb(93, 64, 55);
 }
+.contactconteiner .contactus .formconteiner .contactustitle h1:lang(cz) {
+  font-size: 25px;
+}
 .contactconteiner .contactus .formconteiner .formikConteiner {
   margin: 24px 0;
 }
@@ -89,6 +92,15 @@
   border: none;
 }
 
+@media screen and (max-width: 1810px) {
+  .contactconteiner .contactus .formconteiner .contactustitle h1 {
+    font-size: 34;
+    padding: 0;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle h1:lang(cz) {
+    font-size: 23px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .contactconteiner .contactus .formconteiner .contactustitle h1 {
     font-size: 30px;
@@ -97,8 +109,13 @@
 }
 @media screen and (max-width: 1530px) {
   .contactconteiner .contactus .formconteiner .contactustitle h1 {
-    font-size: 30px;
     padding: 0;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle h1:lang(eng) {
+    font-size: 30px;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle h1:lang(cz) {
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 1450px) {
@@ -110,8 +127,11 @@
   }
 }
 @media screen and (max-width: 1205px) {
-  .contactconteiner .contactus .formconteiner .contactustitle h1 {
+  .contactconteiner .contactus .formconteiner .contactustitle h1:lang(eng) {
     font-size: 30px;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle h1:lang(cz) {
+    font-size: 21px;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -163,8 +183,11 @@
   .contactconteiner .title {
     padding: 10px 0;
   }
-  .contactconteiner .contactus .formconteiner .contactustitle {
+  .contactconteiner .contactus .formconteiner .contactustitle:lang(eng) {
     padding: 0 50px;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle:lang(cz) {
+    padding: 0;
   }
   .contactconteiner .contactus .formconteiner .contactustitle h1 {
     line-height: 22px;
@@ -179,6 +202,12 @@
 @media screen and (max-width: 600px) {
   .contactconteiner .title h1 {
     font-size: 35px;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle h1:lang(eng) {
+    font-size: 18px;
+  }
+  .contactconteiner .contactus .formconteiner .contactustitle h1:lang(cz) {
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 420px) {

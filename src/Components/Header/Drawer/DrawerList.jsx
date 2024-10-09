@@ -9,6 +9,7 @@ import { socialMediaIcons } from "../../../Services/data/header/HeaderData";
 import { scrollToSection } from "../../../Functions/Header/scrollToSection";
 import styles from "../header.module.scss";
 import Divider from "@mui/material/Divider";
+import Change from "../../../shered_components/changelanguage/Change";
 
 export default function DrawerList({ navItems, showNavBar, show }) {
   return (
@@ -29,7 +30,7 @@ export default function DrawerList({ navItems, showNavBar, show }) {
         <Divider sx={{ backgroundColor: 'white' }} className={styles.divider} />
         <ListItem className={styles.navtext} disablePadding>
           <ListItemButton>
-            <ListItemText primary="Eng" />
+            <ListItemText primary={<Change/>} />
           </ListItemButton>
         </ListItem>
 

@@ -3,6 +3,8 @@ import styles from "./contact.module.scss";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { validationSchema } from "../../Functions/FormValidation/validation";
 import { useTranslation } from 'react-i18next';
+import i18n from "../../i18n";
+
 
 export default function Contact() {
   const { t } = useTranslation(); 
@@ -23,7 +25,7 @@ export default function Contact() {
       <div className={styles.contactus}>
         <div className={styles.formconteiner}>
           <div className={styles.contactustitle}>
-          <h1>{t("ContactUs.formtext")}</h1>
+          <h1 lang={i18n.language}>{t("ContactUs.formtext")}</h1>
           </div>
          
           <Formik

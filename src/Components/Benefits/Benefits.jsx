@@ -9,9 +9,10 @@ import { benefitsBreakpoints } from "../../Services/data/benefits/breakpoints";
 import "swiper/css";
 import "swiper/css/pagination";
 import { useTranslation } from 'react-i18next';
+import {swiperstyles} from '../../Services/data/swiperStyles'
+
 
 export default function Benefits() {
-
 
 let benefits =useBenefitsData()
 const { t } = useTranslation(); 
@@ -28,13 +29,7 @@ const { t } = useTranslation();
       <Swiper
         className={styles.swiper}
         
-        style={{
-          "--swiper-pagination-color": "black",
-          "--swiper-pagination-bullet-inactive-color": "red",
-          "--swiper-pagination-bullet-inactive-opacity": "1",
-          "--swiper-pagination-bullet-size": "16px",
-          "--swiper-pagination-bullet-horizontal-gap": "6px",
-        }}
+        style={swiperstyles}
         modules={[Pagination]}
         pagination={{
           bulletClass: `swiper-pagination-bullet ${styles["feature-pagination"]}`,

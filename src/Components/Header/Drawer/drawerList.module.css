@@ -1,52 +1,35 @@
 .socialicons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 8px 16px;
 }
-
 .socialicons li {
   list-style: none;
   padding: 0 8px 0 0;
 }
-
 .socialicons img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: auto;
   width: auto;
 }
 
 .listconteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: start;
 }
 
 .navtext {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 21px;
   text-align: start;
   font-weight: 400;
   color: white;
 }
-
 .navtext ul {
   width: 80%;
 }
-
 .navtext ul li {
   font-size: 19px;
 }
@@ -55,7 +38,7 @@
   width: 24px;
   height: 24px;
   font-size: 24px;
-  color: #0b0a0a;
+  color: rgb(11, 10, 10);
   cursor: pointer;
 }
 
@@ -65,14 +48,7 @@
 
 .box {
   padding: 30px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-/*# sourceMappingURL=drawerList.module.css.map */
+  align-items: baseline;
+  justify-content: space-between;
+}/*# sourceMappingURL=drawerList.module.css.map */

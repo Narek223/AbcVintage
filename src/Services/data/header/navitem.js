@@ -1,3 +1,7 @@
+
+
+
+
 export let navItems = [
     { name: "Home", ref: home },
     { name: "About Us", ref: aboutRef },

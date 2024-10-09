@@ -31,6 +31,10 @@
           font-size: 36px;
           line-height: 46px;
           color: rgba(93, 64, 55);
+          &:lang(cz) {
+            font-size: 25px;
+          }
+
         }
       }
 
@@ -99,7 +103,23 @@
     }
   }
 }
-
+@media screen and (max-width: 1810px) {
+  .contactconteiner {
+    .contactus {
+      .formconteiner {
+        .contactustitle {
+          h1 {
+           font-size: 34;
+            &:lang(cz) {
+              font-size: 23px;
+            }
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 1600px) {
   .contactconteiner {
     .contactus {
@@ -111,10 +131,7 @@
           }
         }
       }
-      .mapconteiner {
-        .map {
-        }
-      }
+     
     }
   }
 }
@@ -124,13 +141,14 @@
       .formconteiner {
         .contactustitle {
           h1 {
-            font-size: 30px;
+            &:lang(eng){
+              font-size: 30px;
+            }
+            &:lang(cz) {
+              font-size: 22px;
+            }
             padding: 0;
           }
-        }
-      }
-      .mapconteiner {
-        .map {
         }
       }
     }
@@ -164,7 +182,15 @@
       .formconteiner {
         .contactustitle {
           h1 {
-            font-size: 30px;
+        
+            &:lang(eng){
+              font-size: 30px;
+            }
+          
+            &:lang(cz) {
+              font-size: 21px;
+            }
+            
           }
         }
       }
@@ -248,7 +274,13 @@
     .contactus {
       .formconteiner {
         .contactustitle {
-          padding: 0 50px;
+          &:lang(eng){
+            padding: 0 50px;
+            }
+            &:lang(cz) {
+              padding: 0;
+            }
+       
           h1 {
             line-height: 22px;
             font-size: 18px;
@@ -269,6 +301,25 @@
     .title {
       h1 {
         font-size: 35px;
+        
+      }
+    }
+    .contactus {
+      .formconteiner {
+        .contactustitle {
+         
+         
+          h1 {
+            &:lang(eng){
+              font-size: 18px;
+            }
+            &:lang(cz) {
+              font-size: 17px;
+            }
+           
+        
+          }
+        }
       }
     }
   }

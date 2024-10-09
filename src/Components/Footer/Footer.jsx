@@ -2,23 +2,19 @@ import React from "react";
 import styles from "./footer.module.scss";
 import logo from "../../assets/footer/footerlogo.png";
 import { socialMediaIcons } from "../../Services/data/header/HeaderData";
-import { useTranslation } from 'react-i18next'; 
+import { useTranslation } from "react-i18next";
 import Change from "../../shered_components/changelanguage/Change";
 
 export default function Footer() {
+  const { t } = useTranslation();
 
-
-  const { t } = useTranslation(); 
-  
   return (
     <div className={styles.footerContainer}>
       <div className={styles.one}>
         <div className={styles.footer}>
           <div className={styles.about}>
             <h1>{t("footer.about.title")}</h1>
-            <p>
-            {t("footer.about.text")}
-            </p>
+            <p>{t("footer.about.text")}</p>
           </div>
 
           <div className={styles.mainMenu}>
@@ -43,18 +39,22 @@ export default function Footer() {
 
           <div className={styles.contact}>
             <h1>{t("footer.contact.title")}</h1>
-            <p>{t("footer.contact.email")}<a href="mailto:ABCvintage@gmail.com"/> ABCvintage@mail.com<a/></p>
-            <p>{t("footer.contact.callUs")}</p>
+            <p>
+              {t("footer.contact.email")}
+              <a href="mailto:ABCvintage@gmail.com">ABCvintage@gmail.com</a>
+            </p>
+
+            <p> <a href="tel:+37493555566">{t("footer.contact.callUs")} </a></p>
             <p>{t("footer.contact.address")}</p>
           </div>
 
           <div className={styles.follow}>
             <h1>{t("footer.followUs")}</h1>
-            
+
             {socialMediaIcons.map((icon) => (
               <div key={icon.id} className={styles.socialItem}>
-                <img src={icon.src} alt={icon.alt} /> 
-              <p> {icon.text}</p> 
+                <img src={icon.src} alt={icon.alt} />
+                <p> {icon.text}</p>
               </div>
             ))}
           </div>
@@ -67,11 +67,9 @@ export default function Footer() {
           <p>{t("footer.copyright")}</p>
         </div>
         <div className={styles.navlinks}>
-
           <nav>
             <ul>
-             
-              <Change/>
+              <Change />
               <li>{t("footer.navLinks.privacy")}</li>
               <li>{t("footer.navLinks.privacy")}</li>
             </ul>

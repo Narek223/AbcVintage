@@ -2,8 +2,12 @@ export let benefitsBreakpoints={
     1550: {
         slidesPerView: 4,
       },
-      1000: {
+      1100:{
         slidesPerView: 3.5,
+        spaceBetween: 0,
+      },
+      1000: {
+        slidesPerView: 3,
         spaceBetween: 0,
       },
       700: {

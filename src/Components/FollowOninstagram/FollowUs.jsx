@@ -7,6 +7,7 @@ import { Autoplay } from "swiper/modules";
 import { swiperbreakpoints } from '../../Services/data/followoninstagram/breakpoints';
 import "swiper/css";
 import { useTranslation } from 'react-i18next';
+import i18n from "../../i18n";
 
 export default function FollowUs() {
   const { t } = useTranslation();
@@ -16,8 +17,8 @@ export default function FollowUs() {
   return (
     <div className={styles.followusContainer}>
       <div className={styles.followusText}>
-        <h1>{t('FollowUs.followUsTitle')}</h1>
-        <p>{t('FollowUs.followUsText')}</p>
+        <h1 lang={i18n.language}>{t('FollowUs.followUsTitle')}</h1>
+        <p lang={i18n.language}>{t('FollowUs.followUsText')}</p>
         <button>
           <RiInstagramLine className={styles.icon} /> {t('FollowUs.followUsButton')}
         </button>

@@ -50,12 +50,12 @@ export default function Header({
   };
 
   let navItems = [
-    { name: "Home", ref: home },
-    { name: "About Us", ref: aboutRef },
-    { name: "Benefits", ref: benefits },
-    { name: "Gallery", ref: gallery },
-    { name: "Spotlight", ref: Spotlight },
-    { name: "Contact", ref: contact },
+    { name:t("header.home"), ref: home },
+    { name: t("header.about"), ref: aboutRef },
+    { name: t("header.benefits"), ref: benefits },
+    { name: t("header.gallery"), ref: gallery },
+    { name: t("header.spotlight"), ref: Spotlight },
+    { name: t("header.contact"), ref: contact },
   ];
 
   return (

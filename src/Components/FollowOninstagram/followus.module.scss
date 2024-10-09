@@ -90,6 +90,7 @@
       }
       p {
         font-size: 25px;
+        
       }
     }
   }
@@ -101,6 +102,10 @@
 
       h1 {
         font-size: 30px;
+       
+        &:lang(cz){
+          font-size: 32px;
+        }
       }
       button {
         font-size: 18px;
@@ -108,7 +113,7 @@
     }
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   .followusContainer {
    
     .followusText {
@@ -119,8 +124,13 @@
       }
       h1 {
         padding: 0;
-        font-size: 32px;
         line-height: 38px;
+        &:lang(eng){
+          font-size: 32px;
+        }
+        &:lang(cz){
+          font-size: 25px;
+        }
       }
       button {
         font-size: 16px;

@@ -1,53 +1,41 @@
 .abcVintageLove {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 700px;
   margin: 50px 0;
 }
-
 .abcVintageLove:nth-child(2) .aboutUsHistory {
   margin: 0 30px 0 0;
   padding: 120px 0px 30px 20px;
 }
-
 .abcVintageLove.reversed {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 .abcVintageLove .vintageimg img {
   width: 890px;
   height: 700px;
 }
-
 .abcVintageLove .aboutUsHistory {
   margin: 0 30px;
   width: 606px;
   height: 700px;
 }
-
 .abcVintageLove .aboutUsHistory h1 {
   font-weight: 400;
   font-size: 64px;
-  color: #5d4037;
+  color: rgb(93, 64, 55);
   margin: 30px 0;
   font-family: "aurora";
 }
-
 .abcVintageLove .aboutUsHistory p {
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
   padding: 15px 0;
   opacity: 80%;
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: start;
 }
-
 .abcVintageLove .aboutUsHistory img {
   height: 255px;
 }
@@ -60,7 +48,6 @@
     height: 245px;
   }
 }
-
 @media screen and (max-width: 1690px) {
   .abcVintageLove .aboutUsHistory {
     width: 550px;
@@ -69,7 +56,6 @@
     height: 235px;
   }
 }
-
 @media screen and (max-width: 1630px) {
   .abcVintageLove .vintageimg img {
     width: 700px;
@@ -78,7 +64,6 @@
     height: 215px;
   }
 }
-
 @media screen and (max-width: 1540px) {
   .abcVintageLove .vintageimg img {
     width: 700px;
@@ -88,14 +73,13 @@
     line-height: 25px;
     padding: 15px 0;
     opacity: 80%;
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: start;
   }
   .abcVintageLove .aboutUsHistory img {
     height: 215px;
   }
 }
-
 @media screen and (max-width: 1500px) {
   .abcVintageLove:nth-child(1) .aboutUsHistory {
     margin: 0 0 0 30px;
@@ -105,7 +89,7 @@
     line-height: 25px;
     padding: 15px 0;
     opacity: 80%;
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: start;
   }
   .abcVintageLove .aboutUsHistory h1 {
@@ -115,7 +99,6 @@
     height: 200px;
   }
 }
-
 @media screen and (max-width: 1390px) {
   .abcVintageLove:nth-child(2) .aboutUsHistory {
     margin: 0 30px 0 0;
@@ -129,7 +112,6 @@
     height: 180px;
   }
 }
-
 @media screen and (max-width: 1080px) {
   .abcVintageLove .aboutUsHistory h1 {
     margin: 10px 0;
@@ -138,13 +120,9 @@
     height: 150px;
   }
 }
-
 @media screen and (max-width: 1010px) {
   .abcVintageLove {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     height: auto;
   }
   .abcVintageLove:nth-child(1) .aboutUsHistory {
@@ -164,10 +142,7 @@
     padding: 0;
   }
   .abcVintageLove.reversed {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .abcVintageLove .vintageimg:nth-child(2) img {
     padding: 0 0 0 20px;
@@ -191,7 +166,6 @@
     display: none;
   }
 }
-
 @media screen and (max-width: 750px) {
   .abcVintageLove {
     margin: 0;
@@ -201,7 +175,6 @@
     height: 500px;
   }
 }
-
 @media screen and (max-width: 450px) {
   .abcVintageLove {
     margin: 0;
@@ -217,7 +190,6 @@
     font-size: 45px;
   }
 }
-
 @media screen and (max-width: 400px) {
   .abcVintageLove {
     margin: 0;
@@ -231,5 +203,4 @@
   .abcVintageLove .aboutUsHistory h1 {
     font-size: 32px;
   }
-}
-/*# sourceMappingURL=aboutusitem.module.css.map */
+}/*# sourceMappingURL=aboutusItem.module.css.map */
