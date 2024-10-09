@@ -1,6 +1,18 @@
 .footerContainer {
   background-color: rgb(152, 137, 108);
 }
+.footerContainer.czStyles .one .footer .contact {
+  width: 320px;
+}
+.footerContainer.czStyles .copyrightConteiner {
+  gap: 0;
+}
+.footerContainer.czStyles .copyrightConteiner .copyright p {
+  font-size: 20px;
+}
+.footerContainer.czStyles .copyrightConteiner .navlinks ul li {
+  font-size: 20px;
+}
 .footerContainer .one .footer {
   display: flex;
   padding: 64px 200px;
@@ -125,6 +137,17 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1645px) {
+  .czStyles .one .footer .mainMenu {
+    width: 200px;
+  }
+  .czStyles .copyrightConteiner h1 {
+    font-size: 40px;
+  }
+  .czStyles .copyrightConteiner .copyright {
+    gap: 50px;
+  }
+}
 @media screen and (max-width: 1605px) {
   .footerContainer .one .footer .about p {
     width: 80%;
@@ -138,6 +161,17 @@
   }
   .footerContainer .copyrightConteiner .copyright {
     gap: 50px;
+  }
+}
+@media screen and (max-width: 1570px) {
+  .czStyles .copyrightConteiner .copyright p {
+    font-size: 18px;
+  }
+  .czStyles .copyrightConteiner .copyright h1 {
+    font-size: 33px;
+  }
+  .czStyles .copyrightConteiner .navlinks ul li {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 1550px) {

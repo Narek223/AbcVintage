@@ -80,6 +80,7 @@
     flex-wrap: nowrap;
   }
   .homepageconteiner .welcometoAbc {
+    justify-content: center;
     padding: 10px 0;
     height: 650px;
   }

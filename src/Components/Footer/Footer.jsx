@@ -4,12 +4,19 @@ import logo from "../../assets/footer/footerlogo.png";
 import { socialMediaIcons } from "../../Services/data/header/HeaderData";
 import { useTranslation } from "react-i18next";
 import Change from "../../shered_components/changelanguage/Change";
+import i18n from "../../i18n";
 
 export default function Footer() {
   const { t } = useTranslation();
 
+  const currentLang = i18n.language; 
+
   return (
-    <div className={styles.footerContainer}>
+    <div
+      className={`${styles.footerContainer} ${
+        currentLang === "cz" ? styles.czStyles : ""
+      }`}
+    >
       <div className={styles.one}>
         <div className={styles.footer}>
           <div className={styles.about}>
