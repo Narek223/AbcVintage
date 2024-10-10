@@ -57,6 +57,8 @@ export default function Footer() {
 
           <div className={styles.follow}>
             <h1>{t("footer.followUs")}</h1>
+<div className={styles.socialMediaicons}>
+
 
             {socialMediaIcons.map((icon) => (
               <div key={icon.id} className={styles.socialItem}>
@@ -64,6 +66,7 @@ export default function Footer() {
                 <p> {icon.text}</p>
               </div>
             ))}
+            </div>
           </div>
         </div>
       </div>

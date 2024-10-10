@@ -1,1 +1,9 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"sideboard.module.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "sideboard.module.scss"
+    ],
+    "names": [],
+    "file": "sideboard.module.css"
+}
