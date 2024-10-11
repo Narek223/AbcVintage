@@ -23,10 +23,16 @@
         flex-direction: row-reverse;
     }
     .vintageimg {
+     
         img {
+            overflow: hidden; 
             width: 890px;
             height: 700px;
+         
         }
+
+     
+    
     }
     .aboutUsHistory {
         margin: 0 30px;

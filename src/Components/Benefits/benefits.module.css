@@ -5,7 +5,7 @@
 }
 .benefitsConteiner .title {
   width: 100%;
-  min-height: 100px;
+  max-height: 150px;
 }
 .benefitsConteiner .title h1 {
   font-family: "aurora";
@@ -19,6 +19,14 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  transform: translateY(158px);
+}
+.benefitsConteiner .title .text.visible {
+  transform: translateY(0);
+  opacity: 1;
 }
 .benefitsConteiner .title .text p {
   width: 50%;

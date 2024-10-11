@@ -5,7 +5,7 @@
     "benefits": "Výhody",
     "gallery": "Galerie",
     "contact": "Kontakt",
-    "spotlight": "V centru pozornosti",
+    "spotlight": "reflektor",
     "call": "Zavolejte nám"
   },
 
@@ -139,6 +139,4 @@
         "cookiePreferences": "Preference cookies"
       }
     }
-  
-  
 }

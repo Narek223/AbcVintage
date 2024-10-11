@@ -1,6 +1,18 @@
 .footerContainer {
   background-color: rgb(152, 137, 108);
 }
+.footerContainer.czStyles .one .footer .contact {
+  width: 320px;
+}
+.footerContainer.czStyles .copyrightConteiner {
+  gap: 0;
+}
+.footerContainer.czStyles .copyrightConteiner .copyright p {
+  font-size: 20px;
+}
+.footerContainer.czStyles .copyrightConteiner .navlinks ul li {
+  font-size: 20px;
+}
 .footerContainer .one .footer {
   display: flex;
   padding: 64px 200px;
@@ -74,14 +86,19 @@
   flex-direction: column;
   gap: 18px;
 }
-.footerContainer .one .footer .follow .socialItem {
+.footerContainer .one .footer .follow .socialMediaicons {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footerContainer .one .footer .follow .socialMediaicons .socialItem {
   color: white;
   font-size: 22px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.footerContainer .one .footer .follow .socialItem img {
+.footerContainer .one .footer .follow .socialMediaicons .socialItem img {
   width: 24px;
   height: 24px;
   -o-object-fit: contain;
@@ -125,6 +142,17 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1645px) {
+  .czStyles .one .footer .mainMenu {
+    width: 200px;
+  }
+  .czStyles .copyrightConteiner h1 {
+    font-size: 40px;
+  }
+  .czStyles .copyrightConteiner .copyright {
+    gap: 50px;
+  }
+}
 @media screen and (max-width: 1605px) {
   .footerContainer .one .footer .about p {
     width: 80%;
@@ -140,15 +168,35 @@
     gap: 50px;
   }
 }
+@media screen and (max-width: 1570px) {
+  .footerContainer.czStyles .copyrightConteiner .copyright p {
+    font-size: 18px;
+  }
+  .footerContainer.czStyles .copyrightConteiner .copyright h1 {
+    font-size: 33px;
+  }
+  .footerContainer.czStyles .copyrightConteiner .navlinks ul li {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 1550px) {
   .footerContainer .one h1 {
+    font-size: 30px;
+  }
+  .footerContainer .one h1:lang(cz) {
     font-size: 30px;
   }
   .footerContainer .one p {
     font-size: 21px;
   }
+  .footerContainer .one p:lang(cz) {
+    font-size: 18px;
+  }
   .footerContainer .one .footer p {
     font-size: 20px;
+  }
+  .footerContainer .one .footer p:lang(cz) {
+    font-size: 18px;
   }
   .footerContainer .one .footer .mainMenu {
     width: 190px;
@@ -171,13 +219,22 @@
     justify-content: space-between;
     padding: 0 100px;
   }
-  .footerContainer .copyrightConteiner .copyright {
+  .footerContainer .copyrightConteiner:lang(cz) .copyright {
+    gap: 0;
+  }
+  .footerContainer .copyrightConteiner .copyright:lang(eng) {
     gap: 120px;
+  }
+  .footerContainer .copyrightConteiner .copyright:lang(cz) {
+    gap: 10px;
   }
 }
 @media screen and (max-width: 1330px) {
   .footerContainer .one .footer p {
     font-size: 18px;
+  }
+  .footerContainer .one .footer .about:lang(cz) {
+    width: 200px;
   }
   .footerContainer .one .footer .about p {
     width: 85%;
@@ -191,11 +248,25 @@
   .footerContainer .one .footer .mainMenu nav ul li {
     font-size: 18px;
   }
+  .footerContainer .one .footer .mainMenu nav ul li:lang(cz) {
+    margin: 0 10px;
+  }
   .footerContainer .copyrightConteiner .copyright p {
     font-size: 18px;
   }
   .footerContainer .copyrightConteiner .navlinks nav ul li {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .footerContainer.czStyles .footer .about {
+    width: 200px;
+  }
+  .footerContainer.czStyles .footer .mainMenu {
+    width: 200px;
+  }
+  .footerContainer.czStyles .copyrightConteiner .navlinks ul li {
+    margin: 0;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -221,6 +292,29 @@
   }
   .footerContainer .copyrightConteiner .navlinks nav ul li {
     margin: 0 10px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .footerContainer.czStyles .one .footer .mainMenu {
+    width: 170px;
+  }
+  .footerContainer.czStyles .copyrightConteiner .copyright {
+    gap: 20px;
+  }
+  .footerContainer.czStyles .copyrightConteiner .navlinks ul li {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1048px) {
+  .footerContainer.czStyles .copyrightConteiner .copyright {
+    gap: 20px;
+  }
+  .footerContainer.czStyles .copyrightConteiner .copyright p {
+    font-size: 16px;
+  }
+  .footerContainer.czStyles .copyrightConteiner .navlinks ul li {
+    font-size: 16px;
+    margin: 0;
   }
 }
 @media screen and (max-width: 1038px) {
@@ -250,7 +344,7 @@
   }
   .footerContainer .one .footer .about {
     width: 100%;
-    height: 200px;
+    height: 150px;
   }
   .footerContainer .one .footer .about h1 {
     text-align: center;

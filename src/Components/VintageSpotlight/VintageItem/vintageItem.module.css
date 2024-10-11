@@ -17,9 +17,6 @@
   width: 100%;
   height: auto;
 }
-.vintageItem .imageContainer img:hover {
-  transform: scale(1.2);
-}
 .vintageItem .info {
   width: 617px;
   padding: 0 30px;

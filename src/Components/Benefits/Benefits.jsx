@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BenefitsImg from "../../assets/Benefits/Benefits.png";
 import styles from "./benefits.module.scss";
 import BenefitsCart from "./BenefitsCart/BenefitsCart";
@@ -13,14 +13,13 @@ import {swiperstyles} from '../../Services/data/swiperStyles'
 
 
 export default function Benefits() {
-
+// let [deley,setdeley]=useState()
 let benefits =useBenefitsData()
 const { t } = useTranslation(); 
 
   return (
     <div className={styles.benefitsConteiner}>
       <div className={styles.title}>
-        {/* <img src={BenefitsImg} /> */}
         <h1>{t("benefits.mainpart.title")}</h1>
         <div className={styles.text}>
           <p>{t("benefits.mainpart.text")} </p>
@@ -35,14 +34,13 @@ const { t } = useTranslation();
           bulletClass: `swiper-pagination-bullet ${styles["feature-pagination"]}`,
           clickable: true,
         }}
-
         spaceBetween={10}
         breakpoints={benefitsBreakpoints}>
         <div className={styles.benefitsdata}>
           {benefits.map((elem) => (
             <SwiperSlide className={styles.swiperslider} key={elem.id}>
 
-              <BenefitsCart key={elem.id} data={elem} />
+              <BenefitsCart key={elem.id} data={elem} deley={elem.id} />
             </SwiperSlide>
           ))}
         </div>

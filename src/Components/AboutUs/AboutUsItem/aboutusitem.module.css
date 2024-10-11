@@ -12,6 +12,7 @@
   flex-direction: row-reverse;
 }
 .abcVintageLove .vintageimg img {
+  overflow: hidden;
   width: 890px;
   height: 700px;
 }
@@ -203,4 +204,4 @@
   .abcVintageLove .aboutUsHistory h1 {
     font-size: 32px;
   }
-}/*# sourceMappingURL=aboutusItem.module.css.map */
+}/*# sourceMappingURL=aboutusitem.module.css.map */

@@ -72,14 +72,16 @@
 }
 @media screen and (max-width: 1010px) {
   .homepageconteiner {
+    padding: 0;
     height: 100%;
-    padding: 0 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
   }
   .homepageconteiner .welcometoAbc {
+    padding: 0 20px;
+    justify-content: center;
     padding: 10px 0;
     height: 650px;
   }
@@ -94,7 +96,8 @@
     font-size: 45px;
   }
   .homepageconteiner .imgbox {
-    width: 100vw;
+    padding: 0;
+    width: 100%;
   }
   .homepageconteiner .imgbox .vintageimg {
     height: auto;

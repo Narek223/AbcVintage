@@ -1,3 +1,7 @@
+.animtation{
+  background-color: black;
+    }
+
 .benefitscart {
   width: 360px;
   height: 340px;
@@ -5,7 +9,8 @@
   border-radius: 0 50px 0 0;
   margin: 50px 10px;
   padding: 30px;
-  
+
+ 
   &:hover{
     cursor: grab;
   }

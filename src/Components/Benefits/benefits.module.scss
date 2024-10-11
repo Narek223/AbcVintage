@@ -4,7 +4,7 @@
     height: 725px;
     .title {
         width: 100%;
-        min-height: 100px;
+        max-height: 150px;
         h1 {
             font-family: "aurora";
             font-size: 64px;
@@ -17,6 +17,15 @@
             align-items: center;
             justify-content: center;
             width: 100%;
+      overflow: hidden;
+                opacity: 0;
+                transition: opacity 2s ease-in-out;
+                transform: translateY(158px);
+              
+                &.visible {
+                    transform: translateY(0);
+                  opacity: 1;
+                }
             p {
                 width: 50%;
                 font-weight: 400;

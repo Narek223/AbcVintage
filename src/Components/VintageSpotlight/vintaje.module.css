@@ -17,19 +17,16 @@
     font-size: 50px;
   }
 }
-
 @media screen and (max-width: 1150px) {
   .vintageConteiner {
     padding: 0 50px;
   }
 }
-
 @media screen and (max-width: 1010px) {
   .vintageConteiner {
     padding: 0 20px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .vintageConteiner {
     padding: 0 20px;
