@@ -8,8 +8,8 @@ export default function Home() {
   const { t} = useTranslation();
 
   return (
-    <div className={styles.homepageconteiner}>
-      <div className={styles.welcometoAbc}>
+    <div   className={styles.homepageconteiner}>
+      <div     data-aos-duration="2000"   data-aos="fade-right" className={styles.welcometoAbc}>
         <img src={AbcVintageImg} />
         <h1>{t('home.welcome')}</h1>
         <p>{t("home.text")}</p>

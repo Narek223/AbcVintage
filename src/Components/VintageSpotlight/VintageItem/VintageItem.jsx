@@ -7,7 +7,10 @@ export default function VintageItem({ data }) {
 
   return (
     <div
-      className={`${styles.vintageItem} ${isReversed ? styles.reversed : ""}`}>
+    data-aos="fade-right"
+    data-aos-duration="1000"  data-aos-once="true" 
+      className={`${styles.vintageItem} ${isReversed ? styles.reversed : ""}   data-aos="fade-left"
+    data-aos-duration="1000" data-aos-once="true"  ` }>
       <div className={styles.imageContainer}>
         <img src={imgSrc} alt={title} />
       </div>

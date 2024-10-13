@@ -9,7 +9,7 @@ export let gallerybreakpoints={
       },
       800:{
         slidesPerView:1.5,
-        spaceBetween: 5,
+        spaceBetween: 10,
       },
 
       320:{
@@ -17,6 +17,5 @@ export let gallerybreakpoints={
         spaceBetween: 15,
  
       }
-      
 
 }

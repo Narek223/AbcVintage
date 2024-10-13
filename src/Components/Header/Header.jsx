@@ -19,19 +19,45 @@ export default function Header({
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [show, setShow] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
   let ref = useRef();
   const { t } = useTranslation();
+
+
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
+
+      const sections = [
+        { id: "home", ref: home },
+        { id: "about", ref: aboutRef },
+        { id: "benefits", ref: benefits },
+        { id: "gallery", ref: gallery },
+        { id: "spotlight", ref: Spotlight },
+        { id: "contact", ref: contact },
+      ];
+
+      const currentSection = sections.find(({ ref }) => {
+        const sectionTop = ref.current.getBoundingClientRect().top;
+        return sectionTop <= 100 && sectionTop >= -100; 
+      });
+
+      if (currentSection) {
+        setActiveSection(currentSection.id); 
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [home, aboutRef, benefits, gallery, Spotlight, contact]);
 
+
+
+
+  
   const handleResize = () => {
     if (window.innerWidth > 1000 && show) {
       setShow(false);
@@ -50,12 +76,12 @@ export default function Header({
   };
 
   let navItems = [
-    { name:t("header.home"), ref: home },
-    { name: t("header.about"), ref: aboutRef },
-    { name: t("header.benefits"), ref: benefits },
-    { name: t("header.gallery"), ref: gallery },
-    { name: t("header.spotlight"), ref: Spotlight },
-    { name: t("header.contact"), ref: contact },
+    { name: t("header.home"), id: "home", ref: home },
+    { name: t("header.about"), id: "about", ref: aboutRef },
+    { name: t("header.benefits"), id: "benefits", ref: benefits },
+    { name: t("header.gallery"), id: "gallery", ref: gallery },
+    { name: t("header.spotlight"), id: "spotlight", ref: Spotlight },
+    { name: t("header.contact"), id: "contact", ref: contact },
   ];
 
   return (
@@ -97,25 +123,16 @@ export default function Header({
                   show ? styles.openNavBar : styles.closeNavBar
                 }`}
               >
-                <li onClick={() => scrollToSection(home)}>
-                  {t("header.home")}
-                </li>
-                <li onClick={() => scrollToSection(aboutRef)}>
-                  {t("header.about")}
-                </li>
-                <li onClick={() => scrollToSection(benefits)}>
-                  {t("header.benefits")}
-                </li>
-                <li onClick={() => scrollToSection(gallery)}>
-                  {t("header.gallery")}
-                </li>
-                <li onClick={() => scrollToSection(Spotlight)}>
-                  {t("header.spotlight")}
-                </li>
-                <li onClick={() => scrollToSection(contact)}>
-                  {t("header.contact")}
-                </li>
-                {show === false ? null : <Change/>}
+                {navItems.map(({ name, id, ref }) => (
+                  <li
+                    key={id}
+                    onClick={() => scrollToSection(ref)}
+                    className={activeSection === id ? styles.active : ""}
+                  >
+                    {name}
+                  </li>
+                ))}
+                {show === false ? null : <Change />}
                 {show === false ? null : (
                   <ul className={styles.socialicons}></ul>
                 )}

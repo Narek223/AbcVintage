@@ -13,7 +13,7 @@ import {swiperstyles} from '../../Services/data/swiperStyles'
 
 
 export default function Benefits() {
-// let [deley,setdeley]=useState()
+
 let benefits =useBenefitsData()
 const { t } = useTranslation(); 
 

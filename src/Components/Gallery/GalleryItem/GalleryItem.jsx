@@ -11,12 +11,12 @@ export default function GalleryItem({ data }) {
   const { t } = useTranslation(); 
   
   return (
-    <div
-      className={`${styles.galleryConteiner} ${
+    <div data-aos="zoom-in"
+    data-aos-duration="1000"  data-aos-delay="300"  data-aos-once="true"  className={`${styles.galleryConteiner} ${
         isReversed ? styles.reversed : null
       }`}
     >
-      <div className={styles.Sideboard}>
+      <div   className={styles.Sideboard}>
         <div className={styles.sideboardText}>
           <p>{title}</p>
           <h1>{heading}</h1>

@@ -3,8 +3,11 @@
   height: 800px;
   width: 100%;
   background-image: url("../../assets/EmbraceVintage/EmbraceVintage.png");
+  overflow: hidden;
   background-position: center;
   position: relative;
+  transition: transform 0.8s ease, filter 0.8s ease;
+  overflow: hidden;
 }
 .EmbraceVintageComponent .vintageElegance {
   height: 366px;

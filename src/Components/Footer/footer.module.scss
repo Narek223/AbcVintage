@@ -526,7 +526,7 @@
           }
           p {
             width: 100%;
-            padding: 0 250px;
+            padding: 0 200px;
             text-align: center;
           }
         }
@@ -570,6 +570,29 @@
           ul {
             li {
               margin: 0 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1010px) {
+  .footerContainer {
+    &.czStyles {
+      .copyrightConteiner {
+        .copyright {
+          gap: 20px;
+          p{
+            font-size: 16px;
+          }
+        }
+        .navlinks {
+          ul {
+            li {
+              font-size: 16px;
+              margin: 0 10px;
+          
             }
           }
         }

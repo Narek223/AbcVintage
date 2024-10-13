@@ -352,7 +352,7 @@
   }
   .footerContainer .one .footer .about p {
     width: 100%;
-    padding: 0 250px;
+    padding: 0 200px;
     text-align: center;
   }
   .footerContainer .one .footer .contact {
@@ -393,6 +393,18 @@
   }
   .footerContainer .copyrightConteiner .navlinks nav ul li {
     margin: 0 30px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .footerContainer.czStyles .copyrightConteiner .copyright {
+    gap: 20px;
+  }
+  .footerContainer.czStyles .copyrightConteiner .copyright p {
+    font-size: 16px;
+  }
+  .footerContainer.czStyles .copyrightConteiner .navlinks ul li {
+    font-size: 16px;
+    margin: 0 10px;
   }
 }
 @media screen and (max-width: 750px) {
