@@ -137,14 +137,14 @@
     height: auto;
   }
   .vintageItem:nth-child(odd) .imageContainer img {
-    height: 200px;
+    height: 250px;
     border-radius: 100px 0 0 0;
   }
   .vintageItem:nth-child(even) .imageContainer {
     height: auto;
   }
   .vintageItem:nth-child(even) .imageContainer img {
-    height: 200px;
+    height: 250px;
     border-radius: 0 100px 0 0;
   }
   .vintageItem .info {

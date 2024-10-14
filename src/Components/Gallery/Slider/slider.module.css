@@ -161,4 +161,9 @@
     height: 384px;
     padding: 0;
   }
+}
+@media screen and (max-width: 370px) {
+  .galleryconteiner .sliderconteiner .swiper .slider {
+    height: 354px;
+  }
 }/*# sourceMappingURL=slider.module.css.map */
