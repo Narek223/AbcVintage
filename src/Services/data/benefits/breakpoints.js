@@ -3,23 +3,23 @@ export let benefitsBreakpoints={
         slidesPerView: 4,
       },
       1100:{
-        slidesPerView: 3.5,
-        spaceBetween: 0,
-      },
-      1000: {
         slidesPerView: 3,
         spaceBetween: 0,
       },
-      700: {
-        slidesPerView: 2.5,
+      // 1000: {
+      //   slidesPerView: 3,
+      //   spaceBetween: 0,
+      // },
+      600: {
+        slidesPerView: 2,
         spaceBetween: 10,
       },
       400: {
-        slidesPerView: 1.5,
-        spaceBetween: 24,
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
       320: {
-        slidesPerView: 1.5,
+        slidesPerView: 1,
         spaceBetween: 45,
       },
 }

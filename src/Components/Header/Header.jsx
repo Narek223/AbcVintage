@@ -23,8 +23,6 @@ export default function Header({
   let ref = useRef();
   const { t } = useTranslation();
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -40,11 +38,11 @@ export default function Header({
 
       const currentSection = sections.find(({ ref }) => {
         const sectionTop = ref.current.getBoundingClientRect().top;
-        return sectionTop <= 100 && sectionTop >= -100; 
+        return sectionTop <= 100 && sectionTop >= -100;
       });
 
       if (currentSection) {
-        setActiveSection(currentSection.id); 
+        setActiveSection(currentSection.id);
       }
     };
 
@@ -54,10 +52,6 @@ export default function Header({
     };
   }, [home, aboutRef, benefits, gallery, Spotlight, contact]);
 
-
-
-
-  
   const handleResize = () => {
     if (window.innerWidth > 1000 && show) {
       setShow(false);
@@ -91,52 +85,54 @@ export default function Header({
         <nav
           className={`${styles.headerNav} ${isScrolled ? styles.scrolled : ""}`}
         >
-          <img src={logo} onClick={() => scrollToSection(home)} alt="Logo" />
+          <div className={styles.headerContent}>
+            <img src={logo} onClick={() => scrollToSection(home)} alt="Logo" />
 
-          <div className={styles.icons} onClick={showNavBar}>
-            {show ? <GiHamburgerMenu /> : <GiHamburgerMenu />}
-          </div>
+            <div className={styles.icons} onClick={showNavBar}>
+              {show ? <GiHamburgerMenu /> : <GiHamburgerMenu />}
+            </div>
 
-          <div className={`${styles.listbox} ${show ? styles.changebg : ""}`}>
-            <div className={styles.list} ref={ref}>
-              <Drawer
-                open={show}
-                anchor="right"
-                PaperProps={{
-                  style: {
-                    width: "68%",
-                    backgroundColor: " rgba(152, 137, 108, 1)",
-                  },
-                }}
-                onClose={showNavBar}
-              >
-                {
-                  <DrawerList
-                    navItems={navItems}
-                    showNavBar={showNavBar}
-                    show={show}
-                  />
-                }
-              </Drawer>
-              <ul
-                className={`${styles.responsivenavigation}  ${
-                  show ? styles.openNavBar : styles.closeNavBar
-                }`}
-              >
-                {navItems.map(({ name, id, ref }) => (
-                  <li
-                    key={id}
-                    onClick={() => scrollToSection(ref)}
-                    className={activeSection === id ? styles.active : ""}
-                  >
-                    {name}
-                  </li>
-                ))}
-                {show === false ? null : <Change />}
-                {show === false ? null : (
-                  <ul className={styles.socialicons}></ul>
-                )}
-              </ul>
+            <div className={`${styles.listbox} ${show ? styles.changebg : ""}`}>
+              <div className={styles.list} ref={ref}>
+                <Drawer
+                  open={show}
+                  anchor="right"
+                  PaperProps={{
+                    style: {
+                      width: "280px",
+                      backgroundColor: "rgba(152, 137, 108, 1)",
+                    },
+                  }}
+                  onClose={showNavBar}
+                >
+                  {
+                    <DrawerList
+                      navItems={navItems}
+                      showNavBar={showNavBar}
+                      show={show}
+                    />
+                  }
+                </Drawer>
+                <ul
+                  className={`${styles.responsivenavigation}  ${
+                    show ? styles.openNavBar : styles.closeNavBar
+                  }`}
+                >
+                  {navItems.map(({ name, id, ref }) => (
+                    <li
+                      key={id}
+                      onClick={() => scrollToSection(ref)}
+                      className={activeSection === id ? styles.active : ""}
+                    >
+                      {name}
+                    </li>
+                  ))}
+                  {show === false ? null : <Change />}
+                  {show === false ? null : (
+                    <ul className={styles.socialicons}></ul>
+                  )}
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
