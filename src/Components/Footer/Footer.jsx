@@ -5,11 +5,31 @@ import { socialMediaIcons } from "../../Services/data/header/HeaderData";
 import { useTranslation } from "react-i18next";
 import Change from "../../shered_components/changelanguage/Change";
 import i18n from "../../i18n";
+import { scrollToSection } from "../../Functions/Header/scrollToSection";
 
-export default function Footer() {
+export default function Footer({
+  home,
+  aboutRef,
+  benefits,
+  gallery,
+  Spotlight,
+  contact,
+}) {
   const { t } = useTranslation();
 
-  const currentLang = i18n.language; 
+  let nextnavItems = [
+    { name:t("footer.mainMenu.items.gallery"), id: "gallery", ref: gallery },
+    { name: t("footer.mainMenu.items.spotlight"), id: "spotlight", ref: Spotlight },
+    { name: t("header.contact"), id: "contact", ref: contact },
+  ]
+  let navItems = [
+    { name:  t("footer.mainMenu.items.home"), id: "home", ref: home },
+    { name: t("footer.mainMenu.items.aboutUs"), id: "about", ref: aboutRef },
+    { name: t("footer.mainMenu.items.benefits"), id: "benefits", ref: benefits },
+
+  ];
+
+  const currentLang = i18n.language;
 
   return (
     <div
@@ -28,14 +48,14 @@ export default function Footer() {
             <h1>{t("footer.mainMenu.title")}</h1>
             <nav>
               <ul>
-                <li>{t("footer.mainMenu.items.home")}</li>
-                <li>{t("footer.mainMenu.items.aboutUs")}</li>
-                <li>{t("footer.mainMenu.items.benefits")}</li>
+                {navItems.map(({name,ref,id})=>(
+                  <li  onClick={() => scrollToSection(ref)} key={id} >{name}</li>
+                ))}
               </ul>
               <ul>
-                <li>{t("footer.mainMenu.items.gallery")}</li>
-                <li>{t("footer.mainMenu.items.spotlight")}</li>
-                <li>{t("footer.mainMenu.items.contact")}</li>
+              {nextnavItems.map(({name,ref,id})=>(
+                  <li  onClick={() => scrollToSection(ref)} key={id} >{name}</li>
+                ))}
               </ul>
             </nav>
           </div>
@@ -51,21 +71,22 @@ export default function Footer() {
               <a href="mailto:ABCvintage@gmail.com">ABCvintage@gmail.com</a>
             </p>
 
-            <p> <a href="tel:+37493555566">{t("footer.contact.callUs")} </a></p>
+            <p>
+              {" "}
+              <a href="tel:+37493555566">{t("footer.contact.callUs")} </a>
+            </p>
             <p>{t("footer.contact.address")}</p>
           </div>
 
           <div className={styles.follow}>
             <h1>{t("footer.followUs")}</h1>
-<div className={styles.socialMediaicons}>
-
-
-            {socialMediaIcons.map((icon) => (
-              <div key={icon.id} className={styles.socialItem}>
-                <img src={icon.src} alt={icon.alt} />
-                <p> {icon.text}</p>
-              </div>
-            ))}
+            <div className={styles.socialMediaicons}>
+              {socialMediaIcons.map((icon) => (
+                <div key={icon.id} className={styles.socialItem}>
+                  <img src={icon.src} alt={icon.alt} />
+                  <p> {icon.text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

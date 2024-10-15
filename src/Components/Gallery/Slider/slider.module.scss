@@ -51,19 +51,28 @@
       width: 68px;
       height: 68px;
       background-color: rgba(152, 137, 108, 1);
-      border-radius: 50%;
-      padding: 10px;
+      border-radius: 50%; 
+      padding: 0; 
       border: none;
       margin: 0 10px;
       cursor: pointer;
-&:active{
-  transform: scale(0.9);
-}
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      box-sizing: border-box;
+    
+      &:active {
+        transform: scale(0.9);
+      }
+    
       .icon {
+        width: 48px;
+        height: 44px;
         color: white;
-        font-size: 3em;
+     
       }
     }
+    
 
     .swiper {
       width: 475px;

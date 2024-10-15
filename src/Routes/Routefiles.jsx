@@ -54,8 +54,20 @@ export default function Routefiles() {
       <section ref={contactref}>
         <Contact />
       </section>
+<section>
+<Footer
 
-      <Footer />
+home={homeref}
+aboutRef={aboutUsRef}
+benefits={Benefitsref}
+gallery={galleryref}
+Spotlight={vintajeref}
+contact={contactref}
+
+/>
+
+</section>
+    
     </div>
   );
 }
