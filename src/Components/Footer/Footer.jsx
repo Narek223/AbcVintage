@@ -102,7 +102,7 @@ export default function Footer({
             <ul>
               <Change />
               <li>{t("footer.navLinks.privacy")}</li>
-              <li>{t("footer.navLinks.privacy")}</li>
+              <li>{t("footer.navLinks.cookiePreferences")}</li>
             </ul>
           </nav>
         </div>

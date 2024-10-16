@@ -148,6 +148,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     position: static;
     background-color: transparent;
@@ -161,7 +162,7 @@
     background-size: cover;
   }
   .EmbraceVintageComponent .vintageElegance button {
-    margin-top: 40%;
+    margin-top: 30%;
     font-size: 16px;
     height: 48px;
   }

@@ -49,7 +49,7 @@
 @media screen and (max-width: 1450px) {
     .benefitsConteiner {
         padding: 20px 100px;
-        margin: 100px 0 10px 0;
+        margin: 50px 0 10px 0;
         .title {
             h1 {
                 font-size: 50px;
@@ -68,8 +68,7 @@
 @media screen and (max-width: 1170px) {
     .benefitsConteiner {
         padding: 20px 50px;
-        .swiper {
-        }
+      
         .title {
             .text {
                 P {
@@ -77,8 +76,7 @@
                 }
             }
         }
-        .benefitsdata {
-        }
+      
     }
 }
 
@@ -86,8 +84,7 @@
     .benefitsConteiner {
         width: 100%;
         padding: 20px 0 20px 20px;
-        .swiper {
-        }
+
 
         .title {
             .text {
@@ -96,8 +93,6 @@
                     width: 100%;
                 }
             }
-        }
-        .benefitsdata {
         }
     }
 }

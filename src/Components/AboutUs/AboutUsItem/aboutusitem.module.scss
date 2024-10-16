@@ -208,7 +208,7 @@
             }
             .vintageimg {
                 img {
-                    padding: 0 20px 0 0;
+                    padding: 0 20px;
                 }
             }
         }
@@ -217,7 +217,7 @@
                 border: 0 100px 0 0;
                 img {
                     border: 0 100px 0 0;
-                    padding: 0 0 0 20px;
+                    padding: 0 20px;
                 }
             }
             .aboutUsHistory {
@@ -229,11 +229,7 @@
             flex-direction: column-reverse;
         }
         .vintageimg {
-            &:nth-child(2) {
-                img {
-                    padding: 0 0 0 20px;
-                }
-            }
+        
             img {
                 width: 100%;
             }
@@ -270,22 +266,22 @@
                 height: 500px;
             }
         }
-        .aboutUsHistory {
-            p {
-            }
-            h1 {
+    }
+}
+@media screen and (max-width: 600px) {
+    .abcVintageLove {
+    
+
+        .vintageimg {
+            img {
+                height: 400px;
             }
         }
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .abcVintageLove {
         margin: 0;
-
-        .vintageimg {
-            img {
-            }
-        }
 
         .vintageimg {
             img {
