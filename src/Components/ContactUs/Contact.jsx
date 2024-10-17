@@ -2,12 +2,11 @@ import React from "react";
 import styles from "./contact.module.scss";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { validationSchema } from "../../Functions/FormValidation/validation";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 
-
 export default function Contact() {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   const initialValues = {
     name: "",
@@ -25,9 +24,9 @@ export default function Contact() {
       <div className={styles.contactus}>
         <div className={styles.formconteiner}>
           <div className={styles.contactustitle}>
-          <h1 lang={i18n.language}>{t("ContactUs.formtext")}</h1>
+            <h1 lang={i18n.language}>{t("ContactUs.formtext")}</h1>
           </div>
-         
+
           <Formik
             validationSchema={validationSchema}
             initialValues={initialValues}
@@ -70,7 +69,12 @@ export default function Contact() {
                     className={styles.error}
                   />
 
-                  <Field as="textarea" name="message" placeholder={t("ContactUs.form.message")}  className={styles.texarea} />
+                  <Field
+                    as="textarea"
+                    name="message"
+                    placeholder={t("ContactUs.form.message")}
+                    className={styles.texarea}
+                  />
                   <ErrorMessage
                     name="message"
                     component="p"
@@ -78,7 +82,7 @@ export default function Contact() {
                   />
                 </div>
                 <button type="submit" disabled={!isValid}>
-                {t("ContactUs.form.submit")}
+                  {t("ContactUs.form.submit")}
                 </button>
               </Form>
             )}

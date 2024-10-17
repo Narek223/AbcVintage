@@ -9,7 +9,6 @@ import Vintage from "../Components/VintageSpotlight/Vintage";
 import FollowUs from "../Components/FollowOninstagram/FollowUs";
 import Contact from "../Components/ContactUs/Contact";
 import Footer from "../Components/Footer/Footer";
-import section from "../Components/section/section";
 import Header from "../Components/Header/Header";
 
 export default function Routefiles() {
@@ -42,10 +41,10 @@ export default function Routefiles() {
       </section>
 
       <EmbraceVintage />
-        <section ref={galleryref}>
+      <section ref={galleryref}>
         <Gallery />
       </section>
-    <Slider />
+      <Slider />
       <section ref={vintajeref}>
         <Vintage />
       </section>
@@ -54,20 +53,16 @@ export default function Routefiles() {
       <section ref={contactref}>
         <Contact />
       </section>
-<section>
-<Footer
-
-home={homeref}
-aboutRef={aboutUsRef}
-benefits={Benefitsref}
-gallery={galleryref}
-Spotlight={vintajeref}
-contact={contactref}
-
-/>
-
-</section>
-    
+      <section>
+        <Footer
+          home={homeref}
+          aboutRef={aboutUsRef}
+          benefits={Benefitsref}
+          gallery={galleryref}
+          Spotlight={vintajeref}
+          contact={contactref}
+        />
+      </section>
     </div>
   );
 }

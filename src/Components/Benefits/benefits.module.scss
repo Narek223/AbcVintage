@@ -17,15 +17,7 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-      overflow: hidden;
-    //             opacity: 0;
-    //             transition: opacity 2s ease-in-out;
-    //             transform: translateY(158px);
-              
-                // &.visible {
-                //     transform: translateY(0);
-                //   opacity: 1;
-                // }
+            overflow: hidden;
             p {
                 width: 50%;
                 font-weight: 400;
@@ -68,7 +60,7 @@
 @media screen and (max-width: 1170px) {
     .benefitsConteiner {
         padding: 20px 50px;
-      
+
         .title {
             .text {
                 P {
@@ -76,7 +68,6 @@
                 }
             }
         }
-      
     }
 }
 
@@ -84,7 +75,6 @@
     .benefitsConteiner {
         width: 100%;
         padding: 20px 0 20px 20px;
-
 
         .title {
             .text {

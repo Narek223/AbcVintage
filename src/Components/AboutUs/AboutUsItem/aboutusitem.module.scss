@@ -23,16 +23,11 @@
         flex-direction: row-reverse;
     }
     .vintageimg {
-     
         img {
-            overflow: hidden; 
+            overflow: hidden;
             width: 890px;
             height: 700px;
-         
         }
-
-     
-    
     }
     .aboutUsHistory {
         margin: 0 30px;
@@ -197,7 +192,6 @@
 }
 @media screen and (max-width: 1010px) {
     .abcVintageLove {
- 
         flex-direction: column-reverse;
 
         height: auto;
@@ -229,7 +223,6 @@
             flex-direction: column-reverse;
         }
         .vintageimg {
-        
             img {
                 width: 100%;
             }
@@ -270,8 +263,6 @@
 }
 @media screen and (max-width: 600px) {
     .abcVintageLove {
-    
-
         .vintageimg {
             img {
                 height: 400px;
@@ -310,7 +301,6 @@
             }
         }
 
-
         .aboutUsHistory {
             p {
                 font-size: 16px;
@@ -321,4 +311,3 @@
         }
     }
 }
-

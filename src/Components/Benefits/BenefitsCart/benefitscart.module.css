@@ -13,16 +13,30 @@
 .benefitscart:hover {
   cursor: grab;
 }
+.benefitscart:hover .benefitsinfo img {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+  transition-delay: 0;
+}
 .benefitscart .benefitsinfo {
   display: flex;
   align-items: center;
   padding: 10px 0;
   text-align: start;
 }
+.benefitscart .benefitsinfo img {
+  transform: rotate(0deg);
+  transition-duration: 1s;
+  transition-delay: 0.5ms;
+}
 .benefitscart .benefitsinfo h1 {
   font-size: 30px;
   padding: 0;
   color: white;
+}
+.benefitscart .benefitsinfo h1:hover {
+  transition-duration: 0.5ms;
+  color: rgba(255, 255, 255, 0.8);
 }
 .benefitscart p {
   text-align: start;

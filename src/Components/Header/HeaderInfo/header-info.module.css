@@ -12,6 +12,10 @@
   justify-content: flex-end;
   height: 30px;
 }
+.contactConteiner .contactInformation a {
+  color: white;
+  text-decoration: none;
+}
 .contactConteiner .contactInformation .iconsImg {
   padding: 0 35px;
 }

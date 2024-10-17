@@ -12,18 +12,18 @@ import { sliderdata } from "../../../Services/data/Gallery/sliderimgdata";
 import Modal from "@mui/material/Modal";
 import { Box } from "@mui/material";
 import { gallerybreakpoints } from "../../../Services/data/Gallery/galleryBreakpoints";
-import { useTranslation } from 'react-i18next';
-import {swiperstyles} from '../../../Services/data/swiperStyles'
+import { useTranslation } from "react-i18next";
+import { swiperstyles } from "../../../Services/data/swiperStyles";
 
 export default function Slider() {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [open, setOpen] = useState(false);
   const handleOpen = (index) => {
     setSelectedIndex(index);
     setOpen(true);
   };
-  
+
   const handleClose = () => setOpen(false);
 
   let next = () => {
@@ -40,20 +40,17 @@ export default function Slider() {
 
   return (
     <div className={styles.galleryconteiner}>
-      <h1 className={styles.slidertitle}>
-        {t("gallery.slider.sliderTitle")}
-      </h1>
+      <h1 className={styles.slidertitle}>{t("gallery.slider.sliderTitle")}</h1>
       <div className={styles.sliderconteiner}>
         <button className="custom-prev">
           <MdKeyboardArrowLeft className={styles.icon} />
         </button>
         <Swiper
-        style={swiperstyles}
+          style={swiperstyles}
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           breakpoints={gallerybreakpoints}
           loop={true}
           pagination={{
-            // el: '.swiper-pagination',
             clickable: true,
           }}
           navigation={{
@@ -90,7 +87,7 @@ export default function Slider() {
               },
             }}
           >
-            <Box className={styles.modalBox} >
+            <Box className={styles.modalBox}>
               <ImageModal
                 index={selectedIndex}
                 onNext={next}

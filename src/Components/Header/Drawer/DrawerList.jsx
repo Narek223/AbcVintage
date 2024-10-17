@@ -7,13 +7,19 @@ import ListItemText from "@mui/material/ListItemText";
 import { MdClear } from "react-icons/md";
 import { socialMediaIcons } from "../../../Services/data/header/HeaderData";
 import { scrollToSection } from "../../../Functions/Header/scrollToSection";
-import styles from "../header.module.scss";
+import styles from "./drawerList.module.scss";
 import Divider from "@mui/material/Divider";
 import Change from "../../../shered_components/changelanguage/Change";
 
 export default function DrawerList({ navItems, showNavBar, show }) {
   return (
     <Box className={styles.box} role="presentation" onClick={showNavBar}>
+      <div className={styles.closeicon}>
+      <p onClick={showNavBar} className={styles.clearIcon}>
+        <MdClear />
+      </p>
+      </div>
+      
       <List className={styles.listconteiner}>
         {navItems.map((text, index) => (
           <ListItem
@@ -35,10 +41,11 @@ export default function DrawerList({ navItems, showNavBar, show }) {
         </ListItem>
 
         {show && (
+
           <ul className={styles.socialicons}>
             {socialMediaIcons.map((icon) => (
               <li key={icon.id}>
-                <a href={icon.link}>
+                <a href={icon.link} target="blank">
                   <img src={icon.src} alt={icon.alt} />
                 </a>
               </li>
@@ -46,9 +53,6 @@ export default function DrawerList({ navItems, showNavBar, show }) {
           </ul>
         )}
       </List>
-      <p onClick={showNavBar} className={styles.clearIcon}>
-        <MdClear />
-      </p>
     </Box>
   );
 }

@@ -18,15 +18,22 @@ export default function Footer({
   const { t } = useTranslation();
 
   let nextnavItems = [
-    { name:t("footer.mainMenu.items.gallery"), id: "gallery", ref: gallery },
-    { name: t("footer.mainMenu.items.spotlight"), id: "spotlight", ref: Spotlight },
+    { name: t("footer.mainMenu.items.gallery"), id: "gallery", ref: gallery },
+    {
+      name: t("footer.mainMenu.items.spotlight"),
+      id: "spotlight",
+      ref: Spotlight,
+    },
     { name: t("header.contact"), id: "contact", ref: contact },
-  ]
+  ];
   let navItems = [
-    { name:  t("footer.mainMenu.items.home"), id: "home", ref: home },
+    { name: t("footer.mainMenu.items.home"), id: "home", ref: home },
     { name: t("footer.mainMenu.items.aboutUs"), id: "about", ref: aboutRef },
-    { name: t("footer.mainMenu.items.benefits"), id: "benefits", ref: benefits },
-
+    {
+      name: t("footer.mainMenu.items.benefits"),
+      id: "benefits",
+      ref: benefits,
+    },
   ];
 
   const currentLang = i18n.language;
@@ -48,13 +55,17 @@ export default function Footer({
             <h1>{t("footer.mainMenu.title")}</h1>
             <nav>
               <ul>
-                {navItems.map(({name,ref,id})=>(
-                  <li  onClick={() => scrollToSection(ref)} key={id} >{name}</li>
+                {navItems.map(({ name, ref, id }) => (
+                  <li onClick={() => scrollToSection(ref)} key={id}>
+                    {name}
+                  </li>
                 ))}
               </ul>
               <ul>
-              {nextnavItems.map(({name,ref,id})=>(
-                  <li  onClick={() => scrollToSection(ref)} key={id} >{name}</li>
+                {nextnavItems.map(({ name, ref, id }) => (
+                  <li onClick={() => scrollToSection(ref)} key={id}>
+                    {name}
+                  </li>
                 ))}
               </ul>
             </nav>
@@ -75,17 +86,29 @@ export default function Footer({
               {" "}
               <a href="tel:+37493555566">{t("footer.contact.callUs")} </a>
             </p>
-            <p>{t("footer.contact.address")}</p>
+            <p>
+              {" "}
+              <a
+                href="https://www.google.com/maps/place/40.179186,44.478342,14"
+                target="_blank"
+              >
+                {" "}
+                {t("footer.contact.address")}
+              </a>
+              <a />
+            </p>
           </div>
 
           <div className={styles.follow}>
             <h1>{t("footer.followUs")}</h1>
             <div className={styles.socialMediaicons}>
               {socialMediaIcons.map((icon) => (
-                <div key={icon.id} className={styles.socialItem}>
-                  <img src={icon.src} alt={icon.alt} />
-                  <p> {icon.text}</p>
-                </div>
+                <a href={icon.link} target="blank">
+                  <div key={icon.id} className={styles.socialItem}>
+                    <img src={icon.src} alt={icon.alt} />
+                    <p> {icon.text}</p>
+                  </div>
+                </a>
               ))}
             </div>
           </div>

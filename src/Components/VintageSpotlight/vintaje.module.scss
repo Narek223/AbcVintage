@@ -1,74 +1,54 @@
 .vintageConteiner {
-    margin: 30px 0;
-    padding: 20px 200px;
-  
+  margin: 30px 0;
+  padding: 20px 200px;
+
+  .vintagetitle {
+    h1 {
+      font-family: "aurora";
+      font-size: 64px;
+      color: rgba(93, 64, 55, 1);
+      font-weight: 400;
+    }
+  }
+}
+@media screen and (max-width: 1450px) {
+  .vintageConteiner {
+    padding: 0 100px;
     .vintagetitle {
       h1 {
-        font-family: "aurora";
-        font-size: 64px;
-        color: rgba(93, 64, 55, 1);
-        font-weight: 400;
+        font-size: 50px;
       }
     }
   }
-  
-
-
-
-
-
-  @media screen and (max-width: 1450px) {
-    .vintageConteiner {
-      padding: 0  100px;
-      .vintagetitle{
-        h1{
-          font-size: 50px;
-        }
+}
+@media screen and (max-width: 1150px) {
+  .vintageConteiner {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .vintageConteiner {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .vintageConteiner {
+    padding: 0 20px;
+    .vintagetitle {
+      h1 {
+        font-size: 35px;
       }
     }
-
-    
   }
-    
-  @media screen and (max-width: 1150px) {
-    .vintageConteiner {
-      padding: 0  50px;
-    }
-    
-  }
-    
+}
 
-  @media screen and (max-width: 1010px) {
-    .vintageConteiner {
-      padding: 0  20px;
-    }
-    
-  }
-    
-
-  @media screen and (max-width: 600px) {
-    .vintageConteiner {
-      padding: 0  20px;
-      .vintagetitle {
-        h1 {
-          font-size: 35px;
-        }
+@media screen and (max-width: 400px) {
+  .vintageConteiner {
+    padding: 0 20px;
+    .vintagetitle {
+      h1 {
+        font-size: 32px;
       }
     }
-    
   }
-    
-
-  @media screen and (max-width: 400px) {
-    .vintageConteiner {
-      padding: 0  20px;
-      .vintagetitle {
-        h1 {
-          font-size: 32px;
-        }
-      }
-    }
-    
-  }
-    
-
+}

@@ -1,54 +1,61 @@
-.socialicons {
-  display: flex;
-  padding: 8px 16px;
-}
-.socialicons li {
-  list-style: none;
-  padding: 0 8px 0 0;
-}
-.socialicons img {
-  display: flex;
-  height: auto;
-  width: auto;
-}
-
-.listconteiner {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: start;
-}
-
-.navtext {
-  width: 50%;
-  display: flex;
-  font-size: 21px;
-  text-align: start;
-  font-weight: 400;
-  color: white;
-}
-.navtext ul {
+.mek {
   width: 80%;
 }
-.navtext ul li {
-  font-size: 19px;
-}
 
-.clearIcon {
+.box {
+  flex-direction: column;
+  padding: 30px 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.box .closeicon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.box .closeicon .clearIcon {
+  display: flex;
+  justify-content: flex-end;
   width: 24px;
   height: 24px;
   font-size: 24px;
   color: rgb(11, 10, 10);
   cursor: pointer;
 }
-
-.mek {
-  width: 80%;
-}
-
-.box {
-  padding: 30px 20px;
+.box .listconteiner {
+  padding: 0;
+  width: 100%;
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+}
+.box .listconteiner .navtext {
+  width: 100%;
+  display: flex;
+  font-size: 21px;
+  text-align: start;
+  font-weight: 400;
+  color: white;
+}
+.box .listconteiner .navtext ul {
+  width: 100%;
+}
+.box .listconteiner .navtext ul li {
+  width: 100%;
+  font-size: 19px;
+}
+.box .socialicons {
+  display: flex;
+  padding: 8px 16px;
+}
+.box .socialicons li {
+  list-style: none;
+  padding: 0 8px 0 0;
+}
+.box .socialicons img {
+  display: flex;
+  height: auto;
+  width: auto;
 }/*# sourceMappingURL=drawerList.module.css.map */

@@ -11,7 +11,6 @@
         flex-wrap: wrap;
         justify-content: start;
         align-items: center;
-
         h1 {
             font-family: "aurora";
             width: 466px;
@@ -44,14 +43,12 @@
         padding: 0 0 0 100px;
         .welcometoAbc {
             width: 420px;
-            h1{
+            h1 {
                 font-size: 50px;
             }
             img {
                 width: 80%;
             }
-        }
-        .imgbox {
         }
     }
 }
@@ -59,8 +56,6 @@
     .homepageconteiner {
         .welcometoAbc {
             width: 400px;
-        }
-        .imgbox {
         }
     }
 }
@@ -73,25 +68,19 @@
                 font-size: 40px;
             }
         }
-        .imgbox {
-        }
     }
 }
 
 @media screen and (max-width: 1150px) {
     .homepageconteiner {
         padding: 20px 0 20px 50px;
-        .welcometoAbc {
-        }
-        .imgbox {
-        }
     }
 }
 @media screen and (max-width: 1010px) {
     .homepageconteiner {
- padding: 0;
+        padding: 0;
         height: 100%;
-      
+
         display: flex;
         align-items: center;
         flex-direction: column;

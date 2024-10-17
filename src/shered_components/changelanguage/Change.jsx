@@ -1,18 +1,15 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
-import {  MenuItem, FormControl, Select } from "@mui/material";
+import { MenuItem, FormControl, Select } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import i18n from "../../i18n";
 import styles from "./change.module.scss";
-import { useTheme } from '@mui/material/styles';
-
-
 
 export default function Change() {
-  const theme = useTheme();
-
   const [anchorEl, setAnchorEl] = useState(null);
-  const [language, setLanguage] = useState(i18n.language === "cz" ? "Cz" : "Eng");
+  const [language, setLanguage] = useState(
+    i18n.language === "cz" ? "Cz" : "Eng"
+  );
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -21,9 +18,8 @@ export default function Change() {
   const handleMenuClose = () => {
     setAnchorEl(null);
   };
-  console.log(language)
+  console.log(language);
   const handleLanguageChange = (lang) => {
- 
     if (lang === "Eng") {
       i18n.changeLanguage("en");
     } else if (lang === "Cz") {
@@ -56,8 +52,8 @@ export default function Change() {
             },
             "& .MuiOutlinedInput-input": {
               fontSize: {
-                xs:"16", 
-                sm: "18px", 
+                xs: "16",
+                sm: "18px",
                 md: "22px",
               },
               padding: 0,
@@ -86,12 +82,16 @@ export default function Change() {
             },
           }}
         >
-          <MenuItem className={styles.language} value="Eng">Eng</MenuItem>
+          <MenuItem className={styles.language} value="Eng">
+            Eng
+          </MenuItem>
           <Divider
             sx={{ backgroundColor: "white" }}
             className={styles.divider}
           />
-          <MenuItem  className={styles.language}  value="Cz">Cz</MenuItem>
+          <MenuItem className={styles.language} value="Cz">
+            Cz
+          </MenuItem>
         </Select>
       </FormControl>
     </div>

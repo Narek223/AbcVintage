@@ -1,4 +1,4 @@
-.EmbraceVintageComponent { 
+.EmbraceVintageComponent {
     border: 1px solid #000;
     height: 800px;
     width: 100%;
@@ -6,92 +6,93 @@
     overflow: hidden;
     background-position: center;
     position: relative;
-    transition: transform 0.8s ease, filter 0.8s ease;
-  
-    .vintageElegance {
-      height: 366px;
-      width: 766px;
-      background-color: rgba(255, 255, 255, 0.1);
-      margin: 50px 10px 10px 10px;
-      border-radius: 10px 15% 10px 10px;
-      position: absolute;
-      top: 217px;
-      left: 55%;
-      opacity: 0;
-      transform: translateY(20px);  
+    transition:
+        transform 0.8s ease,
+        filter 0.8s ease;
 
-      &.visible {
-        animation: fadeInContent 1.5s ease forwards, slideInFromBottom 1.5s ease forwards;
-        opacity: 1;
-        transform: translateY(0);
-      }
-  
-      h1 {
-        height: 250px;
-        font-size: 50px;
-        font-weight: 400;
-        text-align: center;
-        color: #ffffff;
-        padding: 50px;
-        line-height: 92px;
-        font-family: "aurora";
-        opacity: 0;
-        animation: slideInFromBottom 1s ease 2s forwards;
-      }
-  
-      button {
-        width: 325px;
-        height: 64px;
-        border: none;
-        border-radius: 25px;
-        color: white;
-        background-color: #98896c;
-        cursor: pointer;
-        font-size: 22px;
-        box-shadow: 0px 0px 54px 0px #00000017;
+    .vintageElegance {
+        height: 366px;
+        width: 766px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 50px 10px 10px 10px;
+        border-radius: 10px 15% 10px 10px;
+        position: absolute;
+        top: 217px;
+        left: 55%;
         opacity: 0;
         transform: translateY(20px);
-        animation: buttonFadeIn 0.5s ease 2s forwards;
-        &:active{
-            transform: scale(0.9);
-          }
 
-      }
-    }
-  }
-  
+        &.visible {
+            animation:
+                fadeInContent 1.5s ease forwards,
+                slideInFromBottom 1.5s ease forwards;
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-  @keyframes fadeInContent {
+        h1 {
+            height: 250px;
+            font-size: 50px;
+            font-weight: 400;
+            text-align: center;
+            color: #ffffff;
+            padding: 50px;
+            line-height: 92px;
+            font-family: "aurora";
+            opacity: 0;
+            animation: slideInFromBottom 1s ease 2s forwards;
+        }
+
+        button {
+            width: 325px;
+            height: 64px;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            background-color: #98896c;
+            cursor: pointer;
+            font-size: 22px;
+            box-shadow: 0px 0px 54px 0px #00000017;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: buttonFadeIn 0.5s ease 2s forwards;
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+
+@keyframes fadeInContent {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  @keyframes slideInFromBottom {
+}
+
+@keyframes slideInFromBottom {
     0% {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
     100% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  @keyframes buttonFadeIn {
+}
+
+@keyframes buttonFadeIn {
     0% {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
     100% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
+}
 
 @media screen and (max-width: 1760px) {
     .EmbraceVintageComponent {
@@ -162,9 +163,6 @@
         .vintageElegance {
             margin: 0;
             left: 15%;
-
-            button {
-            }
         }
     }
 }
@@ -212,7 +210,7 @@
 }
 @media screen and (max-width: 570px) {
     .EmbraceVintageComponent {
-        background-position: 30% ;
+        background-position: 30%;
         .vintageElegance {
             button {
                 margin-top: 55%;
@@ -222,9 +220,8 @@
 }
 @media screen and (max-width: 450px) {
     .EmbraceVintageComponent {
-
         .vintageElegance {
-            h1{
+            h1 {
                 font-size: 45px;
             }
             button {
@@ -236,15 +233,10 @@
 
 @media screen and (max-width: 400px) {
     .EmbraceVintageComponent {
-
         .vintageElegance {
-            h1{
-                
-            }
             button {
                 margin-top: 70%;
             }
         }
     }
 }
-

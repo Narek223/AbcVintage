@@ -147,7 +147,7 @@
 @media screen and (max-width: 1010px) {
   .contactconteiner {
     padding: 0;
-    min-height: 500px;
+    height: 1200px;
   }
   .contactconteiner .title {
     padding: 10px 0;
@@ -162,13 +162,16 @@
   .contactconteiner .contactus .formconteiner {
     margin: 0;
     padding: 0 20px;
-    width: 100%;
+    width: 75%;
   }
   .contactconteiner .contactus .formconteiner .contactustitle h1 {
     font-size: 25px;
   }
   .contactconteiner .contactus .formconteiner .formikConteiner {
     margin: 0px 0 20px 0;
+  }
+  .contactconteiner .contactus .formconteiner .formikConteiner button {
+    width: 100%;
   }
   .contactconteiner .contactus .mapconteiner {
     border-radius: none;
@@ -180,6 +183,9 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .contactconteiner {
+    height: 1150px;
+  }
   .contactconteiner .title {
     padding: 10px 0;
   }
@@ -200,8 +206,14 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .contactconteiner {
+    height: 1100px;
+  }
   .contactconteiner .title h1 {
     font-size: 35px;
+  }
+  .contactconteiner .contactus .formconteiner {
+    width: 100%;
   }
   .contactconteiner .contactus .formconteiner .contactustitle h1:lang(eng) {
     font-size: 18px;

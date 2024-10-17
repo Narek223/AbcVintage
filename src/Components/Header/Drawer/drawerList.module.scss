@@ -1,4 +1,52 @@
-.socialicons {
+.mek {
+  width: 80%;
+}
+
+.box {
+  flex-direction: column;
+  padding: 30px 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  .closeicon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .clearIcon {
+      display: flex;
+      justify-content: flex-end;
+      width: 24px;
+      height: 24px;
+      font-size: 24px;
+      color: rgb(11, 10, 10);
+      cursor: pointer;
+    }
+  }
+
+  .listconteiner {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    .navtext {
+      width: 100%;
+      display: flex;
+      font-size: 21px;
+      ul {
+        width: 100%;
+        li {
+          width: 100%;
+          font-size: 19px;
+        }
+      }
+      text-align: start;
+      font-weight: 400;
+      color: white;
+    }
+  }
+  .socialicons {
     display: flex;
     padding: 8px 16px;
     li {
@@ -11,46 +59,4 @@
       width: auto;
     }
   }
-  
-  .listconteiner {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-
-  }
-  
-  .navtext {
-    width: 50%;
-    display: flex;
-    font-size: 21px;
-    ul {
-      width: 80%;
-      li {
-        font-size: 19px;
-      }
-    }
-    text-align: start;
-    font-weight: 400;
-    color: white;
-  }
-  
-  .clearIcon {
-    width: 24px;
-    height: 24px;
-    font-size: 24px;
-    color: rgb(11, 10, 10);
-    cursor: pointer;
-  }
-  
-  .mek {
-    width: 80%;
-  }
-  
-  .box {
-    padding: 30px 20px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-  }
-  
+}

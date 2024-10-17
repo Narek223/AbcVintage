@@ -39,6 +39,10 @@
   align-items: center;
   justify-content: center;
 }
+.followusContainer .followusText button a {
+  text-decoration: none;
+  color: white;
+}
 .followusContainer .followusText button .icon {
   margin-right: 5px;
   font-size: 35px;
@@ -79,6 +83,9 @@
   }
   .followusContainer .followusText p {
     font-size: 25px;
+  }
+  .followusContainer .followusImgContainer .image {
+    height: 254px;
   }
 }
 @media screen and (max-width: 600px) {

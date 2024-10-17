@@ -1,7 +1,7 @@
 import artdeco from '../../../assets/Benefits/artDecor.png';
 import artdecoimg from "../../../assets/Benefits/artDecorImg.png";
 import decor from "../../../assets/Benefits/artDeco(1).png";
-import decorimg from "../../../assets/Benefits/artDecor.png";
+import decorimg from "../../../assets/Benefits/artDeco(3).png";
 import { useTranslation } from 'react-i18next';
 
 export const useBenefitsData = () => {
