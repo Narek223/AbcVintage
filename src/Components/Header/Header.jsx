@@ -8,7 +8,7 @@ import Drawer from "@mui/material/Drawer";
 import DrawerList from "./Drawer/DrawerList";
 import { useTranslation } from "react-i18next";
 import Change from "../../shered_components/changelanguage/Change";
-
+import { getCustomStyles } from "../../shered_components/changelanguage/materialUiStyles/materialstyles";
 export default function Header({
   home,
   aboutRef,
@@ -23,6 +23,8 @@ export default function Header({
   let ref = useRef();
   const { t } = useTranslation();
 
+  console.log(getCustomStyles(22, 24));
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -127,7 +129,7 @@ export default function Header({
                       {name}
                     </li>
                   ))}
-                  {show === false ? null : <Change />}
+                  {show === false ? null : <Change sxstyle={getCustomStyles(22,24)} />}
                   {show === false ? null : (
                     <ul className={styles.socialicons}></ul>
                   )}

@@ -74,6 +74,9 @@
             padding: 0 20px;
             list-style: none;
             cursor: pointer;
+            &:hover{
+              color: rgb(152 137 108);
+            }
           }
         }
       }

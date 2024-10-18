@@ -4,21 +4,12 @@ import { MenuItem, FormControl, Select } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import i18n from "../../i18n";
 import styles from "./change.module.scss";
+import { getCustomStyles } from "./materialUiStyles/materialstyles";
 
-export default function Change() {
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [language, setLanguage] = useState(
-    i18n.language === "cz" ? "Cz" : "Eng"
-  );
 
-  const handleMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+export default function Change({sxstyle}) {
+  const [language, setLanguage] = useState(i18n.language === "cz" ? "Cz" : "Eng");
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
-  console.log(language);
   const handleLanguageChange = (lang) => {
     if (lang === "Eng") {
       i18n.changeLanguage("en");
@@ -26,7 +17,6 @@ export default function Change() {
       i18n.changeLanguage("cz");
     }
     setLanguage(lang);
-    handleMenuClose();
   };
 
   useEffect(() => {
@@ -34,39 +24,13 @@ export default function Change() {
   }, [i18n.language]);
 
   return (
-    <div className={styles.conteiner}>
-      <FormControl variant="outlined" sx={{ color: "white" }}>
+    <div className={styles.container}>
+      <FormControl variant="outlined">
         <Select
           value={language}
           onChange={(e) => handleLanguageChange(e.target.value)}
           IconComponent={IoMdArrowDropdown}
-          sx={{
-            backgroundColor: "#98896c",
-            color: "white",
-            "& .MuiSelect-icon": {
-              color: "white",
-            },
-            "& .MuiInputBase-root": {
-              color: "white",
-              padding: 0,
-            },
-            "& .MuiOutlinedInput-input": {
-              fontSize: {
-                xs: "16",
-                sm: "18px",
-                md: "22px",
-              },
-              padding: 0,
-              fontFamily: "Times New Roman",
-            },
-            "& .MuiOutlinedInput-notchedOutline": {
-              padding: 0,
-              border: "none",
-            },
-            "&:hover .MuiOutlinedInput-notchedOutline": {
-              border: "none",
-            },
-          }}
+          sx={{...getCustomStyles(18,22),...sxstyle}}
           inputProps={{
             style: {
               padding: 0,
@@ -82,16 +46,9 @@ export default function Change() {
             },
           }}
         >
-          <MenuItem className={styles.language} value="Eng">
-            Eng
-          </MenuItem>
-          <Divider
-            sx={{ backgroundColor: "white" }}
-            className={styles.divider}
-          />
-          <MenuItem className={styles.language} value="Cz">
-            Cz
-          </MenuItem>
+          <MenuItem value="Eng">Eng</MenuItem>
+          <Divider sx={{ backgroundColor: "white" }} />
+          <MenuItem value="Cz">Cz</MenuItem>
         </Select>
       </FormControl>
     </div>

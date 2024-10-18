@@ -37,7 +37,7 @@ export default function FollowUs() {
           }}
           speed={3000}
           loop={true}
-          allowTouchMove={false}
+          allowTouchMove={true}
           breakpoints={swiperbreakpoints}
         >
           {imgslider.map((elem) => (

@@ -59,7 +59,12 @@
       align-items: center;
       justify-content: center;
       box-sizing: border-box;
-
+      &:hover{
+         .icon{
+          color:rgb(83, 49, 49);
+        }
+     
+      }
       &:active {
         transform: scale(0.9);
       }
@@ -68,6 +73,7 @@
         width: 48px;
         height: 44px;
         color: white;
+       
       }
     }
 

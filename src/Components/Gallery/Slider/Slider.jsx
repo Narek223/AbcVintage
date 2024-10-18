@@ -42,8 +42,8 @@ export default function Slider() {
     <div className={styles.galleryconteiner}>
       <h1 className={styles.slidertitle}>{t("gallery.slider.sliderTitle")}</h1>
       <div className={styles.sliderconteiner}>
-        <button className="custom-prev">
-          <MdKeyboardArrowLeft className={styles.icon} />
+        <button className="custom-prev" >
+          <MdKeyboardArrowLeft className={styles.icon}  data-aos="zoom-in"data-aos-duration="2000" />
         </button>
         <Swiper
           style={swiperstyles}
@@ -66,8 +66,8 @@ export default function Slider() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <button className="custom-next">
-          <MdKeyboardArrowRight className={styles.icon} />
+        <button className="custom-next" >
+          <MdKeyboardArrowRight className={styles.icon} data-aos="fade-right"   data-aos="zoom-in"data-aos-duration="2000"  />
         </button>
       </div>
       {open ? (
