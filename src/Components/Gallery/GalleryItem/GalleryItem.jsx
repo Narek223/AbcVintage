@@ -13,7 +13,6 @@ export default function GalleryItem({ data }) {
       data-aos="zoom-in"
       data-aos-duration="2000"
       data-aos-delay="300"
-      data-aos-once="true"
       className={`${styles.galleryConteiner} ${
         isReversed ? styles.reversed : null
       }`}

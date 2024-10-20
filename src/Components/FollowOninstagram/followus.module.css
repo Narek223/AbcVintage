@@ -47,6 +47,13 @@
   margin-right: 5px;
   font-size: 35px;
 }
+.followusContainer .followusText button:hover {
+  border: 1px solid rgb(97, 85, 59);
+  color: rgb(97, 85, 59);
+}
+.followusContainer .followusText button:hover a {
+  color: rgb(97, 85, 59);
+}
 .followusContainer .followusImgContainer {
   width: 100%;
   overflow: hidden;

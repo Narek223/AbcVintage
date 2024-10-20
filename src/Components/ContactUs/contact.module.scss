@@ -68,6 +68,7 @@
           border-radius: 15px;
           border: 1px solid rgba(152, 137, 108, 1);
           padding: 15px;
+          outline: none;
           margin: 18px 0;
           resize: none;
         }
@@ -85,6 +86,9 @@
         cursor: pointer;
         align-self: center;
         margin-top: 20px;
+        &:hover{
+          color: rgba(97, 85, 59, 1);
+        }
       }
     }
 

@@ -8,7 +8,7 @@ export default function VintageItem({ data }) {
   return (
     <div
     data-aos="fade-right"
-    data-aos-duration="1000"  data-aos-once="true" 
+    data-aos-duration="1000"  
       className={`${styles.vintageItem} ${isReversed ? styles.reversed : ""}   data-aos="fade-left"
     data-aos-duration="1000" data-aos-once="true"  ` }>
       <div className={styles.imageContainer}>

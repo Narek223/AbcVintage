@@ -4,12 +4,16 @@ import Vintage from "../../assets/HomePage/Vintage.png";
 import styles from "./home.module.scss";
 import { useTranslation } from "react-i18next";
 
+
+
 export default function Home() {
   const { t } = useTranslation();
-
+ 
+  
   return (
     <div className={styles.homepageconteiner}>
       <div
+  
         data-aos-duration="2000"
         data-aos="fade-right"
         className={styles.welcometoAbc}

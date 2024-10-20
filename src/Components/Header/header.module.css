@@ -68,6 +68,9 @@
   list-style: none;
   cursor: pointer;
 }
+.headerConteiner header .headerNav .listbox .responsivenavigation li:hover {
+  color: rgb(152, 137, 108);
+}
 
 @media screen and (max-width: 1900px) {
   .headerConteiner header .headerNav .headerContent {

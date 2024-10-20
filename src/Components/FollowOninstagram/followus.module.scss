@@ -48,9 +48,10 @@
         font-size: 35px;
       }
       &:hover{
-        color: rgb(126, 118, 102);
+        border: 1px solid rgba(97, 85, 59, 1);
+        color: rgba(97, 85, 59, 1); 
         a{
-                 color: rgb(126, 118, 102);
+                 color: rgba(97, 85, 59, 1); ;
         }
       }
     }

@@ -54,6 +54,9 @@
 .EmbraceVintageComponent .vintageElegance button:active {
   transform: scale(0.9);
 }
+.EmbraceVintageComponent .vintageElegance button:hover {
+  color: rgb(97, 85, 59);
+}
 
 @keyframes fadeInContent {
   0% {

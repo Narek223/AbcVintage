@@ -398,6 +398,9 @@
   .footerContainer .copyrightConteiner .navlinks nav {
     margin: 5px 0;
   }
+  .footerContainer .copyrightConteiner .navlinks nav ul {
+    align-items: center;
+  }
   .footerContainer .copyrightConteiner .navlinks nav ul li {
     margin: 0 30px;
   }

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Home from "../Components/Home/Home";
 import AboutUs from "../Components/AboutUs/AboutUs";
 import Benefits from "../Components/Benefits/Benefits";
-import EmbraceVintage from "../Components/EmbraceVintage/Embrace Vintage";
+import EmbraceVintage from "../Components/EmbraceVintage/EmbraceVintage";
 import Gallery from "../Components/Gallery/Gallery";
 import Slider from "../Components/Gallery/Slider/Slider";
 import Vintage from "../Components/VintageSpotlight/Vintage";

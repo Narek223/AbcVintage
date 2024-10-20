@@ -59,6 +59,9 @@
             &:active {
                 transform: scale(0.9);
             }
+            &:hover{
+                color:rgba(97, 85, 59, 1)
+            }
         }
     }
 }
