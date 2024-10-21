@@ -9,6 +9,9 @@ import DrawerList from "./Drawer/DrawerList";
 import { useTranslation } from "react-i18next";
 import Change from "../../shered_components/changelanguage/Change";
 import { getCustomStyles } from "../../shered_components/changelanguage/materialUiStyles/materialstyles";
+import { useNavigate } from "react-router-dom";
+
+
 export default function Header({
   home,
   aboutRef,
@@ -23,19 +26,22 @@ export default function Header({
   let ref = useRef();
   const { t } = useTranslation();
 
+
   console.log(getCustomStyles(22, 24));
   
+  const navigate = useNavigate(); 
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
 
       const sections = [
-        { id: "home", ref: home },
-        { id: "about", ref: aboutRef },
-        { id: "benefits", ref: benefits },
-        { id: "gallery", ref: gallery },
-        { id: "spotlight", ref: Spotlight },
-        { id: "contact", ref: contact },
+        { id: "home", ref: home, path: "/" },
+        { id: "about", ref: aboutRef, path: "/about" },
+        { id: "benefits", ref: benefits, path: "/benefits" },
+        { id: "gallery", ref: gallery, path: "/gallery" },
+        { id: "spotlight", ref: Spotlight, path: "/spotlight" },
+        { id: "contact", ref: contact, path: "/contact" },
       ];
 
       const currentSection = sections.find(({ ref }) => {
@@ -43,8 +49,9 @@ export default function Header({
         return sectionTop <= 100 && sectionTop >= -100;
       });
 
-      if (currentSection) {
+      if (currentSection && activeSection !== currentSection.id) {
         setActiveSection(currentSection.id);
+        navigate(currentSection.path);
       }
     };
 
@@ -52,7 +59,8 @@ export default function Header({
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [home, aboutRef, benefits, gallery, Spotlight, contact]);
+  }, [home, aboutRef, benefits, gallery, Spotlight, contact, activeSection, navigate]);
+
 
   const handleResize = () => {
     if (window.innerWidth > 1000 && show) {
@@ -72,13 +80,14 @@ export default function Header({
   };
 
   let navItems = [
-    { name: t("header.home"), id: "home", ref: home },
-    { name: t("header.about"), id: "about", ref: aboutRef },
-    { name: t("header.benefits"), id: "benefits", ref: benefits },
-    { name: t("header.gallery"), id: "gallery", ref: gallery },
-    { name: t("header.spotlight"), id: "spotlight", ref: Spotlight },
-    { name: t("header.contact"), id: "contact", ref: contact },
+    { name: t("header.home"), id: "home", ref: home, path: "/" },
+    { name: t("header.about"), id: "about", ref: aboutRef, path: "/about" },
+    { name: t("header.benefits"), id: "benefits", ref: benefits, path: "/benefits" },
+    { name: t("header.gallery"), id: "gallery", ref: gallery, path: "/gallery" },
+    { name: t("header.spotlight"), id: "spotlight", ref: Spotlight, path: "/spotlight" },
+    { name: t("header.contact"), id: "contact", ref: contact, path: "/contact" },
   ];
+
 
   return (
     <div className={styles.headerConteiner}>
@@ -120,10 +129,10 @@ export default function Header({
                     show ? styles.openNavBar : styles.closeNavBar
                   }`}
                 >
-                  {navItems.map(({ name, id, ref }) => (
+                  {navItems.map(({ name, id, ref, path }) => (
                     <li
                       key={id}
-                      onClick={() => scrollToSection(ref)}
+                      onClick={() => scrollToSection(ref,navigate,path)}
                       className={activeSection === id ? styles.active : ""}
                     >
                       {name}

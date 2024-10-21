@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./slider.module.scss";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,6 +19,9 @@ export default function Slider() {
   const { t } = useTranslation();
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [open, setOpen] = useState(false);
+
+  const swiperInstanceRef = useRef(null);
+
   const handleOpen = (index) => {
     setSelectedIndex(index);
     setOpen(true);
@@ -28,7 +31,7 @@ export default function Slider() {
 
   let next = () => {
     setSelectedIndex(
-      selectedIndex == sliderdata.length - 1 ? 0 : selectedIndex + 1
+      selectedIndex === sliderdata.length - 1 ? 0 : selectedIndex + 1
     );
   };
 
@@ -38,14 +41,32 @@ export default function Slider() {
     );
   };
 
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (swiperInstanceRef.current) {
+        swiperInstanceRef.current.update(); 
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className={styles.galleryconteiner}>
       <h1 className={styles.slidertitle}>{t("gallery.slider.sliderTitle")}</h1>
       <div className={styles.sliderconteiner}>
-        <button className="custom-prev" >
-          <MdKeyboardArrowLeft className={styles.icon}  data-aos="zoom-in"data-aos-duration="2000" />
+        <button className="custom-prev">
+          <MdKeyboardArrowLeft className={styles.icon} data-aos="zoom-in" data-aos-duration="2000" />
         </button>
         <Swiper
+          onSwiper={(swiper) => {
+            swiperInstanceRef.current = swiper; 
+          }}
           style={swiperstyles}
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           breakpoints={gallerybreakpoints}
@@ -66,8 +87,8 @@ export default function Slider() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <button className="custom-next" >
-          <MdKeyboardArrowRight className={styles.icon} data-aos="fade-right"   data-aos="zoom-in"data-aos-duration="2000"  />
+        <button className="custom-next">
+          <MdKeyboardArrowRight className={styles.icon} data-aos="fade-right" data-aos="zoom-in" data-aos-duration="2000" />
         </button>
       </div>
       {open ? (
