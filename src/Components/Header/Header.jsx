@@ -10,7 +10,6 @@ import { useTranslation } from "react-i18next";
 import Change from "../../shered_components/changelanguage/Change";
 import { getCustomStyles } from "../../shered_components/changelanguage/materialUiStyles/materialstyles";
 import { useNavigate, useLocation } from "react-router-dom";
-import { debounce } from "../../Functions/Header/debounce";
 
 export default function Header({
   home,
@@ -19,35 +18,54 @@ export default function Header({
   gallery,
   Spotlight,
   contact,
-  embraceVintage
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [show, setShow] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [initialScroll, setInitialScroll] = useState(false); 
   let ref = useRef();
   const { t } = useTranslation();
-  let location = useLocation();
-
-  let refs = { home, aboutRef, benefits, gallery, Spotlight, contact,embraceVintage };
 
   const navigate = useNavigate();
+  const location = useLocation(); 
+
+  
+  useEffect(() => {
+    if (!initialScroll) {
+      const sections = {
+        "/": home,
+        "/about": aboutRef,
+        "/benefits": benefits,
+        "/gallery": gallery,
+        "/spotlight": Spotlight,
+        "/contact": contact,
+      };
+
+      const currentPath = location.pathname;
+
+      if (sections[currentPath]) {
+        scrollToSection(sections[currentPath], navigate, currentPath);
+        setActiveSection(currentPath.replace("/", "") || "home");
+        setInitialScroll(true); 
+      }
+    }
+  }, [location.pathname, home, aboutRef, benefits, gallery, Spotlight, contact, navigate, initialScroll]);
 
   useEffect(() => {
-    const handleScroll = debounce(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+
       const sections = [
         { id: "home", ref: home, path: "/" },
         { id: "about", ref: aboutRef, path: "/about" },
         { id: "benefits", ref: benefits, path: "/benefits" },
         { id: "gallery", ref: gallery, path: "/gallery" },
         { id: "spotlight", ref: Spotlight, path: "/spotlight" },
-        { id: "EmbraceVintage", ref: embraceVintage, path: "/EmbraceVintage" },
         { id: "contact", ref: contact, path: "/contact" },
       ];
 
-      setIsScrolled(window.scrollY > 0);
-
       const currentSection = sections.find(({ ref }) => {
-        const sectionTop = ref.current?.getBoundingClientRect().top || Infinity;
+        const sectionTop = ref.current.getBoundingClientRect().top;
         return sectionTop <= 100 && sectionTop >= -100;
       });
 
@@ -55,37 +73,13 @@ export default function Header({
         setActiveSection(currentSection.id);
         navigate(currentSection.path);
       }
-    }, 50);
-
-    const LocationChange = () => {
-      const sectionId = location.pathname.replace("/", "");
-      const sectonref = refs[sectionId];
-
-      if (sectonref && sectonref.current) {
-        sectonref.current.scrollIntoView({ behavior: "smooth" });
-
-        setActiveSection(sectionId);
-      }
     };
-
-    LocationChange();
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [
-    home,
-    aboutRef,
-    benefits,
-    gallery,
-    Spotlight,
-    contact,
-    embraceVintage,
-    activeSection,
-    navigate,
-    location.pathname,
-  ]);
+  }, [home, aboutRef, benefits, gallery, Spotlight, contact, activeSection, navigate]);
 
   const handleResize = () => {
     if (window.innerWidth > 1000 && show) {
@@ -107,30 +101,10 @@ export default function Header({
   let navItems = [
     { name: t("header.home"), id: "home", ref: home, path: "/" },
     { name: t("header.about"), id: "about", ref: aboutRef, path: "/about" },
-    {
-      name: t("header.benefits"),
-      id: "benefits",
-      ref: benefits,
-      path: "/benefits",
-    },
-    {
-      name: t("header.gallery"),
-      id: "gallery",
-      ref: gallery,
-      path: "/gallery",
-    },
-    {
-      name: t("header.spotlight"),
-      id: "spotlight",
-      ref: Spotlight,
-      path: "/spotlight",
-    },
-    {
-      name: t("header.contact"),
-      id: "contact",
-      ref: contact,
-      path: "/contact",
-    },
+    { name: t("header.benefits"), id: "benefits", ref: benefits, path: "/benefits" },
+    { name: t("header.gallery"), id: "gallery", ref: gallery, path: "/gallery" },
+    { name: t("header.spotlight"), id: "spotlight", ref: Spotlight, path: "/spotlight" },
+    { name: t("header.contact"), id: "contact", ref: contact, path: "/contact" },
   ];
 
   return (
@@ -182,9 +156,7 @@ export default function Header({
                       {name}
                     </li>
                   ))}
-                  {show === false ? null : (
-                    <Change sxstyle={getCustomStyles(22, 24)} />
-                  )}
+                  {show === false ? null : <Change sxstyle={getCustomStyles(22, 24)} />}
                   {show === false ? null : (
                     <ul className={styles.socialicons}></ul>
                   )}

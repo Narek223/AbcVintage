@@ -41,6 +41,7 @@ export default function Routefiles() {
       <section ref={Benefitsref}>
         <Benefits />
       </section>
+      
       <section ref={embraceVintageref}>
         <EmbraceVintage />
       </section>
