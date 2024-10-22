@@ -14,9 +14,13 @@
         a{
           color: white;
           text-decoration: none;
+          &:hover{
+            color: rgba(97, 85, 59, 1);
+          }
         }
         .iconsImg {
             padding: 0 35px;
+            
             img{
                 margin: 0 5px;
             }

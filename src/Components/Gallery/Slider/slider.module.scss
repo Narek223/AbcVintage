@@ -60,8 +60,10 @@
       justify-content: center;
       box-sizing: border-box;
       &:hover{
+        background-color: rgb(142, 131, 110);
          .icon{
           color:rgba(97, 85, 59, 1);
+
         }
      
       }

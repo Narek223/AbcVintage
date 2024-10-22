@@ -83,17 +83,17 @@ export default function Footer({
             </p>
 
             <p>
-              {" "}
-              <a href="tel:+37493555566">{t("footer.contact.callUs")} </a>
+            {t("footer.contact.callUs")}
+              <a href="tel:+37493555566">{t("footer.contact.PhoneNumber")} </a>
             </p>
             <p>
-              {" "}
+            {t("footer.contact.address")}
               <a
                 href="https://www.google.com/maps/place/40.179186,44.478342,14"
                 target="_blank"
               >
                 {" "}
-                {t("footer.contact.address")}
+                {t("footer.contact.addressPraha")}
               </a>
               <a />
             </p>

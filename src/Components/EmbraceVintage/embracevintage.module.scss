@@ -44,6 +44,7 @@
         }
 
         button {
+            
             width: 325px;
             height: 64px;
             border: none;
@@ -57,10 +58,11 @@
             transform: translateY(20px);
             animation: buttonFadeIn 0.5s ease 2s forwards;
             &:active {
-                transform: scale(0.9);
+                transform: scale(0.9) !important;
             }
             &:hover{
-                color:rgba(97, 85, 59, 1)
+                color:rgba(97, 85, 59, 1);
+                background-color: rgb(142, 131, 110);
             }
         }
     }

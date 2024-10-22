@@ -129,8 +129,10 @@
       "title": "Contact",
       "email": "Email: ",
       "emailAddress": "ABCvintage@mail.com",
-      "callUs": "Call Us: +123456789",
-      "address": "Address: Prague 1, Czech"
+      "callUs":"Call Us: ",
+      "PhoneNumber": "+123456789",
+      "address":"Address:",
+      "addressPraha": " Prague 1, Czech"
     },
     "followUs": "Follow Us",
     "copyright": "Copyright © 2024 ABC Vintage. All rights reserved.",

@@ -2,6 +2,7 @@
 export const getCustomStyles = (style,styforpc) => ({
     backgroundColor: "#98896c",
     color: "white",
+    
     "& .MuiSelect-icon": {
       color: "white",
     },

@@ -59,6 +59,9 @@
   color: white;
   list-style: none;
 }
+.footerContainer .one .footer .mainMenu nav ul li:hover {
+  color: rgb(97, 85, 59);
+}
 .footerContainer .one .footer .logo {
   width: 290px;
   height: 264px;
@@ -75,6 +78,9 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+.footerContainer .one .footer .contact p:hover a {
+  color: rgb(97, 85, 59);
 }
 .footerContainer .one .footer .contact a {
   text-decoration: none;
@@ -94,6 +100,9 @@
 }
 .footerContainer .one .footer .follow .socialMediaicons a {
   text-decoration: none;
+}
+.footerContainer .one .footer .follow .socialMediaicons a:hover .socialItem p {
+  color: rgb(97, 85, 59);
 }
 .footerContainer .one .footer .follow .socialMediaicons a .socialItem {
   color: white;

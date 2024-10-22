@@ -128,8 +128,10 @@
       "contact": {
         "title": "Kontakt",
         "email": "E-mail: ",
-        "callUs": "Zavolejte nám: +123456789",
-        "address": "Adresa: Praha 1, Česko"
+        "callUs":"Zavolejte nám: ",
+        "PhoneNumber": "+123456789",
+        "address":"Adresa:",
+        "addressPraha": " Praha 1, Česko"
       },
       "followUs": "Sleduj nás",
       "copyright": "Copyright © 2024 ABC Vintage. Všechna práva vyhrazena.",
