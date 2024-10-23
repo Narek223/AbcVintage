@@ -18,6 +18,8 @@ export default function Header({
   gallery,
   Spotlight,
   contact,
+  EmbraceVintage,
+  followUs
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [show, setShow] = useState(false);
@@ -36,9 +38,11 @@ export default function Header({
         "/": home,
         "/about": aboutRef,
         "/benefits": benefits,
+        "/EmbraceVintage": EmbraceVintage,
         "/gallery": gallery,
         "/spotlight": Spotlight,
         "/contact": contact,
+        "/followUs":followUs
       };
 
       const currentPath = location.pathname;
@@ -59,8 +63,10 @@ export default function Header({
         { id: "home", ref: home, path: "/" },
         { id: "about", ref: aboutRef, path: "/about" },
         { id: "benefits", ref: benefits, path: "/benefits" },
+        { id: "EmbraceVintage", ref: EmbraceVintage, path: "/EmbraceVintage" },
         { id: "gallery", ref: gallery, path: "/gallery" },
         { id: "spotlight", ref: Spotlight, path: "/spotlight" },
+        { id: "followUs", ref: followUs, path: "/followUs" },
         { id: "contact", ref: contact, path: "/contact" },
       ];
 

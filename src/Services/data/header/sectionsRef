@@ -1,8 +1,0 @@
-export  const sections = [
-        { id: "home", ref: home, path: "/" },
-        { id: "about", ref: aboutRef, path: "/about" },
-        { id: "benefits", ref: benefits, path: "/benefits" },
-        { id: "gallery", ref: gallery, path: "/gallery" },
-        { id: "spotlight", ref: Spotlight, path: "/spotlight" },
-        { id: "contact", ref: contact, path: "/contact" },
-      ];

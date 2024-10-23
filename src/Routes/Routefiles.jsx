@@ -19,7 +19,7 @@ export default function Routefiles() {
   const vintajeref = useRef(null);
   const contactref = useRef(null);
   const embraceVintageref = useRef(null);
-
+  const followusref = useRef(null);
   return (
     <div>
       <Header
@@ -29,7 +29,8 @@ export default function Routefiles() {
         gallery={galleryref}
         Spotlight={vintajeref}
         contact={contactref}
-        embraceVintage={embraceVintageref}
+        EmbraceVintage={embraceVintageref}
+        followUs={followusref}
       />
       <section ref={homeref}>
         <Home />
@@ -41,7 +42,7 @@ export default function Routefiles() {
       <section ref={Benefitsref}>
         <Benefits />
       </section>
-      
+
       <section ref={embraceVintageref}>
         <EmbraceVintage />
       </section>
@@ -53,8 +54,10 @@ export default function Routefiles() {
       <section ref={vintajeref}>
         <Vintage />
       </section>
+      <section ref={followusref}>
+        <FollowUs />
+      </section>
 
-      <FollowUs />
       <section ref={contactref}>
         <Contact />
       </section>

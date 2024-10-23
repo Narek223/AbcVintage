@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import BenefitsImg from "../../assets/Benefits/Benefits.png";
+import React  from "react";
 import styles from "./benefits.module.scss";
 import BenefitsCart from "./BenefitsCart/BenefitsCart";
 import  {useBenefitsData}  from "../../Services/data/benefits/benefitsData";

@@ -1,88 +1,93 @@
 .benefitsConteiner {
-    margin: 100px 0;
-    padding: 100px 200px 100px 200px;
-    height: 725px;
-    .title {
-        width: 100%;
-        min-height: 100px;
-        h1 {
-            font-family: "aurora";
-            font-size: 64px;
-            font-weight: 400;
-            color: rgba(93, 64, 55, 1);
-            padding: 30px 0;
-        }
-        .text {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            overflow: hidden;
-            p {
-                width: 50%;
-                font-weight: 400;
-                font-size: 22px;
-                line-height: 28px;
-                color: rgba(0, 0, 0, 1);
-                opacity: 70%;
-            }
-        }
+  margin: 100px 0;
+  padding: 100px 200px 100px 200px;
+  height: 725px;
+  .title {
+    width: 100%;
+    min-height: 100px;
+    h1 {
+      font-family: "aurora";
+      font-size: 64px;
+      font-weight: 400;
+      color: rgba(93, 64, 55, 1);
+      padding: 30px 0;
     }
-    .benefitsdata {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        .swiperslider {
-            border: 5px solid #c2b3b3;
-        }
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      overflow: hidden;
+      p {
+        width: 50%;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        color: rgba(0, 0, 0, 1);
+        opacity: 70%;
+      }
     }
+  }
+  .benefitsdata {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .swiperslider {
+      border: 5px solid #c2b3b3;
+    }
+  }
 }
 
 @media screen and (max-width: 1450px) {
-    .benefitsConteiner {
-        padding: 20px 100px;
-        margin: 50px 0 10px 0;
-        .title {
-            h1 {
-                font-size: 50px;
-            }
+  .benefitsConteiner {
+    padding: 20px 100px;
+    margin: 50px 0 10px 0;
+    .title {
+      h1 {
+        font-size: 50px;
+      }
 
-            .text {
-                p {
-                    font-size: 18px;
-                    width: 60%;
-                }
-            }
+      .text {
+        p {
+          font-size: 18px;
+          width: 60%;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 1170px) {
-    .benefitsConteiner {
-        padding: 20px 50px;
+  .benefitsConteiner {
+    padding: 20px 50px;
 
-        .title {
-            .text {
-                P {
-                    width: 90%;
-                }
-            }
+    .title {
+      .text {
+        P {
+          width: 90%;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 1010px) {
-    .benefitsConteiner {
-        width: 100%;
-        padding: 20px 0 20px 20px;
+  .benefitsConteiner {
+    width: 100%;
+    padding: 20px 0 20px 20px;
 
-        .title {
-            .text {
-                p {
-                    padding: 0 20px 0 0;
-                    width: 100%;
-                }
-            }
+    .title {
+      .text {
+        p {
+          padding: 0 20px 0 0;
+          width: 100%;
         }
+      }
     }
+  }
+}
+@media screen and (max-width: 410px) {
+  .benefitsConteiner {
+    margin: 50px 0;
+  }
 }

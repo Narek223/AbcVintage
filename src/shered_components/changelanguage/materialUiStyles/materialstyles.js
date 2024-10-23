@@ -1,4 +1,3 @@
-// styles.js (or any suitable name)
 export const getCustomStyles = (style,styforpc) => ({
     backgroundColor: "#98896c",
     color: "white",
