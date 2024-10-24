@@ -1,6 +1,6 @@
-import pinterestLogo from '../../../assets/Header/pinterest.png'
-import instagramlogo from "../../../assets/Header/instagram.png"
-import facebookLogo from '../../../assets/Header/facebook.png'
+import pinterestLogo from '../../../assets/Header/pinterest.svg'
+import instagramlogo from "../../../assets/Header/instagram.svg"
+import facebookLogo from '../../../assets/Header/facebook.svg'
 
 
 export const socialMediaIcons = [

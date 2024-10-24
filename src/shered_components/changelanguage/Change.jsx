@@ -10,6 +10,14 @@ import { getCustomStyles } from "./materialUiStyles/materialstyles";
 export default function Change({sxstyle}) {
   const [language, setLanguage] = useState(i18n.language === "cz" ? "Cz" : "Eng");
 
+
+
+  let menuitemhover={
+    "&:hover": {
+      // backgroundColor: "rgba(97, 85, 59, 1);",
+      color: "rgba(97, 85, 59, 1);", 
+    }
+  }
   const handleLanguageChange = (lang) => {
     if (lang === "Eng") {
       i18n.changeLanguage("en");
@@ -42,13 +50,16 @@ export default function Change({sxstyle}) {
               sx: {
                 backgroundColor: "#98896c",
                 color: "white",
+                
               },
             },
+            
           }}
+          
         >
-          <MenuItem value="Eng">Eng</MenuItem>
+          <MenuItem   disableRipple  value="Eng" sx={menuitemhover}>Eng</MenuItem>
           <Divider sx={{ backgroundColor: "white" }} />
-          <MenuItem value="Cz">Cz</MenuItem>
+          <MenuItem value="Cz" sx={menuitemhover} >Cz</MenuItem>
         </Select>
       </FormControl>
     </div>

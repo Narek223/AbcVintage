@@ -55,6 +55,7 @@
   color: rgb(97, 85, 59);
 }
 .followusContainer .followusImgContainer {
+  cursor: grab;
   width: 100%;
   overflow: hidden;
   padding-top: 50px;

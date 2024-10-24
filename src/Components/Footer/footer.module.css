@@ -78,6 +78,10 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  cursor: pointer;
+}
+.footerContainer .one .footer .contact p:hover {
+  color: rgb(97, 85, 59);
 }
 .footerContainer .one .footer .contact p:hover a {
   color: rgb(97, 85, 59);
@@ -101,8 +105,9 @@
 .footerContainer .one .footer .follow .socialMediaicons a {
   text-decoration: none;
 }
-.footerContainer .one .footer .follow .socialMediaicons a:hover .socialItem p {
-  color: rgb(97, 85, 59);
+.footerContainer .one .footer .follow .socialMediaicons a .socialItem:hover {
+  background-color: rgb(97, 85, 59);
+  border-radius: 50px;
 }
 .footerContainer .one .footer .follow .socialMediaicons a .socialItem {
   color: white;

@@ -5,18 +5,20 @@
 .benefitscart {
   width: 360px;
   height: 340px;
+  overflow: hidden;
   background-color: rgb(152, 137, 108);
   border-radius: 0 50px 0 0;
   margin: 50px 10px;
   padding: 30px;
 }
 .benefitscart:hover {
+  background-color: rgb(97, 85, 59);
   cursor: grab;
+  transform: scale(1.05) rotate(5deg);
 }
 .benefitscart:hover .benefitsinfo img {
-  transform: rotate(360deg);
-  transition-duration: 1s;
-  transition-delay: 0;
+  transform: rotate(360deg) scale(1.1);
+  transition: transform 1s ease;
 }
 .benefitscart .benefitsinfo {
   display: flex;
@@ -33,10 +35,6 @@
   font-size: 30px;
   padding: 0;
   color: white;
-}
-.benefitscart .benefitsinfo h1:hover {
-  transition-duration: 0.5ms;
-  color: rgba(255, 255, 255, 0.8);
 }
 .benefitscart p {
   text-align: start;

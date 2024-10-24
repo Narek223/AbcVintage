@@ -52,10 +52,7 @@
   box-sizing: border-box;
 }
 .galleryconteiner .sliderconteiner button:hover {
-  background-color: rgb(142, 131, 110);
-}
-.galleryconteiner .sliderconteiner button:hover .icon {
-  color: rgb(97, 85, 59);
+  background-color: rgb(97, 85, 59);
 }
 .galleryconteiner .sliderconteiner button:active {
   transform: scale(0.9);

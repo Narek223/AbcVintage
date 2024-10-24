@@ -21,13 +21,14 @@ export default function Header({
   EmbraceVintage,
   followUs
 }) {
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [show, setShow] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [initialScroll, setInitialScroll] = useState(false); 
   let ref = useRef();
-  const { t } = useTranslation();
 
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation(); 
 

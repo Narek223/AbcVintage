@@ -76,28 +76,31 @@ export default function Footer({
           </div>
 
           <div className={styles.contact}>
-            <h1>{t("footer.contact.title")}</h1>
-            <p>
-              {t("footer.contact.email")}
-              <a href="mailto:ABCvintage@gmail.com">ABCvintage@gmail.com</a>
-            </p>
+  <h1>{t("footer.contact.title")}</h1>
 
-            <p>
-            {t("footer.contact.callUs")}
-              <a href="tel:+37493555566">{t("footer.contact.PhoneNumber")} </a>
-            </p>
-            <p>
-            {t("footer.contact.address")}
-              <a
-                href="https://www.google.com/maps/place/40.179186,44.478342,14"
-                target="_blank"
-              >
-                {" "}
-                {t("footer.contact.addressPraha")}
-              </a>
-              <a />
-            </p>
-          </div>
+  <a href="mailto:ABCvintage@gmail.com">
+    <p>{t("footer.contact.email")} ABCvintage@gmail.com</p>
+  </a>
+
+  <a href="tel:+37493555566">
+    <p>
+      {t("footer.contact.callUs")}
+      {t("footer.contact.PhoneNumber")}
+    </p>
+  </a>
+
+  <a
+    href="https://www.google.com/maps/place/40.179186,44.478342,14"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <p>
+      {t("footer.contact.address")}
+      {t("footer.contact.addressPraha")}
+    </p>
+  </a>
+</div>
+
 
           <div className={styles.follow}>
             <h1>{t("footer.followUs")}</h1>

@@ -4,12 +4,14 @@ export const getCustomStyles = (style,styforpc) => ({
     
     "& .MuiSelect-icon": {
       color: "white",
+      
     },
     "& .MuiInputBase-root": {
       color: "white",
       padding: 0,
     },
     "& .MuiOutlinedInput-input": {
+      
       fontSize: "16px", 
       padding: 0,
       fontFamily: "Times New Roman",
@@ -23,6 +25,7 @@ export const getCustomStyles = (style,styforpc) => ({
         fontSize: styforpc,
       },
     },
+    
     "& .MuiOutlinedInput-notchedOutline": {
       padding: 0,
       border: "none",
@@ -30,5 +33,15 @@ export const getCustomStyles = (style,styforpc) => ({
     "&:hover .MuiOutlinedInput-notchedOutline": {
       border: "none",
     },
+    "&:hover .MuiSelect-icon":{
+      color: "rgba(97, 85, 59, 1);", 
+    },
+    "&:hover": {
+    // backgroundColor: "rgba(97, 85, 59, 1);", 
+    color: "rgba(97, 85, 59, 1);", 
+  },
+  "&:hover .MuiOutlinedInput-notchedOutline": {
+    border: "none",
+  },
   });
   

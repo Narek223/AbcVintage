@@ -55,8 +55,7 @@
   transform: scale(0.9) !important;
 }
 .EmbraceVintageComponent .vintageElegance button:hover {
-  color: rgb(97, 85, 59);
-  background-color: rgb(142, 131, 110);
+  background-color: rgb(97, 85, 59);
 }
 
 @keyframes fadeInContent {
