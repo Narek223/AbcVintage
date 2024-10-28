@@ -12,7 +12,7 @@
   padding: 30px;
 }
 .benefitscart:hover {
-  background-color: rgb(97, 85, 59);
+  background-color: #a29276;
   cursor: grab;
   transform: scale(1.05) rotate(5deg);
 }

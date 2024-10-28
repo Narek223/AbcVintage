@@ -16,7 +16,7 @@ export default function AboutUsItem({ data }) {
     <div
       className={`${styles.abcVintageLove} ${isReversed ? styles.reversed : ""}`}
       data-aos="fade-up"
-      data-aos-duration="2000"
+      data-aos-duration="1000"
       data-aos-once="false"
     >
       <div className={styles.vintageimg}>

@@ -54,9 +54,12 @@
   border: 1px solid rgb(152, 137, 108);
   padding: 15px;
 }
+.contactconteiner .contactus .formconteiner .formikConteiner input.inputError {
+  border: 2px solid red;
+}
 .contactconteiner .contactus .formconteiner .formikConteiner .error {
   font-size: 15px;
-  color: rgb(152, 137, 108);
+  color: red;
   text-align: start;
   padding: 5px;
 }
@@ -81,9 +84,11 @@
   cursor: pointer;
   align-self: center;
   margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .contactconteiner .contactus .formconteiner button:hover {
-  background-color: rgb(97, 85, 59);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #a29276;
 }
 .contactconteiner .contactus .mapconteiner {
   width: 990px;

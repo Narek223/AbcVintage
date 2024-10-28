@@ -17,7 +17,7 @@ export default function Home() {
     <div className={styles.homepageconteiner}>
       <div
   
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         data-aos="fade-right"
         className={styles.welcometoAbc}
       >

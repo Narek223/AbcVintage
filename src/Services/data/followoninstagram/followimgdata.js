@@ -3,7 +3,7 @@ import sliderimgtwo from '../../../assets/FollowUs/A1CEE3D2-CE74-4FC5-A5A6-A1EA0
 import sliderimgthree from '../../../assets/FollowUs/A1CEE3D2-CE74-4FC5-A5A6-A1EA0508E01A 1 (3).png'
 import sliderimgfour from '../../../assets/FollowUs/A1CEE3D2-CE74-4FC5-A5A6-A1EA0508E01A 1 (4).png'
 import sliderimgfife from '../../../assets/FollowUs/A1CEE3D2-CE74-4FC5-A5A6-A1EA0508E01A 1 (6).png'
-import sliderimgsix from '../../../assets/EmbraceVintage/EmbraceVintage.png'
+import sliderimgsix from '../../../assets/Gallery/Slider/424897562_831709968970164_671874420631076093_n_1024x1024.webp'
 
 
 

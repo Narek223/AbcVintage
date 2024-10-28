@@ -2,16 +2,10 @@
   text-align: center;
 }
 
-
-
-button:active{
+button:active {
   transform: scale(0.9);
- 
 }
-
-
 
 .App-link {
   color: #61dafb;
 }
-

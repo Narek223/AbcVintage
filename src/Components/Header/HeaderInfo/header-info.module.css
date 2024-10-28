@@ -17,7 +17,7 @@
   text-decoration: none;
 }
 .contactConteiner .contactInformation a:hover {
-  color: rgb(97, 85, 59);
+  font-weight: 550;
 }
 .contactConteiner .contactInformation .iconsImg {
   padding: 0 35px;

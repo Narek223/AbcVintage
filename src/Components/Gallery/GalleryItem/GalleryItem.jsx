@@ -11,7 +11,7 @@ export default function GalleryItem({ data }) {
   return (
     <div
       data-aos="zoom-in"
-      data-aos-duration="2000"
+      data-aos-duration="1000"
       data-aos-delay="300"
       className={`${styles.galleryConteiner} ${
         isReversed ? styles.reversed : null

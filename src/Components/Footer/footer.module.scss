@@ -34,7 +34,7 @@
       h1 {
         font-weight: 400;
         padding-bottom: 25px;
-        color: rgba(93, 64, 55, 1);
+        color: white;
         text-align: start;
       }
 
@@ -99,12 +99,11 @@
         display: flex;
         flex-direction: column;
         gap: 18px;
-cursor: pointer;
+        cursor: pointer;
         p {
           &:hover {
-            
             color: rgba(97, 85, 59, 1);
-            a{
+            a {
               color: rgba(97, 85, 59, 1);
             }
           }
@@ -131,10 +130,15 @@ cursor: pointer;
             text-decoration: none;
 
             .socialItem {
-              &:hover {
-                background-color: rgba(97, 85, 59, 1);
-                border-radius: 50px;
-              }
+         
+                &:hover {
+                  img{
+                  background-color: rgba(97, 85, 59, 1);
+                  border-radius: 50px;
+                  }
+                }
+              
+            
             }
 
             .socialItem {

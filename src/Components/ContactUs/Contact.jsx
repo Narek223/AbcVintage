@@ -7,6 +7,8 @@ import i18n from "../../i18n";
 
 export default function Contact() {
   const { t } = useTranslation();
+  
+
 
   const initialValues = {
     name: "",
@@ -33,13 +35,14 @@ export default function Contact() {
             validateOnChange={false}
             validateOnBlur={true}
           >
-            {({ isValid }) => (
+            {({ isValid,touched, errors  }) => (
               <Form className={styles.formikConteiner}>
                 <div className={styles.form}>
                   <Field
                     type="text"
                     name="name"
                     placeholder={t("ContactUs.form.name")}
+                    className={` ${touched.name && errors.name ? styles.inputError : ''}`}
                   />
                   <ErrorMessage
                     name="name"
@@ -51,6 +54,7 @@ export default function Contact() {
                     type="tel"
                     name="phoneNumber"
                     placeholder={t("ContactUs.form.phone")}
+                    className={` ${touched.phoneNumber && errors.phoneNumber ? styles.inputError : ''}`}
                   />
                   <ErrorMessage
                     name="phoneNumber"
@@ -62,6 +66,7 @@ export default function Contact() {
                     type="email"
                     name="email"
                     placeholder={t("ContactUs.form.email")}
+                    className={` ${touched.email && errors.email ? styles.inputError : ''}`}
                   />
                   <ErrorMessage
                     name="email"
@@ -73,7 +78,8 @@ export default function Contact() {
                     as="textarea"
                     name="message"
                     placeholder={t("ContactUs.form.message")}
-                    className={styles.texarea}
+          
+                    className={`${styles.texarea} ${touched.name && errors.name ? styles.inputError : ''}`}
                   />
                   <ErrorMessage
                     name="message"

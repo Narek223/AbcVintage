@@ -10,20 +10,19 @@ import { getCustomStyles } from "./materialUiStyles/materialstyles";
 export default function Change({sxstyle}) {
   const [language, setLanguage] = useState(i18n.language === "cz" ? "Cz" : "Eng");
 
-
-
   let menuitemhover={
     "&:hover": {
-      // backgroundColor: "rgba(97, 85, 59, 1);",
-      color: "rgba(97, 85, 59, 1);", 
-    }
+    backgroundColor: "rgb(97, 85, 59)"
+    },
+    "@media (min-width:600px)": {
+      fontSize: "18px", 
+    },
+
   }
   const handleLanguageChange = (lang) => {
-    if (lang === "Eng") {
-      i18n.changeLanguage("en");
-    } else if (lang === "Cz") {
-      i18n.changeLanguage("cz");
-    }
+
+    lang === "Eng"?  i18n.changeLanguage("en"): i18n.changeLanguage("cz")
+ 
     setLanguage(lang);
   };
 

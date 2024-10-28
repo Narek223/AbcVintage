@@ -53,7 +53,16 @@
   .vintageItem .imageContainer {
     height: 450px;
   }
+  .vintageItem .imageContainer img {
+    height: 100%;
+  }
+  .vintageItem .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .vintageItem .info h1 {
+    line-height: 50px;
     font-size: 30px;
   }
 }

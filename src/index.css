@@ -1,14 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-
-
- @font-face {
+@font-face {
   font-family: "aurora";
-  src: url('../src/Fonts/Aurora-gx4V6.woff');
+  src: url("../src/Fonts/Aurora-gx4V6.woff");
 }
-

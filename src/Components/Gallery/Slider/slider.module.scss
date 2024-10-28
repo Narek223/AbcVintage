@@ -47,8 +47,8 @@
     }
 
     button {
-      width: 68px;
-      height: 68px;
+      width: 60px;
+      height: 60px;
       background-color: rgba(152, 137, 108, 1);
       border-radius: 50%;
       padding: 0 15px;
@@ -59,8 +59,11 @@
       align-items: center;
       justify-content: center;
       box-sizing: border-box;
+      transition: background-color 0.3s ease, transform 0.2s ease;
       &:hover{
-        background-color: rgb(97, 85, 59);
+      
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #a29276;
 
      
       }

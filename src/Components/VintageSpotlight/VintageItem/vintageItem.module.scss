@@ -59,9 +59,17 @@
     align-items: center;
     .imageContainer {
       height: 450px;
+      img{
+        height: 100%;
+      }
     }
     .info {
+     
+      display: flex;
+      flex-direction: column;
+    justify-content: center;
       h1 {
+        line-height: 50px;
         font-size: 30px;
       }
     }
