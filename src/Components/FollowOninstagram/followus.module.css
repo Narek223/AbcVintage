@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 .followusContainer .followusText button a {
   text-decoration: none;
@@ -48,11 +49,11 @@
   font-size: 35px;
 }
 .followusContainer .followusText button:hover {
-  border: 1px solid rgb(97, 85, 59);
-  color: rgb(97, 85, 59);
+  border: 1px solid rgb(234, 225, 225);
+  color: rgb(234, 225, 225);
 }
 .followusContainer .followusText button:hover a {
-  color: rgb(97, 85, 59);
+  color: rgb(234, 225, 225);
 }
 .followusContainer .followusImgContainer {
   cursor: grab;

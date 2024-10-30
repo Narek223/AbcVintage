@@ -9,3 +9,7 @@ button:active {
 .App-link {
   color: #61dafb;
 }
+.Mui-selected {
+
+  background-color: rgb(93, 64, 55);
+}

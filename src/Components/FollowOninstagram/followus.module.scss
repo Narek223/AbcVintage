@@ -37,7 +37,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      
+      transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
       a {
         text-decoration: none;
         color: white;
@@ -48,10 +48,10 @@
         font-size: 35px;
       }
       &:hover{
-        border: 1px solid rgba(97, 85, 59, 1);
-        color: rgba(97, 85, 59, 1); 
+        border: 1px solid rgb(234, 225, 225);
+        color: rgba(234, 225, 225);
         a{
-                 color: rgba(97, 85, 59, 1); ;
+                 color: rgba(234, 225, 225); 
         }
       }
     }

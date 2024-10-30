@@ -108,7 +108,8 @@ export default function Footer({
               {socialMediaIcons.map((icon) => (
                 <a href={icon.link} target="blank">
                   <div key={icon.id} className={styles.socialItem}>
-                    <img src={icon.src} alt={icon.alt} />
+                    {/* <img src={icon.src} alt={icon.alt} /> */}
+                    {icon.svg}
                     <p> {icon.text}</p>
                   </div>
                 </a>

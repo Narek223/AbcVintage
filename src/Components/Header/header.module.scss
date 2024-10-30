@@ -72,10 +72,14 @@
           li {
             color: rgba(93, 64, 55, 1);
             padding: 0 20px;
+            width: 130px;
             list-style: none;
             cursor: pointer;
+            transition: text-shadow  ease-in-out;
             &:hover{
-              color: rgb(152 137 108);
+              font-weight: 600;
+              // text-shadow: 0.5px 0.5px  rgba(0, 0, 0);
+             
             }
           }
         }
@@ -320,6 +324,15 @@
       .headerNav {
         .headerContent {
           width: 1000px;
+        }
+        .listbox{
+          .responsivenavigation{
+            
+              li{
+                width: auto;
+              }
+            
+          }
         }
       }
     }

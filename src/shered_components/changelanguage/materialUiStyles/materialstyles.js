@@ -6,6 +6,10 @@ export const getCustomStyles = (style,styforpc) => ({
       color: "white",
       
     },
+    "&.Mui-selected": {
+      backgroundColor: "rgb(93, 64, 55)", 
+      color: "white",
+    },
     "& .MuiInputBase-root": {
       color: "white",
       padding: 0,

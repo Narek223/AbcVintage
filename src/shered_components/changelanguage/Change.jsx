@@ -12,8 +12,13 @@ export default function Change({sxstyle}) {
 
   let menuitemhover={
     "&:hover": {
-    backgroundColor: "rgb(97, 85, 59)"
+    backgroundColor: "rgb(93, 64, 55)"
     },
+    "&.Mui-selected": {
+      backgroundColor: "rgb(93, 64, 55)", 
+      color: "white",
+    },
+    
     "@media (min-width:600px)": {
       fontSize: "18px", 
     },
@@ -49,6 +54,7 @@ export default function Change({sxstyle}) {
               sx: {
                 backgroundColor: "#98896c",
                 color: "white",
+                
                 
               },
             },

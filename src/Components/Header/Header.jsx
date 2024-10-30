@@ -154,6 +154,8 @@ export default function Header({
                     show ? styles.openNavBar : styles.closeNavBar
                   }`}
                 >
+
+                  
                   {navItems.map(({ name, id, ref, path }) => (
                     <li
                       key={id}

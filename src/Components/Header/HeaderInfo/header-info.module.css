@@ -15,19 +15,23 @@
 .contactConteiner .contactInformation a {
   color: white;
   text-decoration: none;
+  transition: text-shadow ease-in-out;
 }
 .contactConteiner .contactInformation a:hover {
-  font-weight: 550;
+  color: rgb(234, 225, 225);
 }
 .contactConteiner .contactInformation .iconsImg {
   padding: 0 35px;
 }
-.contactConteiner .contactInformation .iconsImg img {
+.contactConteiner .contactInformation .iconsImg svg {
+  fill: white;
   margin: 0 5px;
 }
-.contactConteiner .contactInformation .iconsImg img:hover {
-  background-color: rgb(97, 85, 59);
-  border-radius: 50px;
+.contactConteiner .contactInformation .iconsImg svg:hover {
+  fill: rgb(234, 225, 225);
+}
+.contactConteiner .contactInformation .iconsImg svg:hover path {
+  fill: rgb(234, 225, 225);
 }
 
 @media screen and (max-width: 1450px) {

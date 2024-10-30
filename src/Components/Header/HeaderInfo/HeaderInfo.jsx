@@ -4,6 +4,7 @@ import { socialMediaIcons } from "../../../Services/data/header/HeaderData";
 import Change from "../../../shered_components/changelanguage/Change";
 import { useTranslation } from "react-i18next";
 
+
 const HeaderInfo = () => {
   const { t } = useTranslation();
 
@@ -14,9 +15,12 @@ const HeaderInfo = () => {
         <nav className={styles.iconsImg}>
           {socialMediaIcons.map((icon) => (
             <a href={icon.link} key={icon.id} target="_blank">
-              <img src={icon.src} alt={icon.alt} />
+           
+           
+               {icon.svg} 
             </a>
           ))}
+          
         </nav>
         <Change />
       </div>
