@@ -77,7 +77,8 @@
   },
 
   "EmbraceVintage": {
-    "vintage": "Embrace Vintage Elegance",
+    "vintage": "Embrace Vintage",
+    "elegance":"Elegance",
     "shop": "Shop now"
   },
   "FollowUs": {

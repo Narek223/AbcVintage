@@ -79,7 +79,8 @@
   },
   
   "EmbraceVintage": {
-    "vintage": "Přijměte vintage eleganci",
+    "vintage": "Přijměte Vintage ",
+    "elegance":"Eleganci",
     "shop": "Nakupujte nyní"
   },
 
@@ -101,6 +102,7 @@
       "errors": {
         "username": "Zadejte prosím své uživatelské jméno",
         "mail": "Zadejte prosím svůj e-mail",
+        "incorect":"Toto není správný formát e-mailu",
         "phone": "Vyžaduje se telefonní číslo",
         "contein": "Telefonní číslo může obsahovat pouze čísla, +, - a ().",
         "toshort": "Telefonní číslo je příliš krátké",

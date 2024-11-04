@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./contact.module.scss";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { validationSchema } from "../../Functions/FormValidation/validation";
+import { useValidationSchema } from "../../Functions/FormValidation/validation";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 
 export default function Contact() {
+  const validationSchema = useValidationSchema();
   const { t } = useTranslation();
   
 

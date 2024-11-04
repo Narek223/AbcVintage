@@ -1,20 +1,26 @@
 import * as Yup from "yup";
+import { useTranslation } from "react-i18next";
 
-export let validationSchema = Yup.object({
-  name: Yup.string()
-    .required("Please enter your Username")
-    .min(4, "Minimum username length 4"),
-  email: Yup.string()
-    .required("Please enter your email")
-    .email("This isn't not correct email format")
-    .matches(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, " "),
-  phoneNumber: Yup.string()
-    .required("Phone number is required")
-    .matches(
-      /^[0-9+()-]*$/,
-      "Phone number can only contain numbers, +, -, and ()"
-    )
-    .min(7, "Phone number is too short")
-    .max(15, "Phone number is too long"),
-  message: Yup.string().min(5, "too short"),
-});
+export const useValidationSchema = () => {
+  const { t } = useTranslation();
+
+  return Yup.object().shape({
+    name: Yup.string()
+      .required(t("ContactUs.form.errors.username"))
+      .min(4, t("ContactUs.form.errors.minimum")),
+      
+    email: Yup.string()
+      .required(t("ContactUs.form.errors.mail"))
+      .email(t("ContactUs.form.errors.incorect"))
+      .matches(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, t("ContactUs.form.errors.incorect")),
+      
+    phoneNumber: Yup.string()
+      .required(t("ContactUs.form.errors.phone"))
+      .matches(/^[0-9+()-]*$/, t("ContactUs.form.errors.contein"))
+      .min(7, t("ContactUs.form.errors.toshort"))
+      .max(15, t("ContactUs.form.errors.tolong")),
+      
+    message: Yup.string()
+      .min(5, t("ContactUs.form.errors.short")),
+  });
+};

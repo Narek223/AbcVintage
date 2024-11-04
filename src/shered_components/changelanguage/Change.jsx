@@ -15,7 +15,7 @@ export default function Change({sxstyle}) {
     backgroundColor: "rgb(93, 64, 55)"
     },
     "&.Mui-selected": {
-      backgroundColor: "rgb(93, 64, 55)", 
+      backgroundColor: "rgb(93, 64, 55) !important", 
       color: "white",
     },
     

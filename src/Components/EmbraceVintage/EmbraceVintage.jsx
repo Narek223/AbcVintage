@@ -17,8 +17,8 @@ export default function EmbraceVintage() {
         className={`${styles.vintageElegance} ${inView ? styles.visible : ""}`}
       >
         <h1>
-          Embrace Vintage
-          <br /> Elegance
+         {t("EmbraceVintage.vintage")}
+          <br /> {t("EmbraceVintage.elegance")} 
         </h1>
         <button>{t("EmbraceVintage.shop")}</button>
       </div>
